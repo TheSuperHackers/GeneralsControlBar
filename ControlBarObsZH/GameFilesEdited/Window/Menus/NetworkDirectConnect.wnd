@@ -341,7 +341,7 @@ WINDOW
                      BOTTOMRIGHT: 389 294,
                      CREATIONRESOLUTION: 800 600;
         NAME = "NetworkDirectConnect.wnd:StaticLocalIP";
-        STATUS = ENABLED;
+        STATUS = ENABLED+HIDDEN;
         STYLE = STATICTEXT+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -389,7 +389,7 @@ WINDOW
                      BOTTOMRIGHT: 370 268,
                      CREATIONRESOLUTION: 800 600;
         NAME = "NetworkDirectConnect.wnd:StaticLocalIPDescription";
-        STATUS = ENABLED;
+        STATUS = ENABLED+HIDDEN;
         STYLE = STATICTEXT+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -589,7 +589,7 @@ WINDOW
                    BOTTOMRIGHT: 389 351,
                    CREATIONRESOLUTION: 800 600;
       NAME = "NetworkDirectConnect.wnd:ComboboxRemoteIP";
-      STATUS = ENABLED+IMAGE;
+      STATUS = ENABLED+IMAGE+HIDDEN;
       STYLE = MOUSETRACK+COMBOBOX;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";

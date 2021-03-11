@@ -939,7 +939,7 @@ WINDOW
                        BOTTOMRIGHT: 608 456,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:ComboBoxIP";
-          STATUS = ENABLED+IMAGE;
+          STATUS = ENABLED+IMAGE+HIDDEN;
           STYLE = MOUSETRACK+COMBOBOX;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
@@ -1181,7 +1181,7 @@ WINDOW
                        BOTTOMRIGHT: 368 456,
                        CREATIONRESOLUTION: 800 600;
           NAME = "OptionsMenu.wnd:ComboBoxOnlineIP";
-          STATUS = ENABLED+IMAGE;
+          STATUS = ENABLED+IMAGE+HIDDEN;
           STYLE = MOUSETRACK+COMBOBOX;
           SYSTEMCALLBACK = "[None]";
           INPUTCALLBACK = "[None]";
