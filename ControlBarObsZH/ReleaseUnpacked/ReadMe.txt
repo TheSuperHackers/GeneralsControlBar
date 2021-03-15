@@ -43,6 +43,18 @@ EA Games, xezon, Legionnaire, FAS
 
 
 -----------------------------------------------------------------------------------------------
+--- Customizations ----------------------------------------------------------------------------
+
++ Edit launcherControlBarObsEnglishZH\commandline.txt
+  to append custom command line arguments to executable.
+
++ Edit launcherControlBarObsEnglishZH\big.txt to enable
+  custom .big files located relative to launcher folder.
+  For example specifying "..\MyBigFile.big" would enable loading of MyBigFile.big
+  in game root directory when using launcher\generals.exe.
+
+
+-----------------------------------------------------------------------------------------------
 --- Compatibility -----------------------------------------------------------------------------
 
 This pack combines well with the Control Bar HD Remastered Pack
