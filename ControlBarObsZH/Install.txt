@@ -1,3 +1,0 @@
-1. Run MAKE_BigFilesUnpacked.bat to generate big file contents
-2. Compress all folders in BigFilesUnpacked into individual BIG files (..\Tools\FinalBig)
-3. Edit and run MAKE_Release.bat
