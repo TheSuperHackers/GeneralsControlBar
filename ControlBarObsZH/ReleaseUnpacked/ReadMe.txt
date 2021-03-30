@@ -17,6 +17,7 @@ EA Games, xezon, Legionnaire, FAS
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarObs.cmd
 
 2. Run GeneralsControlBarObs.cmd
+   or  GeneralsControlBarObsShell.cmd if the first does not work properly
 
 3. If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
    then open launcherControlBarObsEnglishZH\big.txt file with text editor
@@ -76,3 +77,11 @@ v1.2
 
 v1.3
 - Added 250_HideIP_WindowZH.big and 251_HideMail_WindowZH.big.bak
+
+v1.4
+- Added Generals Proxy Launcher 2.0
+- Fixed invisible button bug in Replay mode
+- Fixed positioning of upgrade icons in grid
+- Fixed too large player names
+- Fixed and removed power bars in Game mode
+- Changed color of upgrades grid
