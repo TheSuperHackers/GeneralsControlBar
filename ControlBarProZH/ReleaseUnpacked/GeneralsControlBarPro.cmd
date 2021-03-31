@@ -1,0 +1,2 @@
+start launcherControlBarProZH\generals.exe
+exit
