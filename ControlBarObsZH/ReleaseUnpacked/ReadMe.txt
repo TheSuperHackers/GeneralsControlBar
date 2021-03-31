@@ -1,7 +1,8 @@
 Control Bar Observer for COMMAND AND CONQUER GENERALS: ZERO HOUR
 
-Author:
-EA Games, xezon, Legionnaire, FAS
+Author(s): EA Games, xezon, Legionnaire, FAS
+
+Code & Assets: https://github.com/xezon/GeneralsControlBar
 
 -----------------------------------------------------------------------------------------------
 --- Regular Install ---------------------------------------------------------------------------
@@ -11,10 +12,12 @@ EA Games, xezon, Legionnaire, FAS
    
    > On English install it would then look like so:
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarObsEnglishZH
+   > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarObsEnglishZHShell
    > ...\EA Games\Command & Conquer Generals Zero Hour\200_ControlBarObsEnglishZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\250_HideIP_WindowZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\251_HideMail_WindowZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarObs.cmd
+   > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarObsShell.cmd
 
 2. Run GeneralsControlBarObs.cmd
    or  GeneralsControlBarObsShell.cmd if the first does not work properly
@@ -52,7 +55,7 @@ EA Games, xezon, Legionnaire, FAS
 + Edit launcherControlBarObsEnglishZH\big.txt to enable
   custom .big files located relative to launcher folder.
   For example specifying "..\MyBigFile.big" would enable loading of MyBigFile.big
-  in game root directory when using launcher\generals.exe.
+  in game root directory when using proxy generals.exe.
 
 
 -----------------------------------------------------------------------------------------------
