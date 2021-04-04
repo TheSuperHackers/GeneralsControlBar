@@ -2178,7 +2178,7 @@ WINDOW
 	  CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1643 888,
+        SCREENRECT = UPPERLEFT: 1645 888,
                      BOTTOMRIGHT: 1792 1007,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:CameoWindow";
@@ -2983,16 +2983,16 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 374 1025,
-                     BOTTOMRIGHT: 474 1075,
+        SCREENRECT = UPPERLEFT: 374 1026,
+                     BOTTOMRIGHT: 474 1078,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:ObserverPlayerInfoWindow";
-      STATUS = ENABLED+SEE_THRU;
+      STATUS = ENABLED;
       STYLE = USER;
       SYSTEMCALLBACK = "ControlBarObserverSystem";
       INPUTCALLBACK = "[None]";
       TOOLTIPCALLBACK = "[None]";
-      DRAWCALLBACK = "W3DNoDraw";
+      DRAWCALLBACK = "[None]";
       FONT = NAME: "Times New Roman", SIZE: 14, BOLD: 0;
       HEADERTEMPLATE = "[NONE]";
       TOOLTIPDELAY = -1;
@@ -3029,11 +3029,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 330 878,
-                     BOTTOMRIGHT: 825 1024,
+        SCREENRECT = UPPERLEFT: 330 824,
+                     BOTTOMRIGHT: 842 1080,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:WinGeneralPortrait";
-        STATUS = ENABLED;
+        STATUS = ENABLED+IMAGE;
         STYLE = USER;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "GameWinBlockInput";
@@ -3045,7 +3045,7 @@ WINDOW
         TEXTCOLOR = ENABLED:  255 255 255 0, ENABLEDBORDER:  255 255 255 0,
                     DISABLED: 255 255 255 0, DISABLEDBORDER: 255 255 255 0,
                     HILITE:   255 255 255 0, HILITEBORDER:   255 255 255 0;
-        ENABLEDDRAWDATA = IMAGE: BlackSquare, COLOR: 0 0 0 178, BORDERCOLOR: 0 0 0 0,
+        ENABLEDDRAWDATA = IMAGE: InGameUIObsWindow, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 0,
                           IMAGE: NoImage, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 255,
                           IMAGE: NoImage, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 255,
                           IMAGE: NoImage, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 255,
@@ -3123,11 +3123,11 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 374 1026,
-                     BOTTOMRIGHT: 474 1078,
+        SCREENRECT = UPPERLEFT: 379 1031,
+                     BOTTOMRIGHT: 479 1071,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonCancel";
-        STATUS = ENABLED+IMAGE+ON_MOUSE_DOWN;
+        STATUS = ENABLED+ON_MOUSE_DOWN;
         STYLE = PUSHBUTTON+MOUSETRACK;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "[None]";
@@ -3140,39 +3140,12 @@ WINDOW
         TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
                     DISABLED: 62 64 92 255, DISABLEDBORDER: 31 32 47 255,
                     HILITE:   186 255 12 255, HILITEBORDER:   0 2 0 255;
-        ENABLEDDRAWDATA = IMAGE: Buttons-Left, COLOR: 255 0 0 255, BORDERCOLOR: 255 128 128 255,
-                          IMAGE: NoImage, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
-                          IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: Buttons-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: Buttons-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                          IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-        DISABLEDDRAWDATA = IMAGE: Buttons-Disabled-Left, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                           IMAGE: NoImage, COLOR: 192 192 192 255, BORDERCOLOR: 128 128 128 255,
-                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: Buttons-Disabled-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: Buttons-Disabled-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-        HILITEDRAWDATA = IMAGE: Buttons-HiLite-Left, COLOR: 209 253 4 255, BORDERCOLOR: 59 60 52 255,
-                         IMAGE: Buttons-Pushed-Left, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
-                         IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: Buttons-Pushed-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: Buttons-Pushed-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: Buttons-HiLite-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: Buttons-HiLite-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                         IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
       END
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 332 931,
-                     BOTTOMRIGHT: 452 981,
+        SCREENRECT = UPPERLEFT: 332 934,
+                     BOTTOMRIGHT: 452 984,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextObsBuildings";
         STATUS = ENABLED;
@@ -3220,8 +3193,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 454 931,
-                     BOTTOMRIGHT: 574 981,
+        SCREENRECT = UPPERLEFT: 454 934,
+                     BOTTOMRIGHT: 574 984,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextObsUnits";
         STATUS = ENABLED;
@@ -3269,8 +3242,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 576 931,
-                     BOTTOMRIGHT: 696 981,
+        SCREENRECT = UPPERLEFT: 576 934,
+                     BOTTOMRIGHT: 696 984,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextObsUnitsLost";
         STATUS = ENABLED;
@@ -3318,8 +3291,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 698 931,
-                     BOTTOMRIGHT: 818 981,
+        SCREENRECT = UPPERLEFT: 698 934,
+                     BOTTOMRIGHT: 818 984,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextObsUnitsKilled";
         STATUS = ENABLED;
@@ -3367,8 +3340,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 332 895,
-                     BOTTOMRIGHT: 696 929,
+        SCREENRECT = UPPERLEFT: 332 898,
+                     BOTTOMRIGHT: 696 932,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayerName";
         STATUS = ENABLED;
@@ -3383,7 +3356,7 @@ WINDOW
         TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
                     DISABLED: 192 192 192 255, DISABLEDBORDER: 64 64 64 255,
                     HILITE:   3 196 0 255, HILITEBORDER:   0 66 4 255;
-        ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 0 0 0 102, BORDERCOLOR: 0 0 0 255,
+        ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -3415,8 +3388,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 576 983,
-                     BOTTOMRIGHT: 696 1017,
+        SCREENRECT = UPPERLEFT: 576 986,
+                     BOTTOMRIGHT: 696 1020,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextNumberOfUnitsLost";
         STATUS = ENABLED;
@@ -3463,8 +3436,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 698 983,
-                     BOTTOMRIGHT: 818 1017,
+        SCREENRECT = UPPERLEFT: 698 986,
+                     BOTTOMRIGHT: 818 1020,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextNumberOfUnitsKilled";
         STATUS = ENABLED;
@@ -3511,8 +3484,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 332 983,
-                     BOTTOMRIGHT: 452 1017,
+        SCREENRECT = UPPERLEFT: 332 986,
+                     BOTTOMRIGHT: 452 1020,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextNumberOfBuildings";
         STATUS = ENABLED;
@@ -3575,7 +3548,7 @@ WINDOW
         TEXTCOLOR = ENABLED:  254 254 254 0, ENABLEDBORDER:  0 0 0 0,
                     DISABLED: 192 192 192 0, DISABLEDBORDER: 64 64 64 0,
                     HILITE:   3 196 0 0, HILITEBORDER:   0 66 4 0;
-        ENABLEDDRAWDATA = IMAGE: BlackSquare, COLOR: 0 0 0 100, BORDERCOLOR: 0 0 0 255,
+        ENABLEDDRAWDATA = IMAGE: BlackSquare, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                           IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -3606,8 +3579,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 454 983,
-                     BOTTOMRIGHT: 574 1017,
+        SCREENRECT = UPPERLEFT: 454 986,
+                     BOTTOMRIGHT: 574 1020,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextNumberOfUnits";
         STATUS = ENABLED;
@@ -3702,8 +3675,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 993,
-                     BOTTOMRIGHT: 362 1023,
+        SCREENRECT = UPPERLEFT: 334 997,
+                     BOTTOMRIGHT: 366 1029,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer7";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3749,8 +3722,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 959,
-                     BOTTOMRIGHT: 362 991,
+        SCREENRECT = UPPERLEFT: 334 963,
+                     BOTTOMRIGHT: 366 995,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer6";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3796,8 +3769,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 925,
-                     BOTTOMRIGHT: 362 957,
+        SCREENRECT = UPPERLEFT: 334 929,
+                     BOTTOMRIGHT: 366 961,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer5";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3843,8 +3816,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 891,
-                     BOTTOMRIGHT: 362 923,
+        SCREENRECT = UPPERLEFT: 334 895,
+                     BOTTOMRIGHT: 366 927,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer4";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3890,8 +3863,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 857,
-                     BOTTOMRIGHT: 362 889,
+        SCREENRECT = UPPERLEFT: 334 861,
+                     BOTTOMRIGHT: 366 893,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer3";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3937,8 +3910,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 823,
-                     BOTTOMRIGHT: 362 855,
+        SCREENRECT = UPPERLEFT: 334 827,
+                     BOTTOMRIGHT: 366 859,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer2";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -3984,8 +3957,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 789,
-                     BOTTOMRIGHT: 362 821,
+        SCREENRECT = UPPERLEFT: 334 793,
+                     BOTTOMRIGHT: 366 825,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer1";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -4031,8 +4004,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 330 755,
-                     BOTTOMRIGHT: 362 787,
+        SCREENRECT = UPPERLEFT: 334 759,
+                     BOTTOMRIGHT: 366 791,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonPlayer0";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
