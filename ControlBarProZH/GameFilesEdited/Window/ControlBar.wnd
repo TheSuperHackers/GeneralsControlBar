@@ -3029,8 +3029,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 330 824,
-                     BOTTOMRIGHT: 842 1080,
+        SCREENRECT = UPPERLEFT: 325 824,
+                     BOTTOMRIGHT: 837 1080,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:WinGeneralPortrait";
         STATUS = ENABLED+IMAGE;
