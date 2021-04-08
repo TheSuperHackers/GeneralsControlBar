@@ -233,8 +233,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 759 962,
-                     BOTTOMRIGHT: 849 1034,
+        SCREENRECT = UPPERLEFT: 760 926,
+                     BOTTOMRIGHT: 848 996,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonDeleteBeacon";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED;
@@ -281,8 +281,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = ENTRYFIELD;
-        SCREENRECT = UPPERLEFT: 851 999,
-                     BOTTOMRIGHT: 1217 1034,
+        SCREENRECT = UPPERLEFT: 851 962,
+                     BOTTOMRIGHT: 1217 997,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:EditBeaconText";
         STATUS = ENABLED+IMAGE;
@@ -334,8 +334,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 851 962,
-                     BOTTOMRIGHT: 1217 997,
+        SCREENRECT = UPPERLEFT: 851 925,
+                     BOTTOMRIGHT: 1217 960,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextBeaconLabel";
         STATUS = ENABLED;
@@ -383,8 +383,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 1080 1036,
-                     BOTTOMRIGHT: 1217 1071,
+        SCREENRECT = UPPERLEFT: 1035 999,
+                     BOTTOMRIGHT: 1217 1034,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonClearBeaconText";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED;
@@ -1185,8 +1185,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 760 963,
-                     BOTTOMRIGHT: 848 1033,
+        SCREENRECT = UPPERLEFT: 760 926,
+                     BOTTOMRIGHT: 848 996,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonCancelConstruction";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -1283,8 +1283,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 760 963,
-                     BOTTOMRIGHT: 848 1033,
+        SCREENRECT = UPPERLEFT: 760 926,
+                     BOTTOMRIGHT: 848 996,
                      CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:OCLTimerWindow";
       STATUS = ENABLED+HIDDEN;
@@ -1329,8 +1329,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 760 963,
-                     BOTTOMRIGHT: 848 1033,
+        SCREENRECT = UPPERLEFT: 760 926,
+                     BOTTOMRIGHT: 848 996,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:OCLTimerSellButton";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED;
@@ -1521,8 +1521,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 1875 905,
-                 BOTTOMRIGHT: 1911 1066,
+    SCREENRECT = UPPERLEFT: 1880 923,
+                 BOTTOMRIGHT: 1906 1063,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:GeneralsExp";
     STATUS = ENABLED+NOFOCUS;
