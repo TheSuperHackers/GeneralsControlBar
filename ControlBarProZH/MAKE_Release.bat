@@ -16,6 +16,10 @@ if not exist %BigFilesDir% mkdir %BigFilesDir%
 if not exist %ReleaseUnpackedDir% mkdir %ReleaseUnpackedDir%
 if not exist %ReleaseDir% mkdir %ReleaseDir%
 
+:: Free folders of big file contents
+del /s /f /q %BigFilesUnpackedDir%
+del /s /f /q %BigFilesDir%
+
 setlocal enableextensions enabledelayedexpansion
 
 :: Copy .big contents
