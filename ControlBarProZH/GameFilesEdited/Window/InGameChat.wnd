@@ -69,7 +69,7 @@ WINDOW
     TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
                 DISABLED: 192 192 192 255, DISABLEDBORDER: 64 64 64 255,
                 HILITE:   224 242 255 255, HILITEBORDER:   1 1 1 255;
-    ENABLEDDRAWDATA = IMAGE: TextEntryEnabledLeftEnd, COLOR: 56 56 56 135, BORDERCOLOR: 2 2 2 0,
+    ENABLEDDRAWDATA = IMAGE: TextEntryEnabledLeftEnd, COLOR: 39 39 39 255, BORDERCOLOR: 2 2 2 0,
                       IMAGE: TextEntryEnabledRightEnd, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: TextEntryEnabledRepeatingCenter, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: TextEntryEnabledSmallRepeatingCenter, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -87,7 +87,7 @@ WINDOW
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    HILITEDRAWDATA = IMAGE: TextEntryHiliteLeftEnd, COLOR: 12 131 222 135, BORDERCOLOR: 2 2 2 0,
+    HILITEDRAWDATA = IMAGE: TextEntryHiliteLeftEnd, COLOR: 18 80 129 255, BORDERCOLOR: 2 2 2 0,
                      IMAGE: TextEntryHiliteRightEnd, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: TextEntryHiliteRepeatingCenter, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: TextEntryHiliteSmallRepeatingCenter, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
