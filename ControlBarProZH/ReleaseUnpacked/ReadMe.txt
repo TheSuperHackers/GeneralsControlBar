@@ -2,7 +2,14 @@ Control Bar Pro for COMMAND AND CONQUER GENERALS: ZERO HOUR
 
 Author(s): EA Games, FAS, xezon
 
-Code & Assets: https://github.com/xezon/GeneralsControlBar
+Code & Assets Source: https://github.com/xezon/GeneralsControlBar
+
+-----------------------------------------------------------------------------------------------
+--- Requirements ------------------------------------------------------------------------------
+
+This addon requires GenTool 8.1 or higher to be run properly.
+Generals.exe must be launched with -forcefullviewport command line argument.
+
 
 -----------------------------------------------------------------------------------------------
 --- Regular Install ---------------------------------------------------------------------------
@@ -13,7 +20,7 @@ Code & Assets: https://github.com/xezon/GeneralsControlBar
    > On English install it would then look like so:
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZH
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZHShell
-   > ...\EA Games\Command & Conquer Generals Zero Hour\180_ControlBarProZH.big.bak
+   > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarPro.cmd
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
 
@@ -51,6 +58,12 @@ Code & Assets: https://github.com/xezon/GeneralsControlBar
 
 -----------------------------------------------------------------------------------------------
 --- Compatibility -----------------------------------------------------------------------------
+
+This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR.
+
+It causes no mismatch between player installation in Network and Online.
+
+Best visual quality is served in 1920 x 1080 window resolution.
 
 This pack combines well with the Control Bar HD Remastered Pack
 for upscaled controlbar textures. See: http://gentool.net/download/controlbar
