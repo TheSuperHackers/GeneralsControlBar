@@ -6,11 +6,11 @@ STARTLAYOUTBLOCK
 ENDLAYOUTBLOCK
 WINDOW
   WINDOWTYPE = USER;
-  SCREENRECT = UPPERLEFT: 4 4,
-               BOTTOMRIGHT: 600 401,
-               CREATIONRESOLUTION: 800 600;
+  SCREENRECT = UPPERLEFT: 449 50,
+               BOTTOMRIGHT: 1473 514,
+               CREATIONRESOLUTION: 1920 1080;
   NAME = "Diplomacy.wnd:Parent";
-  STATUS = DRAGABLE+ENABLED;
+  STATUS = ENABLED+IMAGE;
   STYLE = USER;
   SYSTEMCALLBACK = "DiplomacySystem";
   INPUTCALLBACK = "DiplomacyInput";
@@ -22,7 +22,7 @@ WINDOW
   TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  255 255 255 255,
               DISABLED: 255 255 255 255, DISABLEDBORDER: 255 255 255 255,
               HILITE:   255 255 255 255, HILITEBORDER:   255 255 255 255;
-  ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 0 0 0 190, BORDERCOLOR: 47 55 168 255,
+  ENABLEDDRAWDATA = IMAGE: ControlBarProDiplomacyWindow, COLOR: 0 0 0 190, BORDERCOLOR: 47 55 168 255,
                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
@@ -52,48 +52,48 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
-    SCREENRECT = UPPERLEFT: 501 370,
-                 BOTTOMRIGHT: 593 397,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 1281 442,
+                 BOTTOMRIGHT: 1441 482,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:ButtonHide";
-    STATUS = ENABLED+IMAGE+NOFOCUS;
+    STATUS = ENABLED+NOFOCUS;
     STYLE = PUSHBUTTON+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
     FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-    HEADERTEMPLATE = "MainButton";
+    HEADERTEMPLATE = "ButtonSmall";
     TOOLTIPDELAY = -1;
-    TEXT = "GUI:MainMenu";
+    TEXT = "GUI:ControlBarBack";
     TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
                 DISABLED: 62 64 92 255, DISABLEDBORDER: 31 32 47 255,
                 HILITE:   186 255 12 255, HILITEBORDER:   0 2 0 255;
-    ENABLEDDRAWDATA = IMAGE: Buttons-Left, COLOR: 255 0 0 255, BORDERCOLOR: 255 128 128 255,
-                      IMAGE: NoImage, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
+    ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 54 54 54 255, BORDERCOLOR: 54 54 54 255,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                      IMAGE: Buttons-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                      IMAGE: Buttons-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    DISABLEDDRAWDATA = IMAGE: Buttons-Disabled-Left, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                       IMAGE: NoImage, COLOR: 192 192 192 255, BORDERCOLOR: 128 128 128 255,
+    DISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                       IMAGE: Buttons-Disabled-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                       IMAGE: Buttons-Disabled-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    HILITEDRAWDATA = IMAGE: Buttons-HiLite-Left, COLOR: 209 253 4 255, BORDERCOLOR: 59 60 52 255,
-                     IMAGE: Buttons-Pushed-Left, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
+    HILITEDRAWDATA = IMAGE: NoImage, COLOR: 18 80 129 255, BORDERCOLOR: 18 80 129 255,
+                     IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 14 98 165 255,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-Pushed-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-Pushed-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-HiLite-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-HiLite-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
   END
@@ -102,7 +102,7 @@ WINDOW
     WINDOWTYPE = USER;
     SCREENRECT = UPPERLEFT: 8 34,
                  BOTTOMRIGHT: 594 366,
-                 CREATIONRESOLUTION: 800 600;
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:SoloParent";
     STATUS = ENABLED+HIDDEN;
     STYLE = USER;
@@ -148,7 +148,7 @@ WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
       SCREENRECT = UPPERLEFT: 16 42,
                    BOTTOMRIGHT: 588 362,
-                   CREATIONRESOLUTION: 800 600;
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxSolo";
       STATUS = ENABLED;
       STYLE = SCROLLLISTBOX+MOUSETRACK;
@@ -311,9 +311,9 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 8 34,
-                 BOTTOMRIGHT: 594 366,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 481 34,
+                 BOTTOMRIGHT: 1441 366,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:BuddiesParent";
     STATUS = ENABLED+HIDDEN;
     STYLE = USER;
@@ -357,9 +357,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
-      SCREENRECT = UPPERLEFT: 16 226,
-                   BOTTOMRIGHT: 587 336,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 242,
+                   BOTTOMRIGHT: 1441 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxBuddyChat";
       STATUS = ENABLED;
       STYLE = SCROLLLISTBOX+MOUSETRACK;
@@ -522,9 +522,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
-      SCREENRECT = UPPERLEFT: 16 42,
-                   BOTTOMRIGHT: 588 222,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 82,
+                   BOTTOMRIGHT: 1441 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxBuddies";
       STATUS = ENABLED;
       STYLE = SCROLLLISTBOX+MOUSETRACK;
@@ -687,9 +687,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = ENTRYFIELD;
-      SCREENRECT = UPPERLEFT: 16 338,
-                   BOTTOMRIGHT: 412 363,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 402,
+                   BOTTOMRIGHT: 1441 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:TextEntryChat";
       STATUS = ENABLED+IMAGE;
       STYLE = ENTRYFIELD+MOUSETRACK;
@@ -742,9 +742,9 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 8 34,
-                 BOTTOMRIGHT: 595 362,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 481 82,
+                 BOTTOMRIGHT: 1441 442,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:InGameParent";
     STATUS = ENABLED;
     STYLE = USER;
@@ -788,9 +788,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 318,
-                   BOTTOMRIGHT: 554 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 402,
+                   BOTTOMRIGHT: 1441 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus7";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -799,7 +799,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -837,9 +837,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 286,
-                   BOTTOMRIGHT: 554 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 362,
+                   BOTTOMRIGHT: 1441 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus6";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -848,7 +848,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -886,9 +886,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 254,
-                   BOTTOMRIGHT: 554 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 322,
+                   BOTTOMRIGHT: 1441 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus5";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -897,7 +897,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -935,9 +935,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 222,
-                   BOTTOMRIGHT: 554 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 282,
+                   BOTTOMRIGHT: 1441 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus4";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -946,7 +946,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -984,9 +984,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 190,
-                   BOTTOMRIGHT: 554 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 242,
+                   BOTTOMRIGHT: 1441 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus3";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -995,7 +995,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1033,9 +1033,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 158,
-                   BOTTOMRIGHT: 554 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 202,
+                   BOTTOMRIGHT: 1441 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus2";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1044,7 +1044,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1082,9 +1082,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 126,
-                   BOTTOMRIGHT: 554 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 162,
+                   BOTTOMRIGHT: 1441 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus1";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1093,7 +1093,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1131,9 +1131,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 462 94,
-                   BOTTOMRIGHT: 554 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 122,
+                   BOTTOMRIGHT: 1441 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus0";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1142,7 +1142,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1180,9 +1180,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 318,
-                   BOTTOMRIGHT: 411 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 402,
+                   BOTTOMRIGHT: 1161 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide7";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1191,7 +1191,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1229,9 +1229,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 286,
-                   BOTTOMRIGHT: 410 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 362,
+                   BOTTOMRIGHT: 1161 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide6";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1240,7 +1240,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1278,9 +1278,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 254,
-                   BOTTOMRIGHT: 410 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 322,
+                   BOTTOMRIGHT: 1161 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide5";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1289,7 +1289,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1327,9 +1327,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 222,
-                   BOTTOMRIGHT: 411 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 282,
+                   BOTTOMRIGHT: 1161 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide4";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1338,7 +1338,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1376,9 +1376,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 190,
-                   BOTTOMRIGHT: 412 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 242,
+                   BOTTOMRIGHT: 1161 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide3";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1387,7 +1387,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1425,9 +1425,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 158,
-                   BOTTOMRIGHT: 410 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 202,
+                   BOTTOMRIGHT: 1161 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide2";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1436,7 +1436,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1474,9 +1474,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 126,
-                   BOTTOMRIGHT: 410 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 162,
+                   BOTTOMRIGHT: 1161 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide1";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1485,7 +1485,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1523,9 +1523,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 180 94,
-                   BOTTOMRIGHT: 408 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 122,
+                   BOTTOMRIGHT: 1161 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide0";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1534,7 +1534,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1572,9 +1572,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 318,
-                   BOTTOMRIGHT: 176 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 402,
+                   BOTTOMRIGHT: 881 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer7";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1583,7 +1583,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1621,9 +1621,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 286,
-                   BOTTOMRIGHT: 176 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 362,
+                   BOTTOMRIGHT: 881 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer6";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1632,7 +1632,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1670,9 +1670,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 254,
-                   BOTTOMRIGHT: 176 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 322,
+                   BOTTOMRIGHT: 881 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer5";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1681,7 +1681,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1719,9 +1719,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 222,
-                   BOTTOMRIGHT: 176 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 282,
+                   BOTTOMRIGHT: 881 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer4";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1730,7 +1730,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1768,9 +1768,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 190,
-                   BOTTOMRIGHT: 176 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 242,
+                   BOTTOMRIGHT: 881 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer3";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1779,7 +1779,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1817,9 +1817,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 158,
-                   BOTTOMRIGHT: 176 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 202,
+                   BOTTOMRIGHT: 881 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer2";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1828,7 +1828,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1866,9 +1866,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 126,
-                   BOTTOMRIGHT: 176 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 162,
+                   BOTTOMRIGHT: 881 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer1";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1877,7 +1877,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1915,9 +1915,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 48 94,
-                   BOTTOMRIGHT: 176 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 122,
+                   BOTTOMRIGHT: 881 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer0";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -1926,7 +1926,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Monkey";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -1964,9 +1964,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 318,
-                   BOTTOMRIGHT: 44 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 402,
+                   BOTTOMRIGHT: 601 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute7";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2011,9 +2011,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 286,
-                   BOTTOMRIGHT: 44 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 362,
+                   BOTTOMRIGHT: 601 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute6";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2058,9 +2058,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 254,
-                   BOTTOMRIGHT: 44 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 322,
+                   BOTTOMRIGHT: 601 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute5";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2105,9 +2105,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 222,
-                   BOTTOMRIGHT: 44 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 282,
+                   BOTTOMRIGHT: 601 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute4";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2152,9 +2152,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 190,
-                   BOTTOMRIGHT: 44 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 242,
+                   BOTTOMRIGHT: 601 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute3";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2199,9 +2199,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 158,
-                   BOTTOMRIGHT: 44 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 202,
+                   BOTTOMRIGHT: 601 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute2";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2246,9 +2246,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 126,
-                   BOTTOMRIGHT: 44 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 162,
+                   BOTTOMRIGHT: 601 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute1";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2293,9 +2293,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 94,
-                   BOTTOMRIGHT: 44 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 122,
+                   BOTTOMRIGHT: 601 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute0";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2340,9 +2340,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 318,
-                   BOTTOMRIGHT: 44 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 402,
+                   BOTTOMRIGHT: 601 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute7";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2387,9 +2387,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 286,
-                   BOTTOMRIGHT: 44 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 362,
+                   BOTTOMRIGHT: 601 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute6";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2434,9 +2434,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 254,
-                   BOTTOMRIGHT: 44 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 322,
+                   BOTTOMRIGHT: 601 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute5";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2481,9 +2481,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 222,
-                   BOTTOMRIGHT: 44 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 282,
+                   BOTTOMRIGHT: 601 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute4";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2528,9 +2528,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 190,
-                   BOTTOMRIGHT: 44 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 242,
+                   BOTTOMRIGHT: 601 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute3";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2575,9 +2575,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 158,
-                   BOTTOMRIGHT: 44 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 202,
+                   BOTTOMRIGHT: 601 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute2";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2622,9 +2622,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 126,
-                   BOTTOMRIGHT: 44 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 162,
+                   BOTTOMRIGHT: 601 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute1";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2669,9 +2669,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 20 94,
-                   BOTTOMRIGHT: 44 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 122,
+                   BOTTOMRIGHT: 601 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute0";
       STATUS = ENABLED+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -2716,9 +2716,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 318,
-                   BOTTOMRIGHT: 458 342,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 402,
+                   BOTTOMRIGHT: 1291 442,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam7";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2727,7 +2727,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -2765,9 +2765,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 286,
-                   BOTTOMRIGHT: 458 310,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 362,
+                   BOTTOMRIGHT: 1291 402,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam6";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2776,7 +2776,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -2814,9 +2814,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 254,
-                   BOTTOMRIGHT: 458 278,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 322,
+                   BOTTOMRIGHT: 1291 362,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam5";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2825,7 +2825,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -2863,9 +2863,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 222,
-                   BOTTOMRIGHT: 458 246,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 282,
+                   BOTTOMRIGHT: 1291 322,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam4";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2874,7 +2874,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -2912,9 +2912,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 190,
-                   BOTTOMRIGHT: 458 214,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 242,
+                   BOTTOMRIGHT: 1291 282,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam3";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2923,7 +2923,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -2961,9 +2961,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 158,
-                   BOTTOMRIGHT: 458 182,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 202,
+                   BOTTOMRIGHT: 1291 242,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam2";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -2972,7 +2972,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -3010,9 +3010,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 126,
-                   BOTTOMRIGHT: 458 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 162,
+                   BOTTOMRIGHT: 1291 202,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam1";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3021,7 +3021,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -3059,9 +3059,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 410 94,
-                   BOTTOMRIGHT: 458 118,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 122,
+                   BOTTOMRIGHT: 1291 162,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam0";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3070,7 +3070,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "Team:0";
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
@@ -3108,9 +3108,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 12 58,
-                   BOTTOMRIGHT: 62 88,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 481 82,
+                   BOTTOMRIGHT: 601 122,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextMuteTitle";
       STATUS = ENABLED+IMAGE;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3157,9 +3157,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 68 58,
-                   BOTTOMRIGHT: 170 88,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 601 82,
+                   BOTTOMRIGHT: 881 122,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayerTitle";
       STATUS = ENABLED+IMAGE;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3206,9 +3206,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 172 58,
-                   BOTTOMRIGHT: 274 88,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 881 82,
+                   BOTTOMRIGHT: 1161 122,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSideTitle";
       STATUS = ENABLED+IMAGE;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3255,9 +3255,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 412 58,
-                   BOTTOMRIGHT: 460 88,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1161 82,
+                   BOTTOMRIGHT: 1291 122,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeamTitle";
       STATUS = ENABLED+IMAGE;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3304,9 +3304,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 464 58,
-                   BOTTOMRIGHT: 558 88,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1281 82,
+                   BOTTOMRIGHT: 1441 122,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatusTitle";
       STATUS = ENABLED+IMAGE;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -3355,47 +3355,47 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = RADIOBUTTON;
-    SCREENRECT = UPPERLEFT: 20 10,
-                 BOTTOMRIGHT: 216 34,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 641 442,
+                 BOTTOMRIGHT: 921 482,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:RadioButtonInGame";
-    STATUS = ENABLED+IMAGE;
+    STATUS = ENABLED;
     STYLE = RADIOBUTTON+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
     FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-    HEADERTEMPLATE = "LabelRegular";
+    HEADERTEMPLATE = "ButtonSmall";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:InGameDiplomacy";
     TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
                 DISABLED: 192 192 192 255, DISABLEDBORDER: 64 64 64 255,
                 HILITE:   168 255 12 255, HILITEBORDER:   0 1 1 255;
-    ENABLEDDRAWDATA = IMAGE: RadioButtonEnabledLeft, COLOR: 1 1 1 160, BORDERCOLOR: 47 55 168 255,
-                      IMAGE: RadioButtonEnabledMiddle, COLOR: 128 0 0 0, BORDERCOLOR: 0 0 0 0,
-                      IMAGE: RadioButtonEnabledRight, COLOR: 117 43 1 200, BORDERCOLOR: 128 128 255 255,
+    ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 54 54 54 255, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 74 74 74 255, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    DISABLEDDRAWDATA = IMAGE: RadioButtonDisabledLeft, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                       IMAGE: RadioButtonDisabledMiddle, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                       IMAGE: RadioButtonDisabledRight, COLOR: 64 64 64 255, BORDERCOLOR: 254 254 254 255,
+    DISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+                       IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+                       IMAGE: NoImage, COLOR: 64 64 64 255, BORDERCOLOR: 254 254 254 255,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    HILITEDRAWDATA = IMAGE: RadioButtonEnabledLeft, COLOR: 1 1 1 160, BORDERCOLOR: 47 55 168 255,
-                     IMAGE: RadioButtonEnabledMiddle, COLOR: 128 0 0 0, BORDERCOLOR: 0 0 0 0,
-                     IMAGE: RadioButtonEnabledRight, COLOR: 117 43 1 200, BORDERCOLOR: 128 128 255 255,
-                     IMAGE: RadioButtonHilightedLeft, COLOR: 0 1 0 160, BORDERCOLOR: 47 55 168 255,
-                     IMAGE: RadioButtonHilightedMiddle, COLOR: 0 128 0 0, BORDERCOLOR: 128 255 128 255,
-                     IMAGE: RadioButtonHilightedRight, COLOR: 117 43 0 200, BORDERCOLOR: 254 254 254 0,
+    HILITEDRAWDATA = IMAGE: NoImage, COLOR: 18 80 129 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 0 0 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 0 255 0 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 0 0 255 255, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
@@ -3404,47 +3404,47 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = RADIOBUTTON;
-    SCREENRECT = UPPERLEFT: 232 10,
-                 BOTTOMRIGHT: 412 34,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 961 442,
+                 BOTTOMRIGHT: 1241 482,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:RadioButtonBuddies";
-    STATUS = ENABLED+IMAGE;
+    STATUS = ENABLED;
     STYLE = RADIOBUTTON+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
     FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-    HEADERTEMPLATE = "LabelRegular";
+    HEADERTEMPLATE = "ButtonSmall";
     TOOLTIPDELAY = -1;
     TEXT = "ControlBar:Communicator";
     TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
                 DISABLED: 192 192 192 255, DISABLEDBORDER: 64 64 64 255,
                 HILITE:   168 255 12 255, HILITEBORDER:   0 1 1 255;
-    ENABLEDDRAWDATA = IMAGE: RadioButtonEnabledLeft, COLOR: 1 1 1 160, BORDERCOLOR: 47 55 168 255,
-                      IMAGE: RadioButtonEnabledMiddle, COLOR: 128 0 0 0, BORDERCOLOR: 0 0 0 0,
-                      IMAGE: RadioButtonEnabledRight, COLOR: 117 43 1 200, BORDERCOLOR: 128 128 255 255,
+    ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 54 54 54 255, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 74 74 74 255, BORDERCOLOR: 255 255 255 0,
+                      IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    DISABLEDDRAWDATA = IMAGE: RadioButtonDisabledLeft, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                       IMAGE: RadioButtonDisabledMiddle, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
-                       IMAGE: RadioButtonDisabledRight, COLOR: 64 64 64 255, BORDERCOLOR: 254 254 254 255,
+    DISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+                       IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+                       IMAGE: NoImage, COLOR: 64 64 64 255, BORDERCOLOR: 254 254 254 255,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    HILITEDRAWDATA = IMAGE: RadioButtonEnabledLeft, COLOR: 1 1 1 160, BORDERCOLOR: 47 55 168 255,
-                     IMAGE: RadioButtonEnabledMiddle, COLOR: 128 0 0 0, BORDERCOLOR: 0 0 0 0,
-                     IMAGE: RadioButtonEnabledRight, COLOR: 117 43 1 200, BORDERCOLOR: 128 128 255 255,
-                     IMAGE: RadioButtonHilightedLeft, COLOR: 0 1 0 160, BORDERCOLOR: 47 55 168 255,
-                     IMAGE: RadioButtonHilightedMiddle, COLOR: 0 128 0 0, BORDERCOLOR: 128 255 128 255,
-                     IMAGE: RadioButtonHilightedRight, COLOR: 117 43 0 200, BORDERCOLOR: 254 254 254 0,
+    HILITEDRAWDATA = IMAGE: NoImage, COLOR: 18 80 129 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 14 98 165 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 0 0 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 0 255 0 255, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 0 0 255 255, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
