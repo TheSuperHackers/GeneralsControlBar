@@ -53,7 +53,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 1280 442,
-                 BOTTOMRIGHT: 1442 483,
+                 BOTTOMRIGHT: 1441 483,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:ButtonHide";
     STATUS = ENABLED+NOFOCUS;
