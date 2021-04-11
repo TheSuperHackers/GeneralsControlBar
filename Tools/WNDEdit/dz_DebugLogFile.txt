@@ -1,0 +1,60 @@
+Log D:\Projects\GeneralsControlBar\Tools\WNDEdit\dz_DebugLogFile.txt opened: Mon Apr 12 00:48:48 2021
+
+*** Initing Memory Manager prior to main!
+CPU: AMD 3700 MHZ Vendor: 8283020 CPUID: Yes
+SSE Support: No
+MMX Support: Yes
+CMOV Support: Yes
+WW3D::Init hwnd = 00091F5A
+Attempting Set_Render_Device: name: Radeon RX 590 Series, width: 800, height: 600, windowed: 1
+Found zbuffer mode D3DFMT_D24S8
+Font: Loading font 'FixedSys' 12 point
+Font: Loading font 'Times New Roman' 14 point
+Font: Loading font 'Times New Roman' 14 point
+Font: Loading font 'Times New Roman' 12 point
+Font: Loading font 'Times New Roman' 12 point
+Font: Loading font 'Times New Roman' 10 point
+Font: Loading font 'Times New Roman' 10 point
+Font: Loading font 'Times New Roman' 16 point
+Font: Loading font 'Times New Roman' 16 point
+Font: Loading font 'Times New Roman' 18 point
+Font: Loading font 'Times New Roman' 18 point
+Font: Loading font 'Courier New' 10 point
+Font: Loading font 'Courier New' 10 point
+Font: Loading font 'Courier New' 12 point
+Font: Loading font 'Courier New' 12 point
+Font: Loading font 'Courier New' 14 point
+Font: Loading font 'Courier New' 14 point
+Font: Loading font 'Courier New' 16 point
+Font: Loading font 'Courier New' 16 point
+Font: Loading font 'Courier' 10 point
+Font: Loading font 'Courier' 10 point
+Font: Loading font 'Courier' 12 point
+Font: Loading font 'Courier' 12 point
+Font: Loading font 'Courier' 14 point
+Font: Loading font 'Courier' 14 point
+Font: Loading font 'Courier' 16 point
+Font: Loading font 'Courier' 16 point
+Font: Loading font 'Arial' 8 point
+Font: Loading font 'Arial' 8 point
+Font: Loading font 'Arial' 10 point
+Font: Loading font 'Arial' 10 point
+Font: Loading font 'Arial' 12 point
+Font: Loading font 'Arial' 12 point
+Font: Loading font 'Arial' 14 point
+Font: Loading font 'Arial' 14 point
+Font: Loading font 'Arial' 16 point
+Font: Loading font 'Arial' 16 point
+Font: Loading font 'Generals' 15 point
+Font: Loading font 'Generals' 20 point
+Font: Loading font 'Arial' 9 point
+Font: Loading font 'Arial' 11 point
+Font: Loading font 'Placard MT Condensed' 16 point
+Font: Loading font 'Placard MT Condensed' 20 point
+Font: Loading font 'Placard MT Condensed' 14 point
+Targa: Failed to open file "scsmshelluserinterface512_001.tga"
+ASSERTION FAILURE: We need at least one Column in the listbox
+Stack Dump:
+ASSERTION FAILURE: We need at least one Column in the listbox
+Stack Dump:
+[Ignore]
