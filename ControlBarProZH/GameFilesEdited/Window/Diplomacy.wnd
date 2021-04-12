@@ -6,8 +6,8 @@ STARTLAYOUTBLOCK
 ENDLAYOUTBLOCK
 WINDOW
   WINDOWTYPE = USER;
-  SCREENRECT = UPPERLEFT: 448 50,
-               BOTTOMRIGHT: 1472 514,
+  SCREENRECT = UPPERLEFT: 448 48,
+               BOTTOMRIGHT: 1472 512,
                CREATIONRESOLUTION: 1920 1080;
   NAME = "Diplomacy.wnd:Parent";
   STATUS = ENABLED+IMAGE;
@@ -52,8 +52,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
-    SCREENRECT = UPPERLEFT: 1280 442,
-                 BOTTOMRIGHT: 1441 483,
+    SCREENRECT = UPPERLEFT: 1280 440,
+                 BOTTOMRIGHT: 1441 481,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:ButtonHide";
     STATUS = ENABLED+NOFOCUS;
@@ -100,8 +100,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 8 34,
-                 BOTTOMRIGHT: 594 366,
+    SCREENRECT = UPPERLEFT: 0 0,
+                 BOTTOMRIGHT: 0 0,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:SoloParent";
     STATUS = ENABLED+HIDDEN;
@@ -146,11 +146,11 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
-      SCREENRECT = UPPERLEFT: 16 42,
-                   BOTTOMRIGHT: 588 362,
+      SCREENRECT = UPPERLEFT: 0 0,
+                   BOTTOMRIGHT: 0 0,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxSolo";
-      STATUS = ENABLED;
+      STATUS = ENABLED+HIDDEN;
       STYLE = SCROLLLISTBOX+MOUSETRACK;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";
@@ -311,8 +311,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 480 82,
-                 BOTTOMRIGHT: 1440 442,
+    SCREENRECT = UPPERLEFT: 480 80,
+                 BOTTOMRIGHT: 1440 440,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:BuddiesParent";
     STATUS = ENABLED+HIDDEN;
@@ -357,8 +357,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
-      SCREENRECT = UPPERLEFT: 480 242,
-                   BOTTOMRIGHT: 1440 402,
+      SCREENRECT = UPPERLEFT: 480 240,
+                   BOTTOMRIGHT: 1440 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxBuddyChat";
       STATUS = ENABLED;
@@ -522,8 +522,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = SCROLLLISTBOX;
-      SCREENRECT = UPPERLEFT: 480 82,
-                   BOTTOMRIGHT: 1440 242,
+      SCREENRECT = UPPERLEFT: 480 80,
+                   BOTTOMRIGHT: 1440 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ListboxBuddies";
       STATUS = ENABLED;
@@ -687,8 +687,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = ENTRYFIELD;
-      SCREENRECT = UPPERLEFT: 480 402,
-                   BOTTOMRIGHT: 1440 442,
+      SCREENRECT = UPPERLEFT: 480 400,
+                   BOTTOMRIGHT: 1440 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:TextEntryChat";
       STATUS = ENABLED+IMAGE;
@@ -742,8 +742,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 480 82,
-                 BOTTOMRIGHT: 1440 442,
+    SCREENRECT = UPPERLEFT: 480 80,
+                 BOTTOMRIGHT: 1440 440,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:InGameParent";
     STATUS = ENABLED;
@@ -788,8 +788,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 402,
-                   BOTTOMRIGHT: 1440 442,
+      SCREENRECT = UPPERLEFT: 1280 400,
+                   BOTTOMRIGHT: 1440 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus7";
       STATUS = ENABLED;
@@ -837,8 +837,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 362,
-                   BOTTOMRIGHT: 1440 402,
+      SCREENRECT = UPPERLEFT: 1280 360,
+                   BOTTOMRIGHT: 1440 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus6";
       STATUS = ENABLED;
@@ -886,8 +886,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 322,
-                   BOTTOMRIGHT: 1440 362,
+      SCREENRECT = UPPERLEFT: 1280 320,
+                   BOTTOMRIGHT: 1440 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus5";
       STATUS = ENABLED;
@@ -935,8 +935,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 282,
-                   BOTTOMRIGHT: 1440 322,
+      SCREENRECT = UPPERLEFT: 1280 280,
+                   BOTTOMRIGHT: 1440 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus4";
       STATUS = ENABLED;
@@ -984,8 +984,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 242,
-                   BOTTOMRIGHT: 1440 282,
+      SCREENRECT = UPPERLEFT: 1280 240,
+                   BOTTOMRIGHT: 1440 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus3";
       STATUS = ENABLED;
@@ -1033,8 +1033,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 202,
-                   BOTTOMRIGHT: 1440 242,
+      SCREENRECT = UPPERLEFT: 1280 200,
+                   BOTTOMRIGHT: 1440 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus2";
       STATUS = ENABLED;
@@ -1082,8 +1082,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 162,
-                   BOTTOMRIGHT: 1440 202,
+      SCREENRECT = UPPERLEFT: 1280 160,
+                   BOTTOMRIGHT: 1440 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus1";
       STATUS = ENABLED;
@@ -1131,8 +1131,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 122,
-                   BOTTOMRIGHT: 1440 162,
+      SCREENRECT = UPPERLEFT: 1280 120,
+                   BOTTOMRIGHT: 1440 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatus0";
       STATUS = ENABLED;
@@ -1180,8 +1180,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 402,
-                   BOTTOMRIGHT: 1160 442,
+      SCREENRECT = UPPERLEFT: 880 400,
+                   BOTTOMRIGHT: 1160 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide7";
       STATUS = ENABLED;
@@ -1229,8 +1229,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 362,
-                   BOTTOMRIGHT: 1160 402,
+      SCREENRECT = UPPERLEFT: 880 360,
+                   BOTTOMRIGHT: 1160 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide6";
       STATUS = ENABLED;
@@ -1278,8 +1278,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 322,
-                   BOTTOMRIGHT: 1160 362,
+      SCREENRECT = UPPERLEFT: 880 320,
+                   BOTTOMRIGHT: 1160 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide5";
       STATUS = ENABLED;
@@ -1327,8 +1327,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 282,
-                   BOTTOMRIGHT: 1160 322,
+      SCREENRECT = UPPERLEFT: 880 280,
+                   BOTTOMRIGHT: 1160 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide4";
       STATUS = ENABLED;
@@ -1376,8 +1376,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 242,
-                   BOTTOMRIGHT: 1160 282,
+      SCREENRECT = UPPERLEFT: 880 240,
+                   BOTTOMRIGHT: 1160 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide3";
       STATUS = ENABLED;
@@ -1425,8 +1425,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 202,
-                   BOTTOMRIGHT: 1160 242,
+      SCREENRECT = UPPERLEFT: 880 200,
+                   BOTTOMRIGHT: 1160 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide2";
       STATUS = ENABLED;
@@ -1474,8 +1474,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 162,
-                   BOTTOMRIGHT: 1160 202,
+      SCREENRECT = UPPERLEFT: 880 160,
+                   BOTTOMRIGHT: 1160 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide1";
       STATUS = ENABLED;
@@ -1523,8 +1523,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 122,
-                   BOTTOMRIGHT: 1160 162,
+      SCREENRECT = UPPERLEFT: 880 120,
+                   BOTTOMRIGHT: 1160 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSide0";
       STATUS = ENABLED;
@@ -1572,8 +1572,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 402,
-                   BOTTOMRIGHT: 880 442,
+      SCREENRECT = UPPERLEFT: 600 400,
+                   BOTTOMRIGHT: 880 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer7";
       STATUS = ENABLED;
@@ -1621,8 +1621,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 362,
-                   BOTTOMRIGHT: 880 402,
+      SCREENRECT = UPPERLEFT: 600 360,
+                   BOTTOMRIGHT: 880 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer6";
       STATUS = ENABLED;
@@ -1670,8 +1670,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 322,
-                   BOTTOMRIGHT: 880 362,
+      SCREENRECT = UPPERLEFT: 600 320,
+                   BOTTOMRIGHT: 880 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer5";
       STATUS = ENABLED;
@@ -1719,8 +1719,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 282,
-                   BOTTOMRIGHT: 880 322,
+      SCREENRECT = UPPERLEFT: 600 280,
+                   BOTTOMRIGHT: 880 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer4";
       STATUS = ENABLED;
@@ -1768,8 +1768,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 242,
-                   BOTTOMRIGHT: 880 282,
+      SCREENRECT = UPPERLEFT: 600 240,
+                   BOTTOMRIGHT: 880 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer3";
       STATUS = ENABLED;
@@ -1817,8 +1817,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 202,
-                   BOTTOMRIGHT: 880 242,
+      SCREENRECT = UPPERLEFT: 600 200,
+                   BOTTOMRIGHT: 880 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer2";
       STATUS = ENABLED;
@@ -1866,8 +1866,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 162,
-                   BOTTOMRIGHT: 880 202,
+      SCREENRECT = UPPERLEFT: 600 160,
+                   BOTTOMRIGHT: 880 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer1";
       STATUS = ENABLED;
@@ -1915,8 +1915,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 122,
-                   BOTTOMRIGHT: 880 162,
+      SCREENRECT = UPPERLEFT: 600 120,
+                   BOTTOMRIGHT: 880 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayer0";
       STATUS = ENABLED;
@@ -1964,8 +1964,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 402,
-                   BOTTOMRIGHT: 560 442,
+      SCREENRECT = UPPERLEFT: 520 400,
+                   BOTTOMRIGHT: 560 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute7";
       STATUS = ENABLED;
@@ -2011,8 +2011,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 362,
-                   BOTTOMRIGHT: 560 402,
+      SCREENRECT = UPPERLEFT: 520 360,
+                   BOTTOMRIGHT: 560 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute6";
       STATUS = ENABLED;
@@ -2058,8 +2058,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 322,
-                   BOTTOMRIGHT: 560 362,
+      SCREENRECT = UPPERLEFT: 520 320,
+                   BOTTOMRIGHT: 560 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute5";
       STATUS = ENABLED;
@@ -2105,8 +2105,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 282,
-                   BOTTOMRIGHT: 560 322,
+      SCREENRECT = UPPERLEFT: 520 280,
+                   BOTTOMRIGHT: 560 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute4";
       STATUS = ENABLED;
@@ -2152,8 +2152,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 242,
-                   BOTTOMRIGHT: 560 282,
+      SCREENRECT = UPPERLEFT: 520 240,
+                   BOTTOMRIGHT: 560 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute3";
       STATUS = ENABLED;
@@ -2199,8 +2199,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 202,
-                   BOTTOMRIGHT: 560 242,
+      SCREENRECT = UPPERLEFT: 520 200,
+                   BOTTOMRIGHT: 560 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute2";
       STATUS = ENABLED;
@@ -2246,8 +2246,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 162,
-                   BOTTOMRIGHT: 560 202,
+      SCREENRECT = UPPERLEFT: 520 160,
+                   BOTTOMRIGHT: 560 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute1";
       STATUS = ENABLED;
@@ -2293,8 +2293,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 122,
-                   BOTTOMRIGHT: 560 162,
+      SCREENRECT = UPPERLEFT: 520 120,
+                   BOTTOMRIGHT: 560 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonMute0";
       STATUS = ENABLED;
@@ -2340,8 +2340,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 402,
-                   BOTTOMRIGHT: 560 442,
+      SCREENRECT = UPPERLEFT: 520 400,
+                   BOTTOMRIGHT: 560 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute7";
       STATUS = ENABLED;
@@ -2387,8 +2387,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 362,
-                   BOTTOMRIGHT: 560 402,
+      SCREENRECT = UPPERLEFT: 520 360,
+                   BOTTOMRIGHT: 560 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute6";
       STATUS = ENABLED;
@@ -2434,8 +2434,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 322,
-                   BOTTOMRIGHT: 560 362,
+      SCREENRECT = UPPERLEFT: 520 320,
+                   BOTTOMRIGHT: 560 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute5";
       STATUS = ENABLED;
@@ -2481,8 +2481,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 282,
-                   BOTTOMRIGHT: 560 322,
+      SCREENRECT = UPPERLEFT: 520 280,
+                   BOTTOMRIGHT: 560 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute4";
       STATUS = ENABLED;
@@ -2528,8 +2528,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 242,
-                   BOTTOMRIGHT: 560 282,
+      SCREENRECT = UPPERLEFT: 520 240,
+                   BOTTOMRIGHT: 560 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute3";
       STATUS = ENABLED;
@@ -2575,8 +2575,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 202,
-                   BOTTOMRIGHT: 560 242,
+      SCREENRECT = UPPERLEFT: 520 200,
+                   BOTTOMRIGHT: 560 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute2";
       STATUS = ENABLED;
@@ -2622,8 +2622,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 162,
-                   BOTTOMRIGHT: 560 202,
+      SCREENRECT = UPPERLEFT: 520 160,
+                   BOTTOMRIGHT: 560 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute1";
       STATUS = ENABLED;
@@ -2669,8 +2669,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 520 122,
-                   BOTTOMRIGHT: 560 162,
+      SCREENRECT = UPPERLEFT: 520 120,
+                   BOTTOMRIGHT: 560 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:ButtonUnMute0";
       STATUS = ENABLED;
@@ -2716,8 +2716,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 402,
-                   BOTTOMRIGHT: 1280 442,
+      SCREENRECT = UPPERLEFT: 1160 400,
+                   BOTTOMRIGHT: 1280 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam7";
       STATUS = ENABLED;
@@ -2765,8 +2765,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 362,
-                   BOTTOMRIGHT: 1280 402,
+      SCREENRECT = UPPERLEFT: 1160 360,
+                   BOTTOMRIGHT: 1280 400,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam6";
       STATUS = ENABLED;
@@ -2814,8 +2814,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 322,
-                   BOTTOMRIGHT: 1280 362,
+      SCREENRECT = UPPERLEFT: 1160 320,
+                   BOTTOMRIGHT: 1280 360,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam5";
       STATUS = ENABLED;
@@ -2863,8 +2863,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 282,
-                   BOTTOMRIGHT: 1280 322,
+      SCREENRECT = UPPERLEFT: 1160 280,
+                   BOTTOMRIGHT: 1280 320,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam4";
       STATUS = ENABLED;
@@ -2912,8 +2912,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 242,
-                   BOTTOMRIGHT: 1280 282,
+      SCREENRECT = UPPERLEFT: 1160 240,
+                   BOTTOMRIGHT: 1280 280,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam3";
       STATUS = ENABLED;
@@ -2961,8 +2961,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 202,
-                   BOTTOMRIGHT: 1280 242,
+      SCREENRECT = UPPERLEFT: 1160 200,
+                   BOTTOMRIGHT: 1280 240,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam2";
       STATUS = ENABLED;
@@ -3010,8 +3010,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 162,
-                   BOTTOMRIGHT: 1280 202,
+      SCREENRECT = UPPERLEFT: 1160 160,
+                   BOTTOMRIGHT: 1280 200,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam1";
       STATUS = ENABLED;
@@ -3059,8 +3059,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 122,
-                   BOTTOMRIGHT: 1280 162,
+      SCREENRECT = UPPERLEFT: 1160 120,
+                   BOTTOMRIGHT: 1280 160,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeam0";
       STATUS = ENABLED;
@@ -3108,8 +3108,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 480 82,
-                   BOTTOMRIGHT: 600 122,
+      SCREENRECT = UPPERLEFT: 480 80,
+                   BOTTOMRIGHT: 600 120,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextMuteTitle";
       STATUS = ENABLED;
@@ -3157,8 +3157,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 600 82,
-                   BOTTOMRIGHT: 880 122,
+      SCREENRECT = UPPERLEFT: 600 80,
+                   BOTTOMRIGHT: 880 120,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextPlayerTitle";
       STATUS = ENABLED;
@@ -3206,8 +3206,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 880 82,
-                   BOTTOMRIGHT: 1160 122,
+      SCREENRECT = UPPERLEFT: 880 80,
+                   BOTTOMRIGHT: 1160 120,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextSideTitle";
       STATUS = ENABLED;
@@ -3255,8 +3255,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1160 82,
-                   BOTTOMRIGHT: 1280 122,
+      SCREENRECT = UPPERLEFT: 1160 80,
+                   BOTTOMRIGHT: 1280 120,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextTeamTitle";
       STATUS = ENABLED;
@@ -3304,8 +3304,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 1280 82,
-                   BOTTOMRIGHT: 1440 122,
+      SCREENRECT = UPPERLEFT: 1280 80,
+                   BOTTOMRIGHT: 1440 120,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "Diplomacy.wnd:StaticTextStatusTitle";
       STATUS = ENABLED;
@@ -3355,8 +3355,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = RADIOBUTTON;
-    SCREENRECT = UPPERLEFT: 640 442,
-                 BOTTOMRIGHT: 921 483,
+    SCREENRECT = UPPERLEFT: 640 440,
+                 BOTTOMRIGHT: 921 481,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:RadioButtonInGame";
     STATUS = ENABLED;
@@ -3404,8 +3404,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = RADIOBUTTON;
-    SCREENRECT = UPPERLEFT: 960 442,
-                 BOTTOMRIGHT: 1241 483,
+    SCREENRECT = UPPERLEFT: 960 440,
+                 BOTTOMRIGHT: 1241 481,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "Diplomacy.wnd:RadioButtonBuddies";
     STATUS = ENABLED;
