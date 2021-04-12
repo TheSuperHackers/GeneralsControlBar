@@ -1,5 +1,5 @@
 :: Define archive name(s)
-set ArchiveName=ControlBarProZH_v1.0
+set ArchiveName=ControlBarProZH_v0.0
 
 :: Define big file name(s)
 set BigName=340_ControlBarProZH
