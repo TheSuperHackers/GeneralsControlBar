@@ -7,8 +7,8 @@ ENDLAYOUTBLOCK
 WINDOW
   WINDOWTYPE = USER;
   SCREENRECT = UPPERLEFT: 0 0,
-               BOTTOMRIGHT: 799 599,
-               CREATIONRESOLUTION: 800 600;
+               BOTTOMRIGHT: 1920 1080,
+               CREATIONRESOLUTION: 1920 1080;
   NAME = "QuitMessageBox.wnd:";
   STATUS = ENABLED;
   STYLE = USER;
@@ -52,9 +52,9 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 248 100,
-                 BOTTOMRIGHT: 555 432,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 730 420,
+                 BOTTOMRIGHT: 1190 650,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "QuitMessageBox.wnd:MessageBoxParent";
     STATUS = ENABLED;
     STYLE = USER;
@@ -98,9 +98,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 250 103,
-                   BOTTOMRIGHT: 506 135,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 440,
+                   BOTTOMRIGHT: 1160 520,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:StaticTextTitle";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -147,9 +147,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 268 248,
-                   BOTTOMRIGHT: 532 372,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 520,
+                   BOTTOMRIGHT: 1160 560,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:StaticTextMessage";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -158,7 +158,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Munkee";
 	  TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -196,9 +196,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 343 400,
-                   BOTTOMRIGHT: 432 424,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1000 580,
+                   BOTTOMRIGHT: 1160 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:ButtonNo";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -207,7 +207,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:No";
 	  TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -244,9 +244,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 255 368,
-                   BOTTOMRIGHT: 343 392,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 580,
+                   BOTTOMRIGHT: 920 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:ButtonYes";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -255,7 +255,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Yes";
 	  TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -292,9 +292,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 457 400,
-                   BOTTOMRIGHT: 547 424,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1000 580,
+                   BOTTOMRIGHT: 1160 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:ButtonCancel";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -303,7 +303,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Cancel";
 	  TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -340,9 +340,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 255 400,
-                   BOTTOMRIGHT: 342 424,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 580,
+                   BOTTOMRIGHT: 920 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:ButtonOk";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -351,7 +351,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Ok";
 	  TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -390,9 +390,9 @@ WINDOW
       WINDOWTYPE = USER;
       SCREENRECT = UPPERLEFT: 248 135,
                    BOTTOMRIGHT: 555 136,
-                   CREATIONRESOLUTION: 800 600;
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:";
-      STATUS = ENABLED;
+      STATUS = ENABLED+HIDDEN;
       STYLE = USER;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";
@@ -437,9 +437,9 @@ WINDOW
       WINDOWTYPE = USER;
       SCREENRECT = UPPERLEFT: 260 156,
                    BOTTOMRIGHT: 548 249,
-                   CREATIONRESOLUTION: 800 600;
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "QuitMessageBox.wnd:Logo";
-      STATUS = ENABLED+IMAGE;
+      STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = USER;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";
