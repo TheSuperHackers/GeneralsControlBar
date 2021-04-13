@@ -1,4 +1,3 @@
-*.big
 *.big.bak
 /.Generated
 /GameFilesEdited/Data/INI/Rank.ini
