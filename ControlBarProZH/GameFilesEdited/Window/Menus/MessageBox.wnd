@@ -7,8 +7,8 @@ ENDLAYOUTBLOCK
 WINDOW
   WINDOWTYPE = USER;
   SCREENRECT = UPPERLEFT: 0 0,
-               BOTTOMRIGHT: 799 599,
-               CREATIONRESOLUTION: 800 600;
+               BOTTOMRIGHT: 1920 1080,
+               CREATIONRESOLUTION: 1920 1080;
   NAME = "MessageBox.wnd:";
   STATUS = ENABLED;
   STYLE = USER;
@@ -52,9 +52,9 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 252 100,
-                 BOTTOMRIGHT: 552 428,
-                 CREATIONRESOLUTION: 800 600;
+    SCREENRECT = UPPERLEFT: 730 340,
+                 BOTTOMRIGHT: 1190 650,
+                 CREATIONRESOLUTION: 1920 1080;
     NAME = "MessageBox.wnd:MessageBoxParent";
     STATUS = ENABLED;
     STYLE = USER;
@@ -98,9 +98,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 254 114,
-                   BOTTOMRIGHT: 550 146,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 360,
+                   BOTTOMRIGHT: 1160 480,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:StaticTextTitle";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -147,9 +147,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 267 158,
-                   BOTTOMRIGHT: 537 366,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 480,
+                   BOTTOMRIGHT: 1160 560,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:StaticTextMessage";
       STATUS = ENABLED;
       STYLE = STATICTEXT+MOUSETRACK;
@@ -158,7 +158,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "LabelRegular";
+      HEADERTEMPLATE = "LabelSmall";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Munkee";
       TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -196,9 +196,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 348 377,
-                   BOTTOMRIGHT: 438 401,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1000 580,
+                   BOTTOMRIGHT: 1160 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonNo";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -207,7 +207,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:No";
       TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -244,9 +244,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 260 345,
-                   BOTTOMRIGHT: 349 369,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 580,
+                   BOTTOMRIGHT: 920 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonYes";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -255,7 +255,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Yes";
       TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -292,9 +292,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 454 377,
-                   BOTTOMRIGHT: 544 401,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 1000 580,
+                   BOTTOMRIGHT: 1160 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonCancel";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -303,7 +303,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Cancel";
       TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -340,9 +340,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 260 377,
-                   BOTTOMRIGHT: 350 401,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 760 580,
+                   BOTTOMRIGHT: 920 620,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonOk";
       STATUS = ENABLED+HIDDEN+IMAGE;
       STYLE = PUSHBUTTON+MOUSETRACK;
@@ -351,7 +351,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
-      HEADERTEMPLATE = "MainButton";
+      HEADERTEMPLATE = "Button";
       TOOLTIPDELAY = -1;
       TEXT = "GUI:Ok";
       TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
@@ -388,9 +388,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 252 100,
-                   BOTTOMRIGHT: 552 150,
-                   CREATIONRESOLUTION: 800 600;
+      SCREENRECT = UPPERLEFT: 248 135,
+                   BOTTOMRIGHT: 555 136,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:";
       STATUS = ENABLED;
       STYLE = USER;
