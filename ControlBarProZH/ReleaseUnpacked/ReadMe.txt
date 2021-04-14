@@ -20,6 +20,8 @@ Generals.exe must be launched with -forcefullviewport command line argument.
    > On English install it would then look like so:
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZH
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZHShell
+   > ...\EA Games\Command & Conquer Generals Zero Hour\250_HideIP_WindowZH.big.bak
+   > ...\EA Games\Command & Conquer Generals Zero Hour\251_HideMail_WindowZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarPro.cmd
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
@@ -27,6 +29,12 @@ Generals.exe must be launched with -forcefullviewport command line argument.
 2. Run GeneralsControlBarPro.cmd
    or  GeneralsControlBarProShell.cmd if the first does not work properly
 
+3. If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
+   then open launcherControlBarProZH\big.txt file with text editor
+   and add following 2 lines. Then save the file changes.
+
+..\250_HideIP_WindowZH.big
+..\251_HideMail_WindowZH.big
 
 -----------------------------------------------------------------------------------------------
 --- GameRanger Install ------------------------------------------------------------------------

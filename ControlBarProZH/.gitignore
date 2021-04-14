@@ -1,3 +1,5 @@
 *.big.bak
 /.Generated
 /GameFilesEdited/Data/INI/Rank.ini
+!250_HideIP_WindowZH.big.bak
+!251_HideMail_WindowZH.big.bak
