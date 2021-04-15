@@ -2179,8 +2179,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 1644 887,
-                 BOTTOMRIGHT: 1871 1071,
+    SCREENRECT = UPPERLEFT: 1643 887,
+                 BOTTOMRIGHT: 1870 1071,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:WinUnitSelected";
       STATUS = ENABLED+NOFOCUS;
@@ -2225,8 +2225,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1645 888,
-                     BOTTOMRIGHT: 1792 1007,
+        SCREENRECT = UPPERLEFT: 1644 888,
+                     BOTTOMRIGHT: 1791 1007,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:CameoWindow";
         STATUS = ENABLED;
@@ -2272,8 +2272,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1793 888,
-                     BOTTOMRIGHT: 1870 946,
+        SCREENRECT = UPPERLEFT: 1792 888,
+                     BOTTOMRIGHT: 1869 946,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnitUpgrade1";
         STATUS = ENABLED+IMAGE;
@@ -2319,8 +2319,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1793 947,
-                     BOTTOMRIGHT: 1870 1007,
+        SCREENRECT = UPPERLEFT: 1792 947,
+                     BOTTOMRIGHT: 1869 1007,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnitUpgrade2";
         STATUS = ENABLED+IMAGE;
@@ -2366,8 +2366,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1793 1008,
-                     BOTTOMRIGHT: 1870 1070,
+        SCREENRECT = UPPERLEFT: 1792 1008,
+                     BOTTOMRIGHT: 1869 1070,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnitUpgrade3";
         STATUS = ENABLED+IMAGE;
@@ -2413,8 +2413,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1718 1008,
-                     BOTTOMRIGHT: 1792 1070,
+        SCREENRECT = UPPERLEFT: 1717 1008,
+                     BOTTOMRIGHT: 1791 1070,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnitUpgrade4";
         STATUS = ENABLED+IMAGE;
@@ -2460,8 +2460,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1643 1008,
-                     BOTTOMRIGHT: 1717 1070,
+        SCREENRECT = UPPERLEFT: 1644 1008,
+                     BOTTOMRIGHT: 1716 1070,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnitUpgrade5";
         STATUS = ENABLED+IMAGE;
