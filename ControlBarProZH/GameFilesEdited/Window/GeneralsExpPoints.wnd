@@ -22,7 +22,7 @@ WINDOW
   TEXTCOLOR = ENABLED:  255 255 255 0, ENABLEDBORDER:  255 255 255 0,
               DISABLED: 255 255 255 0, DISABLEDBORDER: 255 255 255 0,
               HILITE:   255 255 255 0, HILITEBORDER:   255 255 255 0;
-  ENABLEDDRAWDATA = IMAGE: GeneralsPowerMenu_China, COLOR: 2 2 2 190, BORDERCOLOR: 46 54 165 0,
+  ENABLEDDRAWDATA = IMAGE: HardCodedGeneralsPowerWindow, COLOR: 2 2 2 190, BORDERCOLOR: 46 54 165 0,
                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -102,7 +102,7 @@ WINDOW
     SCREENRECT = UPPERLEFT: 702 228,
                  BOTTOMRIGHT: 1218 250,
                  CREATIONRESOLUTION: 1920 1080;
-    NAME = "GeneralsExpPoints.wnd:";
+    NAME = "GeneralsExpPoints.wnd:StaticTextRank1Required";
     STATUS = ENABLED;
     STYLE = STATICTEXT+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
@@ -196,8 +196,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
-    SCREENRECT = UPPERLEFT: 1114 737,
-                 BOTTOMRIGHT: 1214 765,
+    SCREENRECT = UPPERLEFT: 1139 668,
+                 BOTTOMRIGHT: 1199 718,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "GeneralsExpPoints.wnd:ButtonExit";
     STATUS = ENABLED+IMAGE;
@@ -210,11 +210,10 @@ WINDOW
     HEADERTEMPLATE = "LabelSmall";
     TOOLTIPTEXT = "TOOLTIP:CloseExpScreen";
     TOOLTIPDELAY = -1;
-    TEXT = "GUI:CloseExpScreen";
     TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
                 DISABLED: 62 64 92 255, DISABLEDBORDER: 31 32 47 255,
                 HILITE:   186 255 12 255, HILITEBORDER:   0 2 0 255;
-    ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 255 0 0 255, BORDERCOLOR: 255 128 128 255,
+    ENABLEDDRAWDATA = IMAGE: ControlBarProGenPowerClose, COLOR: 255 0 0 255, BORDERCOLOR: 255 128 128 255,
                       IMAGE: NoImage, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -223,22 +222,22 @@ WINDOW
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    DISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
+    DISABLEDDRAWDATA = IMAGE: ControlBarProGenPowerCloseI, COLOR: 128 128 128 255, BORDERCOLOR: 192 192 192 255,
                        IMAGE: NoImage, COLOR: 192 192 192 255, BORDERCOLOR: 128 128 128 255,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                       IMAGE: Buttons-Disabled-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                       IMAGE: Buttons-Disabled-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                       IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
-    HILITEDRAWDATA = IMAGE: NoImage, COLOR: 209 253 4 255, BORDERCOLOR: 59 60 52 255,
-                     IMAGE: NoImage, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
+    HILITEDRAWDATA = IMAGE: ControlBarProGenPowerCloseH, COLOR: 209 253 4 255, BORDERCOLOR: 59 60 52 255,
+                     IMAGE: ControlBarProGenPowerCloseP, COLOR: 47 55 168 255, BORDERCOLOR: 254 254 254 255,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-Pushed-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-Pushed-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-HiLite-Middle, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
-                     IMAGE: Buttons-HiLite-Right, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
+                     IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
   END
@@ -246,7 +245,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = STATICTEXT;
     SCREENRECT = UPPERLEFT: 702 740,
-                 BOTTOMRIGHT: 1112 762,
+                 BOTTOMRIGHT: 1218 762,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "GeneralsExpPoints.wnd:StaticTextTitle";
     STATUS = ENABLED;
@@ -1469,8 +1468,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = STATICTEXT;
-    SCREENRECT = UPPERLEFT: 1140 276,
-                 BOTTOMRIGHT: 1192 321,
+    SCREENRECT = UPPERLEFT: 1139 272,
+                 BOTTOMRIGHT: 1203 322,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "GeneralsExpPoints.wnd:StaticTextRankPointsAvailable";
     STATUS = ENABLED;
@@ -1520,7 +1519,7 @@ WINDOW
     SCREENRECT = UPPERLEFT: 706 344,
                  BOTTOMRIGHT: 1214 366,
                  CREATIONRESOLUTION: 1920 1080;
-    NAME = "GeneralsExpPoints.wnd:";
+    NAME = "GeneralsExpPoints.wnd:StaticTextRank3Required";
     STATUS = ENABLED;
     STYLE = STATICTEXT+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
@@ -1569,7 +1568,7 @@ WINDOW
     SCREENRECT = UPPERLEFT: 706 624,
                  BOTTOMRIGHT: 1214 646,
                  CREATIONRESOLUTION: 1920 1080;
-    NAME = "GeneralsExpPoints.wnd:";
+    NAME = "GeneralsExpPoints.wnd:StaticTextRank8Required";
     STATUS = ENABLED;
     STYLE = STATICTEXT+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
