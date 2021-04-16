@@ -166,7 +166,7 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 600 904,
+      SCREENRECT = UPPERLEFT: 600 902,
                      BOTTOMRIGHT: 1318 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:BeaconWindow";
@@ -212,10 +212,10 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 600 903,
+      SCREENRECT = UPPERLEFT: 600 902,
                      BOTTOMRIGHT: 1318 1080,
                      CREATIONRESOLUTION: 1920 1080;
-        NAME = "ControlBar.wnd:";
+        NAME = "ControlBar.wnd:BeaconBlockInput";
         STATUS = ENABLED;
         STYLE = USER;
         SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
@@ -433,7 +433,7 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 600 903,
+      SCREENRECT = UPPERLEFT: 600 902,
                      BOTTOMRIGHT: 1318 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:CommandWindow";
@@ -1139,7 +1139,7 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 600 904,
+        SCREENRECT = UPPERLEFT: 600 902,
                       BOTTOMRIGHT: 1318 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:UnderConstructionWindow";
