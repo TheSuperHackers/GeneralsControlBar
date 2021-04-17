@@ -6,7 +6,7 @@ STARTLAYOUTBLOCK
 ENDLAYOUTBLOCK
 WINDOW
   WINDOWTYPE = USER;
-  SCREENRECT = UPPERLEFT: 0 750,
+  SCREENRECT = UPPERLEFT: 0 740,
                BOTTOMRIGHT: 1920 1080,
                CREATIONRESOLUTION: 1920 1080;
   NAME = "ControlBar.wnd:ControlBarParent";
@@ -118,51 +118,89 @@ WINDOW
   END
   CHILD
   WINDOW
-    WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
-                   CREATIONRESOLUTION: 1920 1080;
-    NAME = "ControlBar.wnd:CenterBackground";
-    STATUS = ENABLED+NOFOCUS;
+    WINDOWTYPE = PUSHBUTTON;
+    SCREENRECT = UPPERLEFT: 0 740,
+                 BOTTOMRIGHT: 340 1080,
+                 CREATIONRESOLUTION: 1920 1080;
+    NAME = "ControlBar.wnd:ControlBarProBlockInputRadar";
+    STATUS = ENABLED;
     STYLE = USER;
     SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
     INPUTCALLBACK = "GameWinBlockInput";
     TOOLTIPCALLBACK = "[None]";
-    DRAWCALLBACK = "W3DNoDraw";
-    FONT = NAME: "Times New Roman", SIZE: 14, BOLD: 0;
-    HEADERTEMPLATE = "[NONE]";
+    DRAWCALLBACK = "[None]";
+    FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+    HEADERTEMPLATE = "[None]";
     TOOLTIPDELAY = -1;
-    TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  255 255 255 255,
-                DISABLED: 255 255 255 255, DISABLEDBORDER: 255 255 255 255,
-                HILITE:   255 255 255 255, HILITEBORDER:   255 255 255 255;
-    ENABLEDDRAWDATA = IMAGE: NoImage, COLOR: 0 0 0 0, BORDERCOLOR: 0 0 0 0,
-                      IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                      IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                      IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                      IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                      IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                      IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                      IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                      IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255;
-    DISABLEDDRAWDATA = IMAGE: NoImage, COLOR: 64 64 64 255, BORDERCOLOR: 254 254 254 255,
-                       IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                       IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                       IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                       IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                       IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                       IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                       IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                       IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255;
-    HILITEDRAWDATA = IMAGE: NoImage, COLOR: 128 128 255 255, BORDERCOLOR: 254 254 254 255,
-                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                     IMAGE: NoImage, COLOR: 255 255 255 255, BORDERCOLOR: 255 255 255 255,
-                     IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                     IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                     IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                     IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255,
-                     IMAGE: NoImage, COLOR: 254 254 254 255, BORDERCOLOR: 0 0 0 255;
-    END
+  END
+  CHILD
+  WINDOW
+    WINDOWTYPE = PUSHBUTTON;
+    SCREENRECT = UPPERLEFT: 592 894,
+                 BOTTOMRIGHT: 1326 1080,
+                 CREATIONRESOLUTION: 1920 1080;
+    NAME = "ControlBar.wnd:ControlBarProBlockInputProduction";
+    STATUS = DISABLED;
+    STYLE = USER;
+    SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+    INPUTCALLBACK = "GameWinBlockInput";
+    TOOLTIPCALLBACK = "[None]";
+    DRAWCALLBACK = "[None]";
+    FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+    HEADERTEMPLATE = "[None]";
+    TOOLTIPDELAY = -1;
+  END
+  CHILD
+  WINDOW
+    WINDOWTYPE = PUSHBUTTON;
+    SCREENRECT = UPPERLEFT: 868 870,
+                 BOTTOMRIGHT: 1052 894,
+                 CREATIONRESOLUTION: 1920 1080;
+    NAME = "ControlBar.wnd:ControlBarProBlockInputMoney";
+    STATUS = DISABLED;
+    STYLE = USER;
+    SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+    INPUTCALLBACK = "GameWinBlockInput";
+    TOOLTIPCALLBACK = "[None]";
+    DRAWCALLBACK = "[None]";
+    FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+    HEADERTEMPLATE = "[None]";
+    TOOLTIPDELAY = -1;
+  END
+  CHILD
+  WINDOW
+    WINDOWTYPE = PUSHBUTTON;
+    SCREENRECT = UPPERLEFT: 1625 870,
+                 BOTTOMRIGHT: 1920 1080,
+                 CREATIONRESOLUTION: 1920 1080;
+    NAME = "ControlBar.wnd:ControlBarProBlockInputUpgrades";
+    STATUS = ENABLED;
+    STYLE = USER;
+    SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+    INPUTCALLBACK = "GameWinBlockInput";
+    TOOLTIPCALLBACK = "[None]";
+    DRAWCALLBACK = "[None]";
+    FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+    HEADERTEMPLATE = "[None]";
+    TOOLTIPDELAY = -1;
+  END
+  CHILD
+  WINDOW
+    WINDOWTYPE = PUSHBUTTON;
+    SCREENRECT = UPPERLEFT: 1821 832,
+                 BOTTOMRIGHT: 1920 870,
+                 CREATIONRESOLUTION: 1920 1080;
+    NAME = "ControlBar.wnd:ControlBarProBlockInputGenPowerButton";
+    STATUS = DISABLED;
+    STYLE = USER;
+    SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+    INPUTCALLBACK = "GameWinBlockInput";
+    TOOLTIPCALLBACK = "[None]";
+    DRAWCALLBACK = "[None]";
+    FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+    HEADERTEMPLATE = "[None]";
+    TOOLTIPDELAY = -1;
+  END
     CHILD
     WINDOW
       WINDOWTYPE = USER;
@@ -212,10 +250,10 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 600 902,
-                     BOTTOMRIGHT: 1318 1080,
+        SCREENRECT = UPPERLEFT: 592 894,
+                     BOTTOMRIGHT: 1326 1080,
                      CREATIONRESOLUTION: 1920 1080;
-        NAME = "ControlBar.wnd:BeaconBlockInput";
+        NAME = "ControlBar.wnd:ControlBarProBlockInputBeacon";
         STATUS = ENABLED;
         STYLE = USER;
         SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
@@ -225,10 +263,6 @@ WINDOW
         FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
         HEADERTEMPLATE = "[None]";
         TOOLTIPDELAY = -1;
-        TEXT = "[None]";
-        TEXTCOLOR = ENABLED:  254 254 254 0, ENABLEDBORDER:  0 0 0 0,
-                    DISABLED: 192 192 192 0, DISABLEDBORDER: 64 64 64 0,
-                    HILITE:   128 128 255 0, HILITEBORDER:   0 0 128 0;
       END
       CHILD
       WINDOW
@@ -433,8 +467,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 600 902,
-                     BOTTOMRIGHT: 1318 1080,
+      SCREENRECT = UPPERLEFT: 592 894,
+                   BOTTOMRIGHT: 1326 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:CommandWindow";
       STATUS = ENABLED+HIDDEN;
@@ -1139,8 +1173,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 600 902,
-                      BOTTOMRIGHT: 1318 1080,
+      SCREENRECT = UPPERLEFT: 592 894,
+                   BOTTOMRIGHT: 1326 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:UnderConstructionWindow";
       STATUS = ENABLED+HIDDEN;
@@ -1283,9 +1317,9 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-        SCREENRECT = UPPERLEFT: 1220 1000,
-                     BOTTOMRIGHT: 1308 1070,
-                     CREATIONRESOLUTION: 1920 1080;
+      SCREENRECT = UPPERLEFT: 592 894,
+                   BOTTOMRIGHT: 1326 1080,
+                   CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:OCLTimerWindow";
       STATUS = ENABLED+HIDDEN;
       STYLE = USER;
@@ -2983,16 +3017,16 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 332 748,
-                   BOTTOMRIGHT: 386 1080,
+      SCREENRECT = UPPERLEFT: 332 740,
+                   BOTTOMRIGHT: 835 1080,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:ObserverPlayerInfoWindow";
-      STATUS = ENABLED+SEE_THRU;
+      STATUS = ENABLED+SEE_THRU+NOINPUT+NOFOCUS;
       STYLE = USER;
       SYSTEMCALLBACK = "ControlBarObserverSystem";
       INPUTCALLBACK = "[None]";
       TOOLTIPCALLBACK = "[None]";
-      DRAWCALLBACK = "[None]";
+      DRAWCALLBACK = "W3DNoDraw";
       FONT = NAME: "Times New Roman", SIZE: 14, BOLD: 0;
       HEADERTEMPLATE = "[NONE]";
       TOOLTIPDELAY = -1;
@@ -3028,12 +3062,46 @@ WINDOW
                        IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
       CHILD
       WINDOW
+        WINDOWTYPE = PUSHBUTTON;
+        SCREENRECT = UPPERLEFT: 394 882,
+                     BOTTOMRIGHT: 835 1049,
+                     CREATIONRESOLUTION: 1920 1080;
+        NAME = "ControlBar.wnd:ControlBarProBlockInputObserverPlayerInfoH";
+        STATUS = ENABLED;
+        STYLE = USER;
+        SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+        INPUTCALLBACK = "GameWinBlockInput";
+        TOOLTIPCALLBACK = "[None]";
+        DRAWCALLBACK = "[None]";
+        FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+        HEADERTEMPLATE = "[None]";
+        TOOLTIPDELAY = -1;
+      END	   
+      CHILD
+	  WINDOW
+        WINDOWTYPE = PUSHBUTTON;
+        SCREENRECT = UPPERLEFT: 332 740,
+                     BOTTOMRIGHT: 394 1080,
+                     CREATIONRESOLUTION: 1920 1080;
+        NAME = "ControlBar.wnd:ControlBarProBlockInputObserverPlayerInfoV";
+        STATUS = ENABLED;
+        STYLE = USER;
+        SYSTEMCALLBACK = "PassSelectedButtonsToParentSystem";
+        INPUTCALLBACK = "GameWinBlockInput";
+        TOOLTIPCALLBACK = "[None]";
+        DRAWCALLBACK = "[None]";
+        FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
+        HEADERTEMPLATE = "[None]";
+        TOOLTIPDELAY = -1;
+      END	   
+      CHILD
+      WINDOW
         WINDOWTYPE = USER;
         SCREENRECT = UPPERLEFT: 327 824,
                      BOTTOMRIGHT: 839 1080,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:WinGeneralPortrait";
-        STATUS = ENABLED+IMAGE;
+        STATUS = ENABLED+IMAGE+NOINPUT+NOFOCUS;
         STYLE = USER;
         SYSTEMCALLBACK = "[None]";
         INPUTCALLBACK = "GameWinBlockInput";
@@ -3608,8 +3676,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 332 748,
-                   BOTTOMRIGHT: 386 1009,
+      SCREENRECT = UPPERLEFT: 332 740,
+                   BOTTOMRIGHT: 394 1009,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "ControlBar.wnd:ObserverPlayerListWindow";
       STATUS = ENABLED+SEE_THRU;
