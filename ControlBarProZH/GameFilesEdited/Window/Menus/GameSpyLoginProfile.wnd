@@ -1475,7 +1475,7 @@ WINDOW
                    BOTTOMRIGHT: 397 220,
                    CREATIONRESOLUTION: 800 600;
       NAME = "GameSpyLoginProfile.wnd:ComboBoxEmail";
-      STATUS = ENABLED+IMAGE;
+      STATUS = ENABLED+IMAGE+HIDDEN;
       STYLE = MOUSETRACK+COMBOBOX;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";
