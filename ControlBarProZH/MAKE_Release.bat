@@ -1,39 +1,19 @@
+call SETUP_Folders.bat
+call MAKE_Big_HideIP.bat
+call MAKE_Big_HideMail.bat
+call MAKE_Big_ControlBarPro.bat
+call MAKE_Big_ControlBarPro720.bat
+call MAKE_Big_ControlBarPro900.bat
+call MAKE_Big_ControlBarPro1080.bat
+call MAKE_Big_ControlBarPro1440.bat
+call MAKE_Big_ControlBarPro2160.bat
+
 :: Define archive name(s)
 set ArchiveName=ControlBarProZH_v0.0
 
-:: Define big file name(s)
-set BigName=340_ControlBarProZH
-
-:: Setup work folders
-set GameFilesDir=GameFilesEdited
-set BigFilesUnpackedDir=.Generated\BigFilesUnpacked
-set BigFilesDir=.Generated\BigFiles
-set ReleaseUnpackedDir=ReleaseUnpacked
-set ReleaseDir=Release
-
-if not exist %BigFilesUnpackedDir% mkdir %BigFilesUnpackedDir%
-if not exist %BigFilesDir% mkdir %BigFilesDir%
-if not exist %ReleaseUnpackedDir% mkdir %ReleaseUnpackedDir%
-if not exist %ReleaseDir% mkdir %ReleaseDir%
-
-:: Free folders of big file contents
-del /s /f /q %BigFilesUnpackedDir%
-del /s /f /q %BigFilesDir%
-
-setlocal enableextensions enabledelayedexpansion
-
-:: Copy .big contents
-xcopy /Y /S %GameFilesDir%\*.tga %BigFilesUnpackedDir%\%BigName%\
-xcopy /Y /S %GameFilesDir%\*.dds %BigFilesUnpackedDir%\%BigName%\
-xcopy /Y /S %GameFilesDir%\*.ini %BigFilesUnpackedDir%\%BigName%\
-xcopy /Y /S %GameFilesDir%\*.wnd %BigFilesUnpackedDir%\%BigName%\
-
-:: Generate .big file(s)
-set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
-%GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%BigName% -dest %BigFilesDir%\%BigName%.big
-
-:: Generate Release file(s)
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir%\%BigName%.big.bak*
-
 :: Generate Archive(s)
-tar.exe -a -c -C %ReleaseUnpackedDir% -f %ReleaseDir%\%ArchiveName%.zip *.*
+tar.exe -a -c -C %ReleaseUnpacked720Dir% -f %ReleaseDir%\%ArchiveName%_x720.zip *.*
+tar.exe -a -c -C %ReleaseUnpacked900Dir% -f %ReleaseDir%\%ArchiveName%_x900.zip *.*
+tar.exe -a -c -C %ReleaseUnpacked1080Dir% -f %ReleaseDir%\%ArchiveName%_x1080.zip *.*
+tar.exe -a -c -C %ReleaseUnpacked1440Dir% -f %ReleaseDir%\%ArchiveName%_x1440.zip *.*
+tar.exe -a -c -C %ReleaseUnpacked2160Dir% -f %ReleaseDir%\%ArchiveName%_x2160.zip *.*

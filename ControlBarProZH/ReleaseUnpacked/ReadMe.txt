@@ -7,8 +7,10 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 -----------------------------------------------------------------------------------------------
 --- Requirements ------------------------------------------------------------------------------
 
-This addon requires GenTool 8.1 or higher to be run properly.
-Generals.exe must be launched with -forcefullviewport command line argument.
++ This addon requires GenTool 8.1 or higher to be run properly.
+
++ Generals.exe must be launched with -forcefullviewport command line argument,
+  or with the bundled Generals Proxy Launcher.
 
 
 -----------------------------------------------------------------------------------------------
@@ -69,12 +71,12 @@ Generals.exe must be launched with -forcefullviewport command line argument.
 
 This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR.
 
-It causes no mismatch between player installation in Network and Online.
+No mismatch between player installation in Network and Online.
 
 Best visual quality is served in 1920 x 1080 window resolution.
 
 This pack combines well with the Control Bar HD Remastered Pack
-for upscaled controlbar textures. See: http://gentool.net/download/controlbar
+for upscaled icon textures. See: http://gentool.net/download/controlbar
 
 
 -----------------------------------------------------------------------------------------------

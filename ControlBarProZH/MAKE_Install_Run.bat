@@ -1,4 +1,3 @@
-call MAKE_Release.bat
 call MAKE_Install.bat
 
 ::Run game
