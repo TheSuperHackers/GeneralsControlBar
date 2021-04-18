@@ -17,6 +17,7 @@ set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%BigName% -dest %BigFilesDir%\%BigName%.big
 
 :: Generate Release file(s)
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDefaultDir%\%BigName%.big.bak*
 xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked720Dir%\%BigName%.big.bak*
 xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked900Dir%\%BigName%.big.bak*
 xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked1080Dir%\%BigName%.big.bak*

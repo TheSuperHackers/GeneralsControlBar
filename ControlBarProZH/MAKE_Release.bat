@@ -12,6 +12,7 @@ call MAKE_Big_ControlBarPro2160.bat
 set ArchiveName=ControlBarProZH_v0.0
 
 :: Generate Archive(s)
+tar.exe -a -c -C %ReleaseUnpackedDefaultDir% -f %ReleaseDir%\%ArchiveName%.zip *.*
 tar.exe -a -c -C %ReleaseUnpacked720Dir% -f %ReleaseDir%\%ArchiveName%_x720.zip *.*
 tar.exe -a -c -C %ReleaseUnpacked900Dir% -f %ReleaseDir%\%ArchiveName%_x900.zip *.*
 tar.exe -a -c -C %ReleaseUnpacked1080Dir% -f %ReleaseDir%\%ArchiveName%_x1080.zip *.*

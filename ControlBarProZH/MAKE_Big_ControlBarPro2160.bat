@@ -1,6 +1,5 @@
 call SETUP_Folders.bat
 
-
 :: Copy base release files
 xcopy /Y /S %ReleaseUnpackedDir%\*.txt %ReleaseUnpacked2160Dir%\*.txt
 xcopy /Y /S %ReleaseUnpackedDir%\*.dat %ReleaseUnpacked2160Dir%\*.dat
