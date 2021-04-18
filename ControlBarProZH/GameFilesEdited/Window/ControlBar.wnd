@@ -1313,8 +1313,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = PUSHBUTTON;
-        SCREENRECT = UPPERLEFT: 851 962,
-                     BOTTOMRIGHT: 941 1033,
+        SCREENRECT = UPPERLEFT: 805 962,
+                     BOTTOMRIGHT: 895 1033,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:ButtonCancelConstruction";
         STATUS = ENABLED+IMAGE+NOFOCUS+WRAP_CENTERED+ON_MOUSE_DOWN;
@@ -1360,8 +1360,8 @@ WINDOW
       CHILD
       WINDOW
         WINDOWTYPE = STATICTEXT;
-        SCREENRECT = UPPERLEFT: 943 962,
-                     BOTTOMRIGHT: 1217 1034,
+        SCREENRECT = UPPERLEFT: 897 962,
+                     BOTTOMRIGHT: 1171 1034,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:UnderConstructionDesc";
         STATUS = ENABLED;
