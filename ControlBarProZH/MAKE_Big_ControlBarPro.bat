@@ -1,11 +1,11 @@
 call SETUP_Folders.bat
 
 :: Copy base release files
-xcopy /Y /S %ReleaseUnpackedDir%\*.txt %ReleaseUnpackedDefaultDir%\*.txt
-xcopy /Y /S %ReleaseUnpackedDir%\*.dat %ReleaseUnpackedDefaultDir%\*.dat
-xcopy /Y /S %ReleaseUnpackedDir%\*.big %ReleaseUnpackedDefaultDir%\*.big
-xcopy /Y /S %ReleaseUnpackedDir%\*.exe %ReleaseUnpackedDefaultDir%\*.exe
-xcopy /Y /S %ReleaseUnpackedDir%\*.cmd %ReleaseUnpackedDefaultDir%\*.cmd
+xcopy /Y /S %ReleaseUnpackedDir%\*.txt %ReleaseUnpackedDir_Default%\*.txt
+xcopy /Y /S %ReleaseUnpackedDir%\*.dat %ReleaseUnpackedDir_Default%\*.dat
+xcopy /Y /S %ReleaseUnpackedDir%\*.big %ReleaseUnpackedDir_Default%\*.big
+xcopy /Y /S %ReleaseUnpackedDir%\*.exe %ReleaseUnpackedDir_Default%\*.exe
+xcopy /Y /S %ReleaseUnpackedDir%\*.cmd %ReleaseUnpackedDir_Default%\*.cmd
 
 :: Define big file name(s)
 set BigName=340_ControlBarProZH
@@ -27,9 +27,9 @@ set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%BigName% -dest %BigFilesDir%\%BigName%.big
 
 :: Generate Release file(s)
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDefaultDir%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked720Dir%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked900Dir%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked1080Dir%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked1440Dir%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked2160Dir%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_Default%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_720%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_900%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_1080%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_1440%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_2160%\%BigName%.big.bak*

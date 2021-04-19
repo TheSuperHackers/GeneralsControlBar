@@ -1,12 +1,12 @@
 call SETUP_Folders.bat
 
 :: Copy base release files
-xcopy /Y /S %ReleaseUnpackedDir%\*.txt %ReleaseUnpacked1080Dir%\*.txt
-xcopy /Y /S %ReleaseUnpackedDir%\*.dat %ReleaseUnpacked1080Dir%\*.dat
-xcopy /Y /S %ReleaseUnpackedDir%\*.big %ReleaseUnpacked1080Dir%\*.big
-xcopy /Y /S %ReleaseUnpackedDir%\*.exe %ReleaseUnpacked1080Dir%\*.exe
-xcopy /Y /S %ReleaseUnpackedDir%\*.cmd %ReleaseUnpacked1080Dir%\*.cmd
-xcopy /Y /S %ReleaseUnpackedDir%\*.txt_1080 %ReleaseUnpacked1080Dir%\*.txt
+xcopy /Y /S %ReleaseUnpackedDir%\*.txt %ReleaseUnpackedDir_1080%\*.txt
+xcopy /Y /S %ReleaseUnpackedDir%\*.dat %ReleaseUnpackedDir_1080%\*.dat
+xcopy /Y /S %ReleaseUnpackedDir%\*.big %ReleaseUnpackedDir_1080%\*.big
+xcopy /Y /S %ReleaseUnpackedDir%\*.exe %ReleaseUnpackedDir_1080%\*.exe
+xcopy /Y /S %ReleaseUnpackedDir%\*.cmd %ReleaseUnpackedDir_1080%\*.cmd
+xcopy /Y /S %ReleaseUnpackedDir%\*.txt_1080 %ReleaseUnpackedDir_1080%\*.txt
 
 :: Define big file name(s)
 set BigName=340_ControlBarPro1080ZH
@@ -25,4 +25,4 @@ set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%BigName% -dest %BigFilesDir%\%BigName%.big
 
 :: Generate Release file(s)
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpacked1080Dir%\%BigName%.big.bak*
+xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_1080%\%BigName%.big.bak*

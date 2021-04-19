@@ -6,19 +6,19 @@ set ReleaseDir=Release
 set BigFilesUnpackedDir=.Generated\BigFilesUnpacked
 set BigFilesDir=.Generated\BigFiles
 
-set ReleaseUnpackedDefaultDir=.Generated\ReleaseUnpackedDefault
-set ReleaseUnpacked720Dir=.Generated\ReleaseUnpacked720
-set ReleaseUnpacked900Dir=.Generated\ReleaseUnpacked900
-set ReleaseUnpacked1080Dir=.Generated\ReleaseUnpacked1080
-set ReleaseUnpacked1440Dir=.Generated\ReleaseUnpacked1440
-set ReleaseUnpacked2160Dir=.Generated\ReleaseUnpacked2160
+set ReleaseUnpackedDir_Default=.Generated\ReleaseUnpackedDefault
+set ReleaseUnpackedDir_720=.Generated\ReleaseUnpacked720
+set ReleaseUnpackedDir_900=.Generated\ReleaseUnpacked900
+set ReleaseUnpackedDir_1080=.Generated\ReleaseUnpacked1080
+set ReleaseUnpackedDir_1440=.Generated\ReleaseUnpacked1440
+set ReleaseUnpackedDir_2160=.Generated\ReleaseUnpacked2160
 
 :: Create folders
 if not exist %BigFilesUnpackedDir% mkdir %BigFilesUnpackedDir%
 if not exist %BigFilesDir% mkdir %BigFilesDir%
-if not exist %ReleaseUnpackedDefaultDir% mkdir %ReleaseUnpackedDefaultDir%
-if not exist %ReleaseUnpacked720Dir% mkdir %ReleaseUnpacked720Dir%
-if not exist %ReleaseUnpacked900Dir% mkdir %ReleaseUnpacked900Dir%
-if not exist %ReleaseUnpacked1080Dir% mkdir %ReleaseUnpacked1080Dir%
-if not exist %ReleaseUnpacked1440Dir% mkdir %ReleaseUnpacked1440Dir%
-if not exist %ReleaseUnpacked2160Dir% mkdir %ReleaseUnpacked2160Dir%
+if not exist %ReleaseUnpackedDir_Default% mkdir %ReleaseUnpackedDir_Default%
+if not exist %ReleaseUnpackedDir_720% mkdir %ReleaseUnpackedDir_720%
+if not exist %ReleaseUnpackedDir_900% mkdir %ReleaseUnpackedDir_900%
+if not exist %ReleaseUnpackedDir_1080% mkdir %ReleaseUnpackedDir_1080%
+if not exist %ReleaseUnpackedDir_1440% mkdir %ReleaseUnpackedDir_1440%
+if not exist %ReleaseUnpackedDir_2160% mkdir %ReleaseUnpackedDir_2160%
