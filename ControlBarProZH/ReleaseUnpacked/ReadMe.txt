@@ -4,10 +4,12 @@ Author(s): EA Games, FAS, xezon
 
 Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
+
 -----------------------------------------------------------------------------------------------
 --- Requirements ------------------------------------------------------------------------------
 
-+ This addon requires GenTool 8.1 or higher to be run properly.
++ This addon requires GenTool 8.1 or higher to be run properly:
+  > http://www.gentool.net
 
 + Generals.exe must be launched with -forcefullviewport command line argument,
   or with the bundled Generals Proxy Launcher.
@@ -22,8 +24,6 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
    > On English install it would then look like so:
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZH
    > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZHShell
-   > ...\EA Games\Command & Conquer Generals Zero Hour\250_HideIP_WindowZH.big.bak
-   > ...\EA Games\Command & Conquer Generals Zero Hour\251_HideMail_WindowZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarPro.cmd
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
@@ -69,14 +69,14 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 -----------------------------------------------------------------------------------------------
 --- Compatibility -----------------------------------------------------------------------------
 
-This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR.
++ This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR.
 
-No mismatch between player installation in Network and Online.
++ No mismatch between player installation in Network and Online.
 
-Best visual quality is served in 1920 x 1080 window resolution.
++ Best visual quality is served in 1920 x 1080 window resolution.
 
-This pack combines well with the Control Bar HD Remastered Pack
-for upscaled icon textures. See: http://gentool.net/download/controlbar
++ This pack combines well with the Control Bar HD Pack for upscaled icon textures.
+  > http://gentool.net/download/controlbar
 
 
 -----------------------------------------------------------------------------------------------
