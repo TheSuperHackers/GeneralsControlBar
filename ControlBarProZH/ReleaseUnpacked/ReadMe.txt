@@ -6,17 +6,17 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
---- Requirements ------------------------------------------------------------------------------
+--- REQUIREMENTS ------------------------------------------------------------------------------
 
 + This addon requires GenTool 8.1 or higher to be run properly:
   > http://www.gentool.net
 
 + Generals.exe must be launched with -forcefullviewport command line argument,
-  or with the bundled Generals Proxy Launcher.
+  or with the bundled Generals Proxy Launcher (v2.0+).
 
 
 -----------------------------------------------------------------------------------------------
---- Regular Install ---------------------------------------------------------------------------
+--- REGULAR INSTALL ---------------------------------------------------------------------------
 
 1. Copy all files and folders into the game install directory, for example:
    > C:\Program Files (x86)\EA Games\Command & Conquer Generals Zero Hour
@@ -38,8 +38,9 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 ..\250_HideIP_WindowZH.big
 ..\251_HideMail_WindowZH.big
 
+
 -----------------------------------------------------------------------------------------------
---- GameRanger Install ------------------------------------------------------------------------
+--- GameRanger INSTALL ------------------------------------------------------------------------
 
 1. Follow step 1 from "Regular Install"
 
@@ -55,7 +56,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
---- Customizations ----------------------------------------------------------------------------
+--- CUSTOMIZATIONS ----------------------------------------------------------------------------
 
 + Edit launcherControlBarProZH\commandline.txt
   to append custom command line arguments to executable.
@@ -67,9 +68,10 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
---- Compatibility -----------------------------------------------------------------------------
+--- COMPATIBILITY -----------------------------------------------------------------------------
 
-+ This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR.
++ This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR:
+  Chinese, English, French, German, Italian, Korean, Polish, Spanish
 
 + No mismatch between player installation in Network and Online.
 
@@ -80,7 +82,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
---- Changelog ---------------------------------------------------------------------------------
+--- CHANGELOG ---------------------------------------------------------------------------------
 
 v1.0:
 - Initial release
