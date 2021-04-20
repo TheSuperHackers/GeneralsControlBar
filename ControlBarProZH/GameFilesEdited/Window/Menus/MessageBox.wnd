@@ -388,11 +388,11 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = USER;
-      SCREENRECT = UPPERLEFT: 248 135,
-                   BOTTOMRIGHT: 555 136,
+      SCREENRECT = UPPERLEFT: 0 0,
+                   BOTTOMRIGHT: 0 0,
                    CREATIONRESOLUTION: 1920 1080;
-      NAME = "MessageBox.wnd:";
-      STATUS = ENABLED;
+      NAME = "MessageBox.wnd:Line";
+      STATUS = ENABLED+HIDDEN;
       STYLE = USER;
       SYSTEMCALLBACK = "[None]";
       INPUTCALLBACK = "[None]";
