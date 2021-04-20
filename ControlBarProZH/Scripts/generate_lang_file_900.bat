@@ -1,1 +1,0 @@
-call generate_lang_file_x_y.bat ini_origin ini_900
