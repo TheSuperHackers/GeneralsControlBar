@@ -10,14 +10,14 @@
 
 ;// Whenever we have large Titles
 HeaderTemplate Title
-  Font = "Agency FB"
+  Font = "Batang"
   Point = 22
   Bold = Yes
 End
 
 ;//This will be used for the buttons at the bottom of the screens
 HeaderTemplate MainButton
-  Font = "Agency FB"
+  Font = "Batang"
   Point = 12
   Bold = No
 End
