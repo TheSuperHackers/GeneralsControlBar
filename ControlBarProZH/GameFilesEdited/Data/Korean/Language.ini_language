@@ -21,5 +21,5 @@ Language
   NativeDebugDisplay = FixedSys 8 No;  used to display frame rate and other debug stats.
   DrawGroupInfoFont = Gulim 10 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Arial Unicode MS" 16 Yes; used to diplay number of selection group to left of unit health bar.
-  CreditsNormalFont = "Arial Unicode MS"14 No; used to diplay number of selection group to left of unit health bar.
+  CreditsNormalFont = "Arial Unicode MS" 14 No; used to diplay number of selection group to left of unit health bar.
 End
