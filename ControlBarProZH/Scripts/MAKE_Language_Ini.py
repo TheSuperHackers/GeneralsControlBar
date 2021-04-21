@@ -4,7 +4,7 @@ from parse import *
 
 
 g_iniExtList    = [ ".ini_720", ".ini_900", ".ini_1080", ".ini_1440", ".ini_2160" ]
-g_fontScaleList = [ 1.0       , 1.1       , 1.0        , 1.4        , 1.0         ]
+g_fontScaleList = [ 1.0       , 1.1       , 1.0        , 1.4        , 2.0         ]
 
 
 def ReadFileContent(path):
