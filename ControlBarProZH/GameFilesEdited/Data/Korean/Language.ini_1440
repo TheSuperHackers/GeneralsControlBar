@@ -4,6 +4,7 @@
 
 Language
   UnicodeFontName = "Gulim"
+  MilitaryCaptionSpeed = 0;       ;// the caption speed for the mission location type
   LocalFontFile = PLCC____.TTF  ;//When we add our game fonts... this is where we do it.
   CopyrightFont = Courier 17 Yes; //Used to display copyright at start of game
   MessageFont   = Gulim 14 Yes; //Used for messages at top of screen.
@@ -20,6 +21,7 @@ Language
   TooltipFontName = Gulim 14 No; mouse tooltips
   NativeDebugDisplay = FixedSys 11 No;  used to display frame rate and other debug stats.
   DrawGroupInfoFont = Gulim 14 No; used to diplay number of selection group to left of unit health bar.
+  CreditsTitleFont = "Arial Unicode MS" 31 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Arial Unicode MS" 22 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = "Arial Unicode MS" 20 No; used to diplay number of selection group to left of unit health bar.
 End
