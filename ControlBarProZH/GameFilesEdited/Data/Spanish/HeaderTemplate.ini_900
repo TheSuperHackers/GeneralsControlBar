@@ -84,3 +84,27 @@ HeaderTemplate LoadScreenMissionLocation
   Point = 15
   Bold = No
 End
+
+HeaderTemplate Arial10BoldTemplate
+  Font = "Arial"
+  Point = 11
+  Bold = Yes
+End
+
+HeaderTemplate Arial12BoldTemplate
+  Font = "Arial"
+  Point = 13
+  Bold = Yes
+End
+
+HeaderTemplate Arial14Template
+  Font = "Arial"
+  Point = 15
+  Bold = No
+End
+
+HeaderTemplate Arial14BoldTemplate
+  Font = "Arial"
+  Point = 15
+  Bold = Yes
+End
