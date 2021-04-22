@@ -1,7 +1,7 @@
 call SETUP_Folders.bat
 
 :: Define big file name(s)
-set BigName=251_HideMail_WindowZH
+set BigName=340_ControlBarProHideMailZH
 
 :: Free folders of big file contents
 del /s /f /q %BigFilesUnpackedDir%\%BigName%

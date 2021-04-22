@@ -35,8 +35,8 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
    then open launcherControlBarProZH\big.txt file with text editor
    and add following 2 lines. Then save the file changes.
 
-..\250_HideIP_WindowZH.big
-..\251_HideMail_WindowZH.big
+..\340_ControlBarProHideIpZH.big
+..\340_ControlBarProHideMailZH.big
 
 
 -----------------------------------------------------------------------------------------------
