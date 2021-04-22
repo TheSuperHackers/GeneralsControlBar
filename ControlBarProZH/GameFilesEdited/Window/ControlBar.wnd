@@ -1650,7 +1650,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = USER;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:WinUAttack";
     STATUS = ENABLED+IMAGE;
@@ -2687,7 +2687,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonIdleWorker";
     STATUS = IMAGE+NOFOCUS+ON_MOUSE_DOWN;
@@ -2734,7 +2734,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonPlaceBeacon";
     STATUS = ENABLED+IMAGE+NOFOCUS+ON_MOUSE_DOWN;
@@ -2781,7 +2781,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:PopupCommunicator";
     STATUS = ENABLED+IMAGE+NOFOCUS;
@@ -2828,7 +2828,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonOptions";
     STATUS = ENABLED+IMAGE+NOFOCUS;
@@ -2875,7 +2875,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = USER;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ForegroundMarker";
     STATUS = ENABLED+NOINPUT+NOFOCUS;
@@ -2922,7 +2922,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonGeneral";
     STATUS = ENABLED+IMAGE+NOFOCUS;
@@ -2969,7 +2969,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonSmall";
     STATUS = ENABLED+HIDDEN+IMAGE+NOFOCUS;
@@ -3017,10 +3017,10 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonLarge";
-    STATUS = ENABLED+IMAGE+NOFOCUS;
+    STATUS = ENABLED+HIDDEN+IMAGE+NOFOCUS;
     STYLE = PUSHBUTTON+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
     INPUTCALLBACK = "[None]";
@@ -3064,7 +3064,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = PUSHBUTTON;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:ButtonMedium";
     STATUS = ENABLED+HIDDEN+IMAGE+NOFOCUS;
@@ -3112,10 +3112,10 @@ WINDOW
   WINDOW
     WINDOWTYPE = USER;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:OnTopDraw";
-    STATUS = DISABLED+NOINPUT+NOFOCUS;
+    STATUS = DISABLED+HIDDEN+NOINPUT+NOFOCUS;
     STYLE = USER;
     SYSTEMCALLBACK = "[None]";
     INPUTCALLBACK = "[None]";
@@ -3286,7 +3286,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = USER;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:WinFlag";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4240,7 +4240,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer7";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4289,7 +4289,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer6";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4338,7 +4338,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer5";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4387,7 +4387,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer4";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4436,7 +4436,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer3";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4485,7 +4485,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer2";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4534,7 +4534,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer1";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4583,7 +4583,7 @@ WINDOW
       WINDOW
         WINDOWTYPE = STATICTEXT;
         SCREENRECT = UPPERLEFT: 0 0,
-                     BOTTOMRIGHT: 0 0,
+                     BOTTOMRIGHT: 100 100,
                      CREATIONRESOLUTION: 1920 1080;
         NAME = "ControlBar.wnd:StaticTextPlayer0";
         STATUS = ENABLED+HIDDEN+SEE_THRU;
@@ -4634,7 +4634,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = STATICTEXT;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:MoneyDisplay";
     STATUS = ENABLED;
@@ -4683,7 +4683,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = USER;
     SCREENRECT = UPPERLEFT: 0 0,
-                 BOTTOMRIGHT: 0 0,
+                 BOTTOMRIGHT: 100 100,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "ControlBar.wnd:PowerWindow";
     STATUS = ENABLED;
