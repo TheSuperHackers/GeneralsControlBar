@@ -29,7 +29,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
 
 2. Run GeneralsControlBarPro.cmd
-   or  GeneralsControlBarProShell.cmd if the first does not work properly
+   or  GeneralsControlBarProShell.cmd if the non-shell does not work properly
 
 3. If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
    then open launcherControlBarProZH\big.txt file with text editor
@@ -71,7 +71,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 --- COMPATIBILITY -----------------------------------------------------------------------------
 
 + This addon is compatible with COMMAND AND CONQUER GENERALS: ZERO HOUR:
-  Chinese, English, French, German, Italian, Korean, Polish, Spanish
+  Brazilian, Chinese, English, French, German, Italian, Korean, Polish, Spanish
 
 + No mismatch between player installation in Network and Online.
 
