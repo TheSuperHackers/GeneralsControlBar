@@ -52,8 +52,8 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = USER;
-    SCREENRECT = UPPERLEFT: 730 340,
-                 BOTTOMRIGHT: 1190 650,
+    SCREENRECT = UPPERLEFT: 690 300,
+                 BOTTOMRIGHT: 1230 650,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "MessageBox.wnd:MessageBoxParent";
     STATUS = ENABLED;
@@ -98,8 +98,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 760 360,
-                   BOTTOMRIGHT: 1160 480,
+      SCREENRECT = UPPERLEFT: 720 320,
+                   BOTTOMRIGHT: 1200 440,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:StaticTextTitle";
       STATUS = ENABLED;
@@ -147,8 +147,8 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = STATICTEXT;
-      SCREENRECT = UPPERLEFT: 760 480,
-                   BOTTOMRIGHT: 1160 560,
+      SCREENRECT = UPPERLEFT: 720 440,
+                   BOTTOMRIGHT: 1200 560,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:StaticTextMessage";
       STATUS = ENABLED;
@@ -197,7 +197,7 @@ WINDOW
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
       SCREENRECT = UPPERLEFT: 1000 580,
-                   BOTTOMRIGHT: 1160 620,
+                   BOTTOMRIGHT: 1200 620,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonNo";
       STATUS = ENABLED+HIDDEN+IMAGE;
@@ -244,7 +244,7 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 760 580,
+      SCREENRECT = UPPERLEFT: 720 580,
                    BOTTOMRIGHT: 920 620,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonYes";
@@ -293,7 +293,7 @@ WINDOW
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
       SCREENRECT = UPPERLEFT: 1000 580,
-                   BOTTOMRIGHT: 1160 620,
+                   BOTTOMRIGHT: 1200 620,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonCancel";
       STATUS = ENABLED+HIDDEN+IMAGE;
@@ -340,7 +340,7 @@ WINDOW
     CHILD
     WINDOW
       WINDOWTYPE = PUSHBUTTON;
-      SCREENRECT = UPPERLEFT: 760 580,
+      SCREENRECT = UPPERLEFT: 720 580,
                    BOTTOMRIGHT: 920 620,
                    CREATIONRESOLUTION: 1920 1080;
       NAME = "MessageBox.wnd:ButtonOk";
