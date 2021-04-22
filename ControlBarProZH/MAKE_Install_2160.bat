@@ -1,5 +1,5 @@
 call MAKE_Install.bat
-call MAKE_Big_ControlBarPro_2160.bat
+call MAKE_Big_ControlBarPro_ResX.bat 2160
 
 ::Copy release files to game
-xcopy /Y /S %ReleaseUnpackedDir_2160% %GameRootDir%
+xcopy /Y /S %GeneratedReleaseUnpacked2160Dir% %GameRootDir%

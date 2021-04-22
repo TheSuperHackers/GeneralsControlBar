@@ -4,22 +4,19 @@ call SETUP_Folders.bat
 set BigName=340_ControlBarProHideIpZH
 
 :: Free folders of big file contents
-del /s /f /q %BigFilesUnpackedDir%\%BigName%
-del /s /f /q %BigFilesDir%\%BigName%
-
-setlocal enableextensions enabledelayedexpansion
+del /s /f /q %GeneratedBigFilesUnpackedDir%\%BigName%
+del /s /f /q %GeneratedBigFilesDir%\%BigName%
 
 :: Copy .big contents
-xcopy /Y /S %GameFilesDir%\*.wnd_hideip %BigFilesUnpackedDir%\%BigName%\*.wnd
+xcopy /Y /S %GameFilesDir%\*.wnd_hideip %GeneratedBigFilesUnpackedDir%\%BigName%\*.wnd
 
 :: Generate .big file(s)
-set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
-%GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%BigName% -dest %BigFilesDir%\%BigName%.big
+%ToolsDir%\GeneralsBigCreator\GeneralsBigCreator.exe -source %GeneratedBigFilesUnpackedDir%\%BigName% -dest %GeneratedBigFilesDir%\%BigName%.big
 
 :: Generate Release file(s)
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_Default%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_720%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_900%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_1080%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_1440%\%BigName%.big.bak*
-xcopy /Y %BigFilesDir%\%BigName%.big %ReleaseUnpackedDir_2160%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpackedDir%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpacked720Dir%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpacked900Dir%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpacked1080Dir%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpacked1440Dir%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpacked2160Dir%\%BigName%.big.bak*

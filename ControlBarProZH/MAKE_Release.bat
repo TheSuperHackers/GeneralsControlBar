@@ -12,9 +12,9 @@ call MAKE_Big_ControlBarPro_2160.bat
 set ArchiveName=ControlBarProZH_v0.0
 
 :: Generate Archive(s)
-tar.exe -a -c -C %ReleaseUnpackedDir_Default% -f %ReleaseDir%\%ArchiveName%.zip *.*
-tar.exe -a -c -C %ReleaseUnpackedDir_720% -f %ReleaseDir%\%ArchiveName%_x720.zip *.*
-tar.exe -a -c -C %ReleaseUnpackedDir_900% -f %ReleaseDir%\%ArchiveName%_x900.zip *.*
-tar.exe -a -c -C %ReleaseUnpackedDir_1080% -f %ReleaseDir%\%ArchiveName%_x1080.zip *.*
-tar.exe -a -c -C %ReleaseUnpackedDir_1440% -f %ReleaseDir%\%ArchiveName%_x1440.zip *.*
-tar.exe -a -c -C %ReleaseUnpackedDir_2160% -f %ReleaseDir%\%ArchiveName%_x2160.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpackedDir% -f %ReleaseDir%\%ArchiveName%.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpacked720Dir% -f %ReleaseDir%\%ArchiveName%_x720.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpacked900Dir% -f %ReleaseDir%\%ArchiveName%_x900.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpacked1080Dir% -f %ReleaseDir%\%ArchiveName%_x1080.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpacked1440Dir% -f %ReleaseDir%\%ArchiveName%_x1440.zip *.*
+tar.exe -a -c -C %GeneratedReleaseUnpacked2160Dir% -f %ReleaseDir%\%ArchiveName%_x2160.zip *.*
