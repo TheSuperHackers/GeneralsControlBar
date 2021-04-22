@@ -2,6 +2,8 @@ Control Bar Pro for COMMAND AND CONQUER GENERALS: ZERO HOUR
 
 Author(s): EA Games, FAS, xezon
 
+Download from: http://gentool.net/download/controlbarpro
+
 Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
