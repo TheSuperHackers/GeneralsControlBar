@@ -1,12 +1,11 @@
-call SETUP_Folders.bat
-call MAKE_Big_HideIP.bat
-call MAKE_Big_HideMail.bat
-call MAKE_Big_ControlBarPro.bat
-call MAKE_Big_ControlBarPro_720.bat
-call MAKE_Big_ControlBarPro_900.bat
-call MAKE_Big_ControlBarPro_1080.bat
-call MAKE_Big_ControlBarPro_1440.bat
-call MAKE_Big_ControlBarPro_2160.bat
+call MAKE_ControlBarProHideIpZH.bat
+call MAKE_ControlBarProHideMailZH.bat
+call MAKE_ControlBarProZH.bat
+call MAKE_ControlBarProResXZH.bat 720
+call MAKE_ControlBarProResXZH.bat 900
+call MAKE_ControlBarProResXZH.bat 1080
+call MAKE_ControlBarProResXZH.bat 1440
+call MAKE_ControlBarProResXZH.bat 2160
 
 :: Define archive name(s)
 set ArchiveName=ControlBarProZH_v0.0
