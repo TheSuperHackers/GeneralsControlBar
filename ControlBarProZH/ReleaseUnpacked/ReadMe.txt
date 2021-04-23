@@ -79,8 +79,30 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 + Best visual quality is served in 1920 x 1080 window resolution.
 
-+ This pack combines well with the Control Bar HD Pack for upscaled icon textures.
++ This addon combines well with the Control Bar HD Addon for upscaled icon textures.
   > http://gentool.net/download/controlbar
+
++ This product is self contained and has no dependencies other than the original game.
+  Some features may not work correctly if you have other third party modifications installed.
+  
+  The following files MUST not be modified:
+  > Data\INI\ControlBarScheme.ini
+  > Window\ControlBar.wnd
+  > Window\GeneralsExpPoints.wnd
+  > Window\GenPowersShortcutBarChina.wnd
+  > Window\GenPowersShortcutBarGLA.wnd
+  > Window\GenPowersShortcutBarUS.wnd
+  > Window\ReplayControl.wnd
+  
+  The following files SHOULD not be modified for the best experience:
+  > Window\ControlBarPopupDescription.wnd
+  > Window\Diplomacy.wnd
+  > Window\InGameChat.wnd
+  > Window\DisconnectScreen.wnd
+  > Window\MessageBox.wnd
+  > Window\PopupBuddyListNotification.wnd
+  > Window\QuitMessageBox.wnd
+  > Window\QuitNoSave.wnd
 
 
 -----------------------------------------------------------------------------------------------
