@@ -58,6 +58,13 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
+--- FUNCTIONALTY ------------------------------------------------------------------------------
+
+Control Bar Pro preserved all original functionality with the exception of a button to minimize
+the Control Bar. Instead F9 button can be used to hide it.
+
+
+-----------------------------------------------------------------------------------------------
 --- CUSTOMIZATIONS ----------------------------------------------------------------------------
 
 + Edit launcherControlBarProZH\commandline.txt
@@ -82,7 +89,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 + This addon combines well with the Control Bar HD Addon for upscaled icon textures.
   > http://gentool.net/download/controlbar
 
-+ This product is self contained and has no dependencies other than the original game.
++ This addon is self contained and has no dependencies other than the original game.
   Some features may not work correctly if you have other third party modifications installed.
   
   The following files MUST not be modified:
