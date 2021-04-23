@@ -1841,10 +1841,10 @@ WINDOW
   CHILD
   WINDOW
     WINDOWTYPE = STATICTEXT;
-    SCREENRECT = UPPERLEFT: 480 80,
+    SCREENRECT = UPPERLEFT: 480 70,
                  BOTTOMRIGHT: 1440 120,
                  CREATIONRESOLUTION: 1920 1080;
-    NAME = "DisconnectScreen.wnd:";
+    NAME = "DisconnectScreen.wnd:TitleText";
     STATUS = ENABLED+IMAGE;
     STYLE = STATICTEXT+MOUSETRACK;
     SYSTEMCALLBACK = "[None]";
@@ -1852,7 +1852,7 @@ WINDOW
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
     FONT = NAME: "Placard MT Condensed", SIZE: 20, BOLD: 0;
-    HEADERTEMPLATE = "MainButton";
+    HEADERTEMPLATE = "Arial14Template";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:InternetDisconnectionMenuHeaderCaps";
     TEXTCOLOR = ENABLED:  255 255 255 255, ENABLEDBORDER:  0 0 0 255,
