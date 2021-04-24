@@ -1,4 +1,0 @@
-1. Run MAKE_big_files.bat to generate big file contents
-2. Compress all folders in BigFilesUnpacked into individual BIG files (..\Tools\FinalBig)
-3. Compress all BIG files in BigFilesUnpacked with 7z for distribution (..\Tools\7-Zip)
-4. Copy packed files into Release\big and Release\7z
