@@ -12,7 +12,7 @@ set BigName=340_ControlBarProZH
 
 :: Free folders of big file contents
 del /s /f /q %GeneratedBigFilesUnpackedDir%\%BigName%
-del /s /f /q %GeneratedBigFilesDir%\%BigName%
+del /s /f /q %GeneratedBigFilesDir%\%BigName%.big
 
 :: Copy .big contents
 xcopy /Y /S %GameFilesDir%\*.tga %GeneratedBigFilesUnpackedDir%\%BigName%\

@@ -5,7 +5,7 @@ set BigName=340_ControlBarProHideMailZH
 
 :: Free folders of big file contents
 del /s /f /q %GeneratedBigFilesUnpackedDir%\%BigName%
-del /s /f /q %GeneratedBigFilesDir%\%BigName%
+del /s /f /q %GeneratedBigFilesDir%\%BigName%.big
 
 :: Copy .big contents
 xcopy /Y /S %GameFilesDir%\*.wnd_hidemail %GeneratedBigFilesUnpackedDir%\%BigName%\*.wnd

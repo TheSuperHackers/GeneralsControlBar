@@ -17,7 +17,7 @@ set BigName=340_ControlBarPro%ResolutionName%ZH
 
 :: Free folders of big file contents
 del /s /f /q %GeneratedBigFilesUnpackedDir%\%BigName%
-del /s /f /q %GeneratedBigFilesDir%\%BigName%
+del /s /f /q %GeneratedBigFilesDir%\%BigName%.big
 
 :: Copy .big contents
 xcopy /Y /S %GameFilesDir%\*.ini_%ResolutionName% %GeneratedBigFilesUnpackedDir%\%BigName%\*.ini
