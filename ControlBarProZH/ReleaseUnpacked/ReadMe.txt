@@ -2,7 +2,7 @@ Control Bar Pro for COMMAND AND CONQUER GENERALS: ZERO HOUR
 
 Author(s): EA Games, FAS, xezon
 
-Download from: http://gentool.net/download/controlbarpro
+Original download from: http://gentool.net/download/controlbarpro
 
 Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
@@ -12,9 +12,6 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 + This addon requires GenTool 8.1 or higher to be run properly:
   > http://www.gentool.net
-
-+ Generals.exe must be launched with -forcefullviewport command line argument,
-  or with the bundled Generals Proxy Launcher (v2.0+).
 
 
 -----------------------------------------------------------------------------------------------
@@ -31,9 +28,11 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
    > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
 
 2. Run GeneralsControlBarPro.cmd
-   or  GeneralsControlBarProShell.cmd if the non-shell does not work properly
+     OR GeneralsControlBarProShell.cmd
+      OR launcherControlBarProZH\generals.exe
+       OR launcherControlBarProZHShell\generals.exe
 
-3. If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
+3. [OPTIONAL] If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
    then open launcherControlBarProZH\big.txt file with text editor
    and add following 2 lines. Then save the file changes.
 
