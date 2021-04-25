@@ -67,7 +67,8 @@ the Control Bar. Instead F9 button can be used to hide it.
 --- CUSTOMIZATIONS ----------------------------------------------------------------------------
 
 + Edit launcherControlBarProZH\commandline.txt
-  to append custom command line arguments to executable.
+  to add or remove custom command line arguments to executable.
+  For example add -quickstart or remove -win.
 
 + Edit launcherControlBarProZH\big.txt to enable
   custom .big files located relative to launcher folder.
