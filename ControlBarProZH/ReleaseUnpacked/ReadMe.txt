@@ -10,50 +10,25 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 -----------------------------------------------------------------------------------------------
 --- REQUIREMENTS ------------------------------------------------------------------------------
 
-+ This addon requires GenTool 8.1 or higher to be run properly:
++ This addon requires GenTool 8.5 or higher to be run properly:
   > http://www.gentool.net
 
 
 -----------------------------------------------------------------------------------------------
 --- REGULAR INSTALL ---------------------------------------------------------------------------
 
-1. Copy all files and folders into the game install directory, for example:
+1. Copy all files into the game install directory, for example:
    > C:\Program Files (x86)\EA Games\Command & Conquer Generals Zero Hour
    
    > On English install it would then look like so:
-   > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZH
-   > ...\EA Games\Command & Conquer Generals Zero Hour\launcherControlBarProZHShell
-   > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big.bak
-   > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarPro.cmd
-   > ...\EA Games\Command & Conquer Generals Zero Hour\GeneralsControlBarProShell.cmd
+   > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big
 
-2. Run GeneralsControlBarPro.cmd
-     OR GeneralsControlBarProShell.cmd
-      OR launcherControlBarProZH\generals.exe
-       OR launcherControlBarProZHShell\generals.exe
+2. Run generals.exe
 
-3. [OPTIONAL] If IPv4 address and/or E-Mail address need to be hidden in game for streaming purposes,
-   then open launcherControlBarProZH\big.txt file with text editor
-   and add following 2 lines. Then save the file changes.
-
-..\340_ControlBarProHideIpZH.big
-..\340_ControlBarProHideMailZH.big
-
-
------------------------------------------------------------------------------------------------
---- GameRanger INSTALL ------------------------------------------------------------------------
-
-1. Follow step 1 from "Regular Install"
-
-2. Start GameRanger
-
-3. Open Edit > Options > Games
-
-4. Select the game from the list
-
-5. Click Browse... and navigate to generals.exe in launcher directory, for example:
-   > C:\Program Files (x86)\EA Games\Command & Conquer Generals Zero Hour\
-     launcherControlBarProZH\generals.exe
+3. [OPTIONAL] If IPv4 address and/or E-Mail address need to be hidden in game
+   for streaming purposes, then rename
+   > 340_ControlBarProHideIpZH.big.bak To 340_ControlBarProHideIpZH.big
+   > 340_ControlBarProHideMailZH.big.bak To 340_ControlBarProHideMailZH.big
 
 
 -----------------------------------------------------------------------------------------------
@@ -61,19 +36,6 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 Control Bar Pro preserved all original functionality with the exception of a button to minimize
 the Control Bar. Instead F9 button can be used to hide it.
-
-
------------------------------------------------------------------------------------------------
---- CUSTOMIZATIONS ----------------------------------------------------------------------------
-
-+ Edit launcherControlBarProZH\commandline.txt
-  to add or remove custom command line arguments to executable.
-  For example add -quickstart or remove -win.
-
-+ Edit launcherControlBarProZH\big.txt to enable
-  custom .big files located relative to launcher folder.
-  For example specifying "..\MyBigFile.big" would enable loading of MyBigFile.big
-  in game root directory when using proxy generals.exe.
 
 
 -----------------------------------------------------------------------------------------------
@@ -89,7 +51,7 @@ the Control Bar. Instead F9 button can be used to hide it.
 + This addon combines well with the Control Bar HD Addon for upscaled icon textures.
   > http://gentool.net/download/controlbar
 
-+ This addon is self contained and has no dependencies other than the original game.
++ This addon is self contained and has no dependencies other than original Game and GenTool.
   Some features may not work correctly if you have other third party modifications installed.
   
   The following files MUST not be modified:
@@ -117,3 +79,6 @@ the Control Bar. Instead F9 button can be used to hide it.
 
 v1.0:
 - Initial release
+
+v1.1:
+- Simplify dependency setup with GenTool 8.5

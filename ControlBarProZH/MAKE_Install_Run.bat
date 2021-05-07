@@ -1,4 +1,4 @@
 call MAKE_Install.bat
 
 ::Run game
-%GameRootDir%\launcherControlBarProZH\generals.exe -quickstart
+%GameRootDir%\generals.exe -win -quickstart

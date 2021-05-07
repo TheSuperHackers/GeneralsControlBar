@@ -5,12 +5,7 @@ set ResolutionName=%1
 set GeneratedReleaseUnpackedDirResX=%GeneratedReleaseUnpackedDir%%ResolutionName%
 
 :: Copy base release files
-xcopy /Y /S %ReleaseUnpackedDir%\*.txt %GeneratedReleaseUnpackedDirResX%\*.txt
-xcopy /Y /S %ReleaseUnpackedDir%\*.dat %GeneratedReleaseUnpackedDirResX%\*.dat
-xcopy /Y /S %ReleaseUnpackedDir%\*.big %GeneratedReleaseUnpackedDirResX%\*.big
-xcopy /Y /S %ReleaseUnpackedDir%\*.exe %GeneratedReleaseUnpackedDirResX%\*.exe
-xcopy /Y /S %ReleaseUnpackedDir%\*.cmd %GeneratedReleaseUnpackedDirResX%\*.cmd
-xcopy /Y /S %ReleaseUnpackedDir%\*.txt_%ResolutionName% %GeneratedReleaseUnpackedDirResX%\*.txt
+xcopy /Y /S %ReleaseUnpackedDir%\* %GeneratedReleaseUnpackedDirResX%\*
 
 :: Define big file name(s)
 set BigName=340_ControlBarPro%ResolutionName%ZH
@@ -26,4 +21,4 @@ xcopy /Y /S %GameFilesDir%\*.ini_%ResolutionName% %GeneratedBigFilesUnpackedDir%
 %ToolsDir%\GeneralsBigCreator\GeneralsBigCreator.exe -source %GeneratedBigFilesUnpackedDir%\%BigName% -dest %GeneratedBigFilesDir%\%BigName%.big
 
 :: Generate Release file(s)
-xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpackedDirResX%\%BigName%.big.bak*
+xcopy /Y %GeneratedBigFilesDir%\%BigName%.big %GeneratedReleaseUnpackedDirResX%\%BigName%.big*

@@ -8,7 +8,7 @@ call MAKE_ControlBarProResXZH.bat 1440
 call MAKE_ControlBarProResXZH.bat 2160
 
 :: Define archive name(s)
-set ArchiveName=ControlBarProZH_v1.0
+set ArchiveName=ControlBarProZH_v1.1
 
 :: Generate Archive(s)
 tar.exe -a -c -C %GeneratedReleaseUnpackedDir% -f %ReleaseDir%\%ArchiveName%.zip *.*
