@@ -81,4 +81,8 @@ v1.0:
 - Initial release
 
 v1.1:
-- Simplify dependency setup with GenTool 8.5
+- Simplified setup with GenTool 8.5, removed GeneralsProxyLauncher
+- Added button to minimize control bar
+- Moved messages text 12 pixels lower
+- Increased click area of generals powers button
+- Changed texture of mosaic next to money text and gen power window title texts
