@@ -58,7 +58,7 @@ def ScaleFontSizes(inText, fontScale):
 
 
 def main():
-    pathList = Path("../GameFilesEdited/Data/").glob('**/*.ini_language')
+    pathList = Path("../GameFilesEdited/Data/").glob('**/*.ini_resx')
     for path in pathList:
         fileName = str(path)
         fileNameWithoutExt = os.path.splitext(fileName)[0]
