@@ -74,7 +74,7 @@ End
 ;// Used only on the loadscreen under the cameos that popup partway through the load movie
 HeaderTemplate LoadScreenCameos
   Font = "±¼¸²"
-  Point = 20
+  Point = 10 ;NoScale
   Bold = No
 End
 
