@@ -16,6 +16,7 @@ del /s /f /q %GeneratedBigFilesDir%\%BigName%.big
 
 :: Copy .big contents
 xcopy /Y /S %GameFilesDir%\*.ini_%ResolutionName% %GeneratedBigFilesUnpackedDir%\%BigName%\*.ini
+xcopy /Y /S %GameFilesDir%\*.wnd_resx %GeneratedBigFilesUnpackedDir%\%BigName%\*.wnd
 
 :: Generate .big file(s)
 %ToolsDir%\GeneralsBigCreator\GeneralsBigCreator.exe -source %GeneratedBigFilesUnpackedDir%\%BigName% -dest %GeneratedBigFilesDir%\%BigName%.big
