@@ -85,11 +85,11 @@ Control Bar Pro preserves all original game functionality.
   instead of the files provided by this addon. In that case, other modified files must be
   deleted.
 
-# NOTE: Game files outside of .BIG files are loaded before any files in .BIG files.
-  And .big files with names in less alphabetical order are loaded before .BIG files with names
+# NOTE: Game files outside of BIG files are loaded before any files in BIG files.
+  And BIG files with names in less alphabetical order are loaded before BIG files with names
   in greater alphabetical order.
 
-# If original control bar textures are shown, then likely game has modified .INI and/or .WND
+# If original control bar textures are shown, then likely game has modified INI and/or WND
   files somewhere that break the install of this addon. See list above which files must not be
   changed by other game modifications.
 
@@ -112,7 +112,7 @@ v1.1:
 - Fixed scrolling inconsistencies with GenTool 8.5
 - Removed GeneralsProxyLauncher files
 - Added button to minimize control bar
-- Moved messages texts 12 pixels lower
+- Moved message texts 12 pixels lower
 - Increased click area of generals powers button
 - Fixed scroll list text errors in 3840x2160 and 2560x1440 by reducing font scaling
 - Changed textures next to money text and gen power window title texts
