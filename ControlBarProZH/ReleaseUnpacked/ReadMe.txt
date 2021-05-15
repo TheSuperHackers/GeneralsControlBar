@@ -85,5 +85,6 @@ v1.1:
 - Added button to minimize control bar
 - Moved messages text 12 pixels lower
 - Increased click area of generals powers button
-- Fixed text errors in 3840x2160 preset by reducing text scaling from 2.0 to 1.9
+- Fixed potential SCROLLLISTBOX text errors in 3840x2160 and 2560x1440 presets
+    by reducing text scaling
 - Changed textures next to money text and gen power window title texts
