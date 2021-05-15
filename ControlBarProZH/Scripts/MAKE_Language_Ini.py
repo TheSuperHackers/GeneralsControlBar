@@ -30,28 +30,31 @@ def ScaleFontSizes(inText, fontScale):
     headerTemplateIniPattern = 'Point = {:d}'
     languageIniPatternA = '{:d} Yes'
     languageIniPatternB = '{:d} No'
+    antiPattern = 'NoScale'
+    
     for line in inText.splitlines():
-        # HeaderTemplate.ini pattern
-        pointSize = search(headerTemplateIniPattern, line)
-        if pointSize is not None:
-            newPointSize = round(pointSize[0] * fontScale)
-            curPointStr = headerTemplateIniPattern.format(pointSize[0])
-            newPointStr = headerTemplateIniPattern.format(newPointSize)
-            line = line.replace(curPointStr, newPointStr)
-            print(curPointStr + ' -> ' + newPointStr)
-        else:
-            #Language.ini pattern
-            pattern = languageIniPatternA
-            pointSize = search(pattern, line)
-            if pointSize is None:
-                pattern = languageIniPatternB
-                pointSize = search(pattern, line)
+        if line.find(antiPattern) < 0:
+            # HeaderTemplate.ini pattern
+            pointSize = search(headerTemplateIniPattern, line)
             if pointSize is not None:
                 newPointSize = round(pointSize[0] * fontScale)
-                curPointStr = pattern.format(pointSize[0])
-                newPointStr = pattern.format(newPointSize)
+                curPointStr = headerTemplateIniPattern.format(pointSize[0])
+                newPointStr = headerTemplateIniPattern.format(newPointSize)
                 line = line.replace(curPointStr, newPointStr)
                 print(curPointStr + ' -> ' + newPointStr)
+            else:
+                #Language.ini pattern
+                pattern = languageIniPatternA
+                pointSize = search(pattern, line)
+                if pointSize is None:
+                    pattern = languageIniPatternB
+                    pointSize = search(pattern, line)
+                if pointSize is not None:
+                    newPointSize = round(pointSize[0] * fontScale)
+                    curPointStr = pattern.format(pointSize[0])
+                    newPointStr = pattern.format(newPointSize)
+                    line = line.replace(curPointStr, newPointStr)
+                    print(curPointStr + ' -> ' + newPointStr)
         # Add original or modified line to output text
         outText += line + "\n"
     return outText
