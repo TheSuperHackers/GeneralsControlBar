@@ -1,0 +1,7 @@
+Control Bar Obs for COMMAND AND CONQUER GENERALS: ZERO HOUR
+
+Author(s): EA Games, xezon, Legionnaire, FAS
+
+Original download from: http://gentool.net/download/controlbarobs
+
+Code & Assets Source: https://github.com/xezon/GeneralsControlBar
