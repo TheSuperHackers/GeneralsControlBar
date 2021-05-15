@@ -585,7 +585,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:America";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -634,7 +634,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:AmericaSuperWeaponGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -683,7 +683,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:AmericaLaserGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -732,7 +732,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:AmericaAirForceGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -781,7 +781,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:China";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -830,7 +830,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:ChinaTankGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -879,7 +879,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:ChinaInfantryGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -928,7 +928,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:ChinaNukeGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -977,7 +977,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:GLA";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -1026,7 +1026,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:GLAToxinGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -1075,7 +1075,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:GLADemolitionGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -1124,7 +1124,7 @@ WINDOW
           TOOLTIPCALLBACK = "[None]";
           DRAWCALLBACK = "[None]";
           FONT = NAME: "Arial", SIZE: 12, BOLD: 1;
-          HEADERTEMPLATE = "[NONE]";
+          HEADERTEMPLATE = "LabelRegular";
           TOOLTIPTEXT = "SIDE:GLAStealthGeneral";
           TOOLTIPDELAY = -1;
           TEXT = "GUI:WinPercent";
@@ -1513,7 +1513,7 @@ WINDOW
       TOOLTIPCALLBACK = "[None]";
       DRAWCALLBACK = "[None]";
       FONT = NAME: "Arial", SIZE: 10, BOLD: 0;
-      HEADERTEMPLATE = "ControlBarProScrollListBox000";
+      HEADERTEMPLATE = "ControlBarProScrollListBox025";
       TOOLTIPDELAY = -1;
       TEXTCOLOR = ENABLED:  254 254 254 255, ENABLEDBORDER:  0 0 0 255,
                   DISABLED: 192 192 192 255, DISABLEDBORDER: 64 64 64 255,
