@@ -17,7 +17,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 -----------------------------------------------------------------------------------------------
 --- INSTALL -----------------------------------------------------------------------------------
 
-1. [OPTIONAL] Delete files of prior install of Control Bar Pro if applicable
+1. [OPTIONAL] Delete files of prior install of Control Bar Pro if applicable.
 
 2. Copy all files into the game install directory, for example:
    > C:\Program Files (x86)\EA Games\Command & Conquer Generals Zero Hour
@@ -28,11 +28,9 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
    > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big
 
 3. [OPTIONAL] If IPv4 address and/or E-Mail address need to be hidden in game
-   for streaming purposes, then rename
-   > 340_ControlBarProHideIpZH.big.bak To 340_ControlBarProHideIpZH.big
-   > 340_ControlBarProHideMailZH.big.bak To 340_ControlBarProHideMailZH.big
+   for streaming purposes, then run 340_ControlBarPro_Toggle_HideIP_HideMail.bat once.
 
-4. Start the game (run generals.exe)
+4. Start the game (Run generals.exe)
 
 
 -----------------------------------------------------------------------------------------------
