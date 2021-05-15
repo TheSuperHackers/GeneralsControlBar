@@ -15,7 +15,7 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
---- REGULAR INSTALL ---------------------------------------------------------------------------
+--- INSTALL -----------------------------------------------------------------------------------
 
 1. [OPTIONAL] Delete files of prior install of Control Bar Pro if applicable
 
