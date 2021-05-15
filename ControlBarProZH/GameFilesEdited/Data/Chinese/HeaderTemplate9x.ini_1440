@@ -108,3 +108,27 @@ HeaderTemplate Arial14BoldTemplate
   Point = 20
   Bold = No
 End
+
+HeaderTemplate ControlBarProScrollListBox000
+  Font = 細明體
+  Point = 10 ;UpScaleMult=0.0
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox025
+  Font = 細明體
+  Point = 11 ;UpScaleMult=0.25
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox050
+  Font = 細明體
+  Point = 12 ;UpScaleMult=0.50
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox075
+  Font = 細明體
+  Point = 13 ;UpScaleMult=0.75
+  Bold = No
+End

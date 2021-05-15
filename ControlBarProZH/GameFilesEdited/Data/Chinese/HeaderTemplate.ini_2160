@@ -108,3 +108,27 @@ HeaderTemplate Arial14BoldTemplate
   Point = 28
   Bold = No
 End
+
+HeaderTemplate ControlBarProScrollListBox000
+  Font = "Batang"
+  Point = 10 ;UpScaleMult=0.0
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox025
+  Font = "Batang"
+  Point = 12 ;UpScaleMult=0.25
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox050
+  Font = "Batang"
+  Point = 15 ;UpScaleMult=0.50
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox075
+  Font = "Batang"
+  Point = 18 ;UpScaleMult=0.75
+  Bold = No
+End

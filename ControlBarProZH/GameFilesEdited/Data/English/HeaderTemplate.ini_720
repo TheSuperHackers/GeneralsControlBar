@@ -72,6 +72,9 @@ HeaderTemplate LabelSmall
 End
 
 ;// Used only on the loadscreen under the cameos that popup partway through the load movie
+; Control Bar Pro repurposes this font for SCROLLLISTBOX window elements.
+; SCROLLLISTBOX breaks when a containing row element surpasses a certain pixel height.
+; Using Arial 10 is within the safe zone for most or all window elements.
 HeaderTemplate LoadScreenCameos
   Font = "Arial"
   Point = 10 ;NoScale
@@ -107,4 +110,28 @@ HeaderTemplate Arial14BoldTemplate
   Font = "Arial"
   Point = 14
   Bold = Yes
+End
+
+HeaderTemplate ControlBarProScrollListBox000
+  Font = "Arial"
+  Point = 10 ;UpScaleMult=0.0
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox025
+  Font = "Arial"
+  Point = 10 ;UpScaleMult=0.25
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox050
+  Font = "Arial"
+  Point = 10 ;UpScaleMult=0.50
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox075
+  Font = "Arial"
+  Point = 10 ;UpScaleMult=0.75
+  Bold = No
 End

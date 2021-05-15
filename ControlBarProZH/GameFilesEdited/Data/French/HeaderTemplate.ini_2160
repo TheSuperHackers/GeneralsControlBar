@@ -109,3 +109,26 @@ HeaderTemplate Arial14BoldTemplate
   Bold = Yes
 End
 
+HeaderTemplate ControlBarProScrollListBox000
+  Font = "Arial"
+  Point = 10 ;UpScaleMult=0.0
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox025
+  Font = "Arial"
+  Point = 12 ;UpScaleMult=0.25
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox050
+  Font = "Arial"
+  Point = 15 ;UpScaleMult=0.50
+  Bold = No
+End
+
+HeaderTemplate ControlBarProScrollListBox075
+  Font = "Arial"
+  Point = 18 ;UpScaleMult=0.75
+  Bold = No
+End
