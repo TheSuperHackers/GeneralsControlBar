@@ -22,13 +22,13 @@ Code & Assets Source: https://github.com/xezon/GeneralsControlBar
 2. Copy all files into the game install directory, for example:
    > C:\Program Files (x86)\EA Games\Command & Conquer Generals Zero Hour
    > On English install it would then look like so:
+   > ...\EA Games\Command & Conquer Generals Zero Hour\339_ControlBarProHideIpZH.big.BAK
+   > ...\EA Games\Command & Conquer Generals Zero Hour\339_ControlBarProHideMailZH.big.BAK
    > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarPro1080ZH.big
-   > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProHideIpZH.big.bak
-   > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProHideMailZH.big.bak
    > ...\EA Games\Command & Conquer Generals Zero Hour\340_ControlBarProZH.big
 
 3. [OPTIONAL] If IPv4 address and/or E-Mail address need to be hidden in game
-   for streaming purposes, then run 340_ControlBarPro_Toggle_HideIP_HideMail.bat once.
+   for streaming purposes, then run ControlBarPro_ON_OFF_HideIP_HideMail.bat once.
 
 4. Start the game (Run generals.exe)
 
