@@ -30,14 +30,21 @@ def ScaleFontSizes(inText, fontScale):
     headerTemplateIniPattern = 'Point = {:d}'
     languageIniPatternA = '{:d} Yes'
     languageIniPatternB = '{:d} No'
-    antiPattern = 'NoScale'
+    noScalePattern = 'NoScale'
+    upScaleMultPattern = 'UpScaleMult={:f}'
     
     for line in inText.splitlines():
-        if line.find(antiPattern) < 0:
+        if line.find(noScalePattern) < 0:
+            # Scale given font scale
+            newFontScale = fontScale;
+            if newFontScale > 1.0:
+                upScaleMult = search(upScaleMultPattern, line)
+                if upScaleMult is not None:
+                    newFontScale = 1.0 + (newFontScale - 1.0) * upScaleMult[0]
             # HeaderTemplate.ini pattern
             pointSize = search(headerTemplateIniPattern, line)
             if pointSize is not None:
-                newPointSize = round(pointSize[0] * fontScale)
+                newPointSize = round(pointSize[0] * newFontScale)
                 curPointStr = headerTemplateIniPattern.format(pointSize[0])
                 newPointStr = headerTemplateIniPattern.format(newPointSize)
                 line = line.replace(curPointStr, newPointStr)
@@ -50,7 +57,7 @@ def ScaleFontSizes(inText, fontScale):
                     pattern = languageIniPatternB
                     pointSize = search(pattern, line)
                 if pointSize is not None:
-                    newPointSize = round(pointSize[0] * fontScale)
+                    newPointSize = round(pointSize[0] * newFontScale)
                     curPointStr = pattern.format(pointSize[0])
                     newPointStr = pattern.format(newPointSize)
                     line = line.replace(curPointStr, newPointStr)
