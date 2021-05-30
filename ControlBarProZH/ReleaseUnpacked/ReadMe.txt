@@ -114,3 +114,6 @@ v1.1:
 - Increased click area of generals powers button
 - Fixed scroll list text errors in 3840x2160 and 2560x1440 by reducing font scaling
 - Changed textures next to money text and gen power window title texts
+
+v1.2:
+- Decrease font sizes in 720, 900, 1440, 2160 presets

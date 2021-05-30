@@ -4,7 +4,7 @@ from parse import *
 
 
 g_iniExtList    = [ ".ini_720", ".ini_900", ".ini_1080", ".ini_1440", ".ini_2160" ]
-g_fontScaleList = [ 1.0       , 1.1       , 1.0        , 1.4        , 2.0         ]
+g_fontScaleList = [ 0.9       , 0.9       , 1.0        , 1.2        , 1.9         ]
 
 # Note: Original font sizes scaled by 2.0 or higher will cause issues with text in Load Replay scroll box.
 # Tested in English and German languages.
