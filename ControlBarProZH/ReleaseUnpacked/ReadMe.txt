@@ -117,3 +117,4 @@ v1.1:
 
 v1.2:
 - Decrease font sizes in 720, 900, 1440, 2160 presets
+- Fix position of Available Gen Points number

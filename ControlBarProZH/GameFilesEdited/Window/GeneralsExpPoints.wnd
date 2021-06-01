@@ -1375,7 +1375,7 @@ WINDOW
   WINDOW
     WINDOWTYPE = STATICTEXT;
     SCREENRECT = UPPERLEFT: 1139 248,
-                 BOTTOMRIGHT: 1203 298,
+                 BOTTOMRIGHT: 1199 298,
                  CREATIONRESOLUTION: 1920 1080;
     NAME = "GeneralsExpPoints.wnd:StaticTextRankPointsAvailable";
     STATUS = ENABLED;
