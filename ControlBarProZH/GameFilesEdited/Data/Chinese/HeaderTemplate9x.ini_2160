@@ -74,7 +74,7 @@ End
 ;// Used only on the loadscreen under the cameos that popup partway through the load movie
 HeaderTemplate LoadScreenCameos
   Font = 細明體
-  Point = 10 ;NoScale
+  Point = 19
   Bold = No
 End
 
@@ -108,6 +108,11 @@ HeaderTemplate Arial14BoldTemplate
   Point = 27
   Bold = No
 End
+
+; Control Bar Pro requires new font(s) for SCROLLLISTBOX window elements.
+; SCROLLLISTBOX breaks when a containing row element surpasses a certain pixel height.
+; Therefore font must not be scaled up too much.
+; Arial 10 is within the safe zone for most if not all SCROLLLISTBOX window elements.
 
 HeaderTemplate ControlBarProScrollListBox000
   Font = 細明體
