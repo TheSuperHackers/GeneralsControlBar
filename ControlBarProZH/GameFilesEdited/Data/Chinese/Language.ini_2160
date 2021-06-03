@@ -21,8 +21,9 @@ Language
   DefaultDisplayStringFont = Batang 23 No;  default font used for strings that don't specify font.
   TooltipFontName = Batang 15 No; mouse tooltips
   NativeDebugDisplay = FixedSys 15 No;  used to display frame rate and other debug stats.
-  DrawGroupInfoFont = Batang 19 No; used to diplay number of selection group to left of unit health bar.
+  DrawGroupInfoFont = Batang 23 No; used to diplay number of selection group to left of unit health bar.
   CreditsTitleFont = "Placard MT Condensed" 46 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Batang Unicode MS" 30 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = "Batang Unicode MS" 27 No; used to diplay number of selection group to left of unit health bar.
+  ResolutionFontAdjustment = 0.7 ; Fonts increase at 70% the rate the resolution increases.
 End

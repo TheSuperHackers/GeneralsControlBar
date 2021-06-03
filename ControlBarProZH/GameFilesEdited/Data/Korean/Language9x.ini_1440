@@ -20,8 +20,9 @@ Language
   DefaultDisplayStringFont = ±¼¸² 14 No;  default font used for strings that don't specify font.
   TooltipFontName = ±¼¸² 12 No; mouse tooltips
   NativeDebugDisplay = FixedSys 10 No;  used to display frame rate and other debug stats.
-  DrawGroupInfoFont = ±¼¸² 12 No; used to diplay number of selection group to left of unit health bar.
+  DrawGroupInfoFont = ±¼¸² 14 No; used to diplay number of selection group to left of unit health bar.
   CreditsTitleFont = "Arial" 26 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Arial" 19 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = "Arial" 17 No; used to diplay number of selection group to left of unit health bar.
+  ResolutionFontAdjustment = 0.7 ; Fonts increase at 70% the rate the resolution increases.
 End

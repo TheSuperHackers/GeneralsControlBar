@@ -20,7 +20,7 @@ Language
   DefaultDisplayStringFont = "Times New Roman" 23 No;  default font used for strings that don't specify font.
   TooltipFontName = Arial 15 No; mouse tooltips
   NativeDebugDisplay = FixedSys 15 No;  used to display frame rate and other debug stats.
-  DrawGroupInfoFont = Arial 19 No; used to diplay number of selection group to left of unit health bar.
+  DrawGroupInfoFont = Arial 23 No; used to diplay number of selection group to left of unit health bar.
   CreditsTitleFont = Arial 42 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = Arial 30 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = Arial 27 No; used to diplay number of selection group to left of unit health bar.
