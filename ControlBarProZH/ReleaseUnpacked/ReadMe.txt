@@ -119,3 +119,4 @@ v1.2:
 - Decrease font sizes in 720, 900, 1440, 2160 presets
 - Fix scroll list box text sizes in Disconnect and Diplomacy Window
 - Fix position of Available Gen Points number
+- Increase font size of group numbers

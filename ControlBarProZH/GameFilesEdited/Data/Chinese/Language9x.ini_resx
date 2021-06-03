@@ -20,7 +20,7 @@ Language
   DefaultDisplayStringFont = 細明體 12 No;  default font used for strings that don't specify font.
   TooltipFontName = 細明體 8 No; mouse tooltips
   NativeDebugDisplay = FixedSys 8 No;  used to display frame rate and other debug stats.
-  DrawGroupInfoFont = 細明體 10 No; used to diplay number of selection group to left of unit health bar.
+  DrawGroupInfoFont = 細明體 12 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsTitleFont = "Placard MT Condensed" 24 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Arial Unicode MS" 16 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = "Arial Unicode MS" 14 No; used to diplay number of selection group to left of unit health bar.
