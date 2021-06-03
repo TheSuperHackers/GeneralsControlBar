@@ -25,4 +25,5 @@ Language
   CreditsTitleFont = "Placard MT Condensed" 24 No; used to diplay number of selection group to left of unit health bar.
   CreditsMinorTitleFont = "Batang Unicode MS" 16 Yes; used to diplay number of selection group to left of unit health bar.
   CreditsNormalFont = "Batang Unicode MS" 14 No; used to diplay number of selection group to left of unit health bar.
+  ResolutionFontAdjustment = 0.7 ; Fonts increase at 70% the rate the resolution increases.
 End
