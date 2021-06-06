@@ -1,13 +1,12 @@
 import os
+import sys
+import argparse
 from pathlib import Path
 from parse import *
 
 
-g_iniExtList    = [ ".ini_720", ".ini_900", ".ini_1080", ".ini_1440", ".ini_2160" ]
-g_fontScaleList = [ 0.9       , 0.9       , 1.0        , 1.2        , 1.9         ]
-
-# Note: Original font sizes scaled by 2.0 or higher will cause issues with text in Load Replay scroll box.
-# Tested in English and German languages.
+g_fontResList   = [ 720, 900, 1080, 1440, 2160 ]
+g_fontScaleList = [ 0.9, 0.9,  1.0,  1.2,  1.9 ]
 
 
 def ReadFileContent(path):
@@ -68,19 +67,31 @@ def ScaleFontSizes(inText, fontScale):
 
 
 def main():
-    pathList = Path("../GameFilesEdited/Data/").glob('**/*.ini_resx')
-    for path in pathList:
-        fileName = str(path)
-        fileNameWithoutExt = os.path.splitext(fileName)[0]
-        fileContent = ReadFileContent(fileName)
-        for iniIndex in range(len(g_iniExtList)):
-            iniExt = g_iniExtList[iniIndex]
-            fontScale = g_fontScaleList[iniIndex]
-            fileNameModified = fileNameWithoutExt + iniExt
-            fileContentModified = ScaleFontSizes(fileContent, fontScale)
-            WriteFileContent(fileNameModified, fileContentModified)
-            print("Write file :" + fileNameModified)
-            print(fileContentModified)
+    parser = argparse.ArgumentParser(prog='MAKE_Language_Ini.py')
+    parser.add_argument('-resolution', nargs=1, type=int)
+    parser.add_argument('-source', nargs=1, type=ascii)
+    parser.add_argument('-dest', nargs=1, type=ascii)
+    args = parser.parse_args()
+    resolution = args.resolution[0]
+    sourceDir = os.path.normpath(args.source[0].strip("'"))
+    destDir = os.path.normpath(args.dest[0].strip("'"))
+    print('resolution:' + str(resolution))
+    print('source:' + sourceDir)
+    print('dest:' + destDir)
+    for resIndex in range(len(g_fontResList)):
+        if g_fontResList[resIndex] == resolution:
+            fontScale = g_fontScaleList[resIndex]
+            pathList = Path(sourceDir).glob('*.ini_resx')
+            for path in pathList:
+                inputFileName = str(path)
+                fileName = os.path.basename(path)
+                fileNameWithoutExt = os.path.splitext(fileName)[0]
+                fileContent = ReadFileContent(inputFileName)
+                outputFileName = destDir + '\\' + fileNameWithoutExt + '.ini'
+                fileContentModified = ScaleFontSizes(fileContent, fontScale)
+                WriteFileContent(outputFileName, fileContentModified)
+                print("Write file :" + outputFileName)
+                print(fileContentModified)
 
 
 main()
