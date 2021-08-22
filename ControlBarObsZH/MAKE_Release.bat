@@ -7,11 +7,13 @@ set HideIPBigName=250_HideIP_WindowZH
 set HideMailBigName=251_HideMail_WindowZH
 
 :: Setup work folders
-set GameFilesDir=GameFilesEdited
-set BigFilesUnpackedDir=.Generated\BigFilesUnpacked
-set BigFilesDir=.Generated\BigFiles
-set ReleaseUnpackedDir=ReleaseUnpacked
-set ReleaseDir=Release
+set ProjectDir=%~dp0
+set ToolsDir=%ProjectDir%..\Tools
+set GameFilesDir=%ProjectDir%GameFilesEdited
+set BigFilesUnpackedDir=%ProjectDir%.Generated\BigFilesUnpacked
+set BigFilesDir=%ProjectDir%.Generated\BigFiles
+set ReleaseUnpackedDir=%ProjectDir%ReleaseUnpacked
+set ReleaseDir=%ProjectDir%Release
 
 if not exist %BigFilesUnpackedDir% mkdir %BigFilesUnpackedDir%
 if not exist %BigFilesDir% mkdir %BigFilesDir%
@@ -50,7 +52,7 @@ if not exist %DestHideMailWindowMenusDir% mkdir %DestHideMailWindowMenusDir%
 xcopy /Y %GameFilesDir%\Window\Menus\GameSpyLoginProfile.wnd %DestHideMailWindowMenusDir%\
 
 :: Generate .big file(s)
-set GeneralsBigCreatorExe=..\Tools\GeneralsBigCreator\GeneralsBigCreator.exe
+set GeneralsBigCreatorExe=%ToolsDir%\GeneralsBigCreator\GeneralsBigCreator.exe
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%ControlBarObsBigName% -dest %BigFilesDir%\%ControlBarObsBigName%.big
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%HideIPBigName% -dest %BigFilesDir%\%HideIPBigName%.big
 %GeneralsBigCreatorExe% -source %BigFilesUnpackedDir%\%HideMailBigName% -dest %BigFilesDir%\%HideMailBigName%.big

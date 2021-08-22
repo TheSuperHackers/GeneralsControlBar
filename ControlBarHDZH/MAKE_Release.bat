@@ -5,12 +5,13 @@ setlocal enableextensions enabledelayedexpansion
 set ArchiveName=ControlBarHDZH_v1.0
 
 :: Setup folders
-set ToolsDir=..\Tools
-set GameFilesDir=GameFilesEdited
-set GeneratedBigFilesUnpackedDir=.Generated\BigFilesUnpacked
-set GeneratedBigFilesDir=.Generated\BigFiles
-set ReleaseUnpackedDir=ReleaseUnpacked
-set ReleaseDir=Release
+set ProjectDir=%~dp0
+set ToolsDir=%ProjectDir%..\Tools
+set GameFilesDir=%ProjectDir%GameFilesEdited
+set GeneratedBigFilesUnpackedDir=%ProjectDir%.Generated\BigFilesUnpacked
+set GeneratedBigFilesDir=%ProjectDir%.Generated\BigFiles
+set ReleaseUnpackedDir=%ProjectDir%ReleaseUnpacked
+set ReleaseDir=%ProjectDir%Release
 set BigNameBegin=400_ControlBarHD
 set BigNameEnd=ZH
 
