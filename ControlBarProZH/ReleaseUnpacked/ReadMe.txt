@@ -116,7 +116,8 @@ v1.1:
 - Changed textures next to money text and gen power window title texts
 
 v1.2:
-- Decrease font sizes in 720, 900, 1440, 2160 presets
-- Fix scroll list box text sizes in Disconnect and Diplomacy Window
-- Fix position of Available Gen Points number
-- Increase font size of group numbers
+- Compressed all TGA textures to DDS DXT5 to cut 75% GPU memory
+- Decreased font sizes in 720, 900, 1440, 2160 presets
+- Fixed scroll list box text sizes in Disconnect and Diplomacy Window
+- Fixed position of Available Gen Points number
+- Increased font size of group numbers
