@@ -26,9 +26,9 @@ if '%errorlevel%' NEQ '0' (
 echo on
 
 set ThisDir0=%~dp0
-call %ThisDir0%MAKE_ControlBarProHideIpZH.bat
-call %ThisDir0%MAKE_ControlBarProHideMailZH.bat
-call %ThisDir0%MAKE_ControlBarProZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProHideIpZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProHideMailZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProZH.bat
 
 set GameRootDir="C:\Program Files (x86)\EA Games\Command & Conquer The First Decade\Command & Conquer(tm) Generals Zero Hour"
 

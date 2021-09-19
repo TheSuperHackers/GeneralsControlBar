@@ -1,11 +1,12 @@
-call MAKE_ControlBarProHideIpZH.bat
-call MAKE_ControlBarProHideMailZH.bat
-call MAKE_ControlBarProZH.bat
-call MAKE_ControlBarProResXZH.bat 720
-call MAKE_ControlBarProResXZH.bat 900
-call MAKE_ControlBarProResXZH.bat 1080
-call MAKE_ControlBarProResXZH.bat 1440
-call MAKE_ControlBarProResXZH.bat 2160
+set ThisDir0=%~dp0
+call %ThisDir0%Scripts\MAKE_ControlBarProHideIpZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProHideMailZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProZH.bat
+call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 720
+call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 900
+call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 1080
+call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 1440
+call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 2160
 
 :: Define archive name(s)
 set ArchiveName=ControlBarProZH_v1.2

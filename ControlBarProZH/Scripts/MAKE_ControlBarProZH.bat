@@ -20,8 +20,13 @@ xcopy /y /s %GameFilesDir%\*.txt %GeneratedBigFilesUnpackedDir%\%BigName%\
 
 :: Compress TGA and PSD to DDS and delete intermediate source copies
 for /r %GeneratedBigFilesUnpackedDir%\%BigName%\ %%f in (*.tga, *.psd) do (
-	echo %%f
-    %ToolsDir%\crunch\crunch_x64.exe -file %%f -fileformat dds -outsamedir -dxt5 -quality 255 -mipmode none -lzmastats
+    %ToolsDir%\crunch\crunch_x64.exe ^
+	-file %%f ^
+	-fileformat dds ^
+	-outsamedir -dxt5 ^
+	-quality 255 ^
+	-mipmode none ^
+	-lzmastats
 	del /f /q %%f
 )
 
