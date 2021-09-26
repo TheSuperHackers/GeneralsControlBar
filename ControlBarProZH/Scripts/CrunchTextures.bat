@@ -2,7 +2,7 @@
 
 set TextureDir=%1
 
-if "%TextureDir%" == "" (
+if "%TextureDir%"=="" (
   echo First argument must be directory to textures
 ) else (
   set TextureInfoFile=%TextureDir%\CrunchInfo.txt
@@ -12,24 +12,10 @@ if "%TextureDir%" == "" (
     findstr /c:"A8L8" /c:"A8R8G8B8" %TextureInfoFile% >nul
     if not ERRORLEVEL 1 (
       :: Texture has alpha channel
-      %ToolsDir%\crunch\crunch_x64.exe ^
-        -file %%f ^
-        -fileformat dds ^
-        -outsamedir ^
-        -dxt5 ^
-        -quality 255 ^
-        -mipmode none ^
-        -lzmastats
+      %ToolsDir%\crunch\crunch_x64.exe -file %%f -fileformat dds -outsamedir -dxt5 -quality 255 -mipmode none -lzmastats
     ) else (
       :: Texture does not have alpha channel
-      %ToolsDir%\crunch\crunch_x64.exe ^
-        -file %%f ^
-        -fileformat dds ^
-        -outsamedir ^
-        -dxt1 ^
-        -quality 255 ^
-        -mipmode none ^
-        -lzmastats
+      %ToolsDir%\crunch\crunch_x64.exe -file %%f -fileformat dds -outsamedir -dxt1 -quality 255 -mipmode none -lzmastats
     )
     del /f /q %%f
   )
