@@ -1,4 +1,5 @@
-call SETUP_Folders.bat
+set ThisDir1="%~dp0."
+call %ThisDir1%\SETUP_Folders.bat
 
 :: Copy base release files
 xcopy /y /s %ReleaseUnpackedDir%\* %GeneratedReleaseUnpackedDir%\*

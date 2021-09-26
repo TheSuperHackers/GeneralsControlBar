@@ -25,11 +25,11 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 echo on
 
-set ThisDir0=%~dp0
-call %ThisDir0%Scripts\MAKE_ControlBarProHideIpZH.bat
-call %ThisDir0%Scripts\MAKE_ControlBarProHideMailZH.bat
-call %ThisDir0%Scripts\MAKE_ControlBarProZH.bat
-call %ThisDir0%SETUP_UserSettings.bat
+set ThisDir0="%~dp0."
+call %ThisDir0%\Scripts\MAKE_ControlBarProHideIpZH.bat
+call %ThisDir0%\Scripts\MAKE_ControlBarProHideMailZH.bat
+call %ThisDir0%\Scripts\MAKE_ControlBarProZH.bat
+call %ThisDir0%\SETUP_UserSettings.bat
 
 :: Copy release files to game
 xcopy /y /s %GeneratedReleaseUnpackedDir% %GameRootDir%

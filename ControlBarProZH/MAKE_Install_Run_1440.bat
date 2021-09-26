@@ -25,10 +25,10 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 echo on
 
-set ThisDir0=%~dp0
+set ThisDir0="%~dp0."
 
 :: Install
-call %ThisDir0%MAKE_Install_1440.bat
+call %ThisDir0%\MAKE_Install_1440.bat
 
 :: Run game
 set GameExeArgs0=%GameExeArgs:"=%

@@ -1,5 +1,5 @@
-set ThisDir1=%~dp0
-call %ThisDir1%SETUP_Folders.bat
+set ThisDir1="%~dp0."
+call %ThisDir1%\SETUP_Folders.bat
 
 setlocal enableextensions enabledelayedexpansion
 

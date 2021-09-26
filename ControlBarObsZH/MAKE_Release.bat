@@ -7,7 +7,7 @@ set HideIPBigName=250_HideIP_WindowZH
 set HideMailBigName=251_HideMail_WindowZH
 
 :: Setup work folders
-set ProjectDir=%~dp0
+set ProjectDir="%~dp0"
 set ToolsDir=%ProjectDir%..\Tools
 set GameFilesDir=%ProjectDir%GameFilesEdited
 set BigFilesUnpackedDir=%ProjectDir%.Generated\BigFilesUnpacked

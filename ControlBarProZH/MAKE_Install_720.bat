@@ -25,9 +25,9 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 echo on
 
-set ThisDir0=%~dp0
-call %ThisDir0%MAKE_Install.bat
-call %ThisDir0%Scripts\MAKE_ControlBarProResXZH.bat 720
+set ThisDir0="%~dp0."
+call %ThisDir0%\MAKE_Install.bat
+call %ThisDir0%\Scripts\MAKE_ControlBarProResXZH.bat 720
 
 :: Copy release files to game
 xcopy /y /s %GeneratedReleaseUnpacked720Dir% %GameRootDir%
