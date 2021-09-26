@@ -16,8 +16,8 @@ xcopy /y /s %GameFilesDir%\*.wnd %GeneratedBigFilesUnpackedDir%\%BigName%\
 xcopy /y /s %GameFilesDir%\*.dat %GeneratedBigFilesUnpackedDir%\%BigName%\
 xcopy /y /s %GameFilesDir%\*.txt %GeneratedBigFilesUnpackedDir%\%BigName%\
 
-:: Compress Textures to DDS and delete intermediate source copies
-call %ThisDir1%\CrunchTextures.bat %GeneratedBigFilesUnpackedDir%\%BigName%\
+:: Compress PSD to DDS and delete intermediate source copies
+call %ThisDir1%\CrunchTextures.bat %GeneratedBigFilesUnpackedDir%\%BigName%
 
 :: Generate .big file(s)
 %ToolsDir%\GeneralsBigCreator\GeneralsBigCreator.exe -source %GeneratedBigFilesUnpackedDir%\%BigName% -dest %GeneratedBigFilesDir%\%BigName%.big
