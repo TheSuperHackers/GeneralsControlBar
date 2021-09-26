@@ -3,7 +3,7 @@
 set TextureDir=%1
 
 if "%TextureDir%" == "" (
-  echo "First argument must be directory to texture(s)"
+  echo First argument must be directory to textures
 ) else (
   set TextureInfoFile=%TextureDir%\CrunchInfo.txt
   :: Compress PSD to DDS and delete intermediate source copies
