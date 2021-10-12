@@ -48,7 +48,7 @@ for %%l in (Brazilian,Chinese,English,French,German,Italian,Korean,Polish,Spanis
 	del /s /f /q %GeneratedBigFilesDir%\!LanguageBigName!.big
 	
 	:: Copy .big contents
-	set SrcDataLangArtTexturesDir=%GameFilesDir%\Data\Language\Art\Texture
+	set SrcDataLangArtTexturesDir=%GameFilesDir%\Data\Language\Art\Textures
 	set DestDataLangArtTexturesDir=%GeneratedBigFilesUnpackedDir%\!LanguageBigName!\Data\%%l\Art\Textures
 	if not exist !DestDataLangArtTexturesDir! mkdir !DestDataLangArtTexturesDir!
 	xcopy /Y !SrcDataLangArtTexturesDir! !DestDataLangArtTexturesDir!
