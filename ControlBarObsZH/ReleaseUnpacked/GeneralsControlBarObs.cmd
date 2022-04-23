@@ -1,2 +1,0 @@
-start launcherControlBarObsEnglishZH\generals.exe
-exit
