@@ -1,0 +1,77 @@
+{
+    "bundles": {
+        "version": 1,
+        "itemsPrefix": "",
+        "itemsSuffix": "ZH",
+        "items": [
+            {
+                "name": "200_ControlBarObsBase",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*",
+                                "target": "Art/Textures/*.dds"
+                            }
+                        ]
+                    },
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "*.txt",
+                            "Data/INI/*.ini",
+                            "GenTool/*.dat",
+                            "Window/ControlBar.wnd",
+                            "Window/ReplayControl.wnd"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "200_ControlBarObsEnglish",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "Data/English/*"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "250_HideIP_Window",
+                "big": true,
+                "bigSuffix": ".off",
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "Window/Menus/NetworkDirectConnect.wnd",
+                            "Window/Menus/OptionsMenu.wnd"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "251_HideMail_Window",
+                "big": true,
+                "bigSuffix": ".off",
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "Window/Menus/GameSpyLoginProfile.wnd"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
