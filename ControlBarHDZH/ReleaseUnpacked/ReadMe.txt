@@ -4,7 +4,7 @@ Author(s): EA Games, xezon
 
 Original download from: http://gentool.net/download/controlbar
 
-Code & Assets: https://github.com/xezon/GeneralsControlBar
+Code & Assets: https://github.com/TheSuperHackers/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ Code & Assets: https://github.com/xezon/GeneralsControlBar
 
 This pack improves texture quality by 150-200% on Control Bar only.
 Uses textures 4 times larger than usual. Use with high resolution only.
-If you play with 800x600 then this pack has no effect. Game will use more process memory.
+If you play with 800x600 then this pack has no effect.
 
 
 -----------------------------------------------------------------------------------------------
@@ -31,3 +31,6 @@ If you play with 800x600 then this pack has no effect. Game will use more proces
 
 v1.0:
 - Initial release
+
+v1.1
+- Uses DDS DXT formats for all control bar textures

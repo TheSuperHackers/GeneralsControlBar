@@ -1,0 +1,7 @@
+Control Bar HD for COMMAND AND CONQUER GENERALS: ZERO HOUR
+
+Author(s): EA Games, xezon
+
+Original download from: http://gentool.net/download/controlbar
+
+Code & Assets Source: https://github.com/TheSuperHackers/GeneralsControlBar

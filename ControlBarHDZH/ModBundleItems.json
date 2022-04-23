@@ -1,0 +1,203 @@
+{
+    "bundles": {
+        "version": 1,
+        "itemsPrefix": "400_ControlBarHD",
+        "itemsSuffix": "ZH",
+        "items": [
+            {
+                "name": "Base",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*",
+                                "target": "Art/Textures/*.dds"
+                            }
+                        ]
+                    },
+                    {
+                        "parent": "GameFilesEdited",
+                        "source": "*.txt"
+                    }
+                ]
+            },
+            {
+                "name": "Brazilian",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Brazilian/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Chinese",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Chinese/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "English",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/English/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "French",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/French/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "German",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/German/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Italian",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Italian/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Korean",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Korean/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Polish",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Polish/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Spanish",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Data/Language/Art/Textures/*",
+                                "target": "Data/Spanish/Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

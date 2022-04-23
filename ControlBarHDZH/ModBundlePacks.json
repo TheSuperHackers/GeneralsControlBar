@@ -1,0 +1,82 @@
+{
+    "bundles": {
+        "version": 1,
+        "packsPrefix": "ControlBarHDZH_v1.1_",
+        "packsSuffix": "",
+        "packs": [
+            {
+                "setGameLanguageOnInstall": "Brazilian",
+                "name": "Brazilian",
+                "itemNames": [
+                    "Base",
+                    "Brazilian"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "Chinese",
+                "name": "Chinese",
+                "itemNames": [
+                    "Base",
+                    "Chinese"
+                ]
+            },
+            {
+                "install": true,
+                "setGameLanguageOnInstall": "English",
+                "name": "English",
+                "itemNames": [
+                    "Base",
+                    "English"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "French",
+                "name": "French",
+                "itemNames": [
+                    "Base",
+                    "French"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "German",
+                "name": "German",
+                "itemNames": [
+                    "Base",
+                    "German"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "Italian",
+                "name": "Italian",
+                "itemNames": [
+                    "Base",
+                    "Italian"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "Korean",
+                "name": "Korean",
+                "itemNames": [
+                    "Base",
+                    "Korean"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "Polish",
+                "name": "Polish",
+                "itemNames": [
+                    "Base",
+                    "Polish"
+                ]
+            },
+            {
+                "setGameLanguageOnInstall": "Spanish",
+                "name": "Spanish",
+                "itemNames": [
+                    "Base",
+                    "Spanish"
+                ]
+            }
+        ]
+    }
+}
