@@ -1,0 +1,18 @@
+{
+    "bundles": {
+        "version": 1,
+        "packs": [
+            {
+                "install": true,
+                "setGameLanguageOnInstall": "English",
+                "name": "ControlBarObsEnglishZH_v1.5",
+                "itemNames": [
+                    "200_ControlBarObsBase",
+                    "200_ControlBarObsEnglish",
+                    "250_HideIP_Window",
+                    "251_HideMail_Window"
+                ]
+            }
+        ]
+    }
+}
