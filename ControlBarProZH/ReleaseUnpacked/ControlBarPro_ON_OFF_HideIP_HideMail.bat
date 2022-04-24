@@ -1,15 +1,13 @@
 @echo off
-
-:: BatchGotAdmin
 :-------------------------------------
-REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 
-REM --> If error flag set, we do not have admin.
 if '%errorlevel%' NEQ '0' (
     echo Requesting administrative privileges...
     goto UACPrompt
-) else ( goto gotAdmin )
+) else (
+    goto gotAdmin
+)
 
 :UACPrompt
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
@@ -25,23 +23,34 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-set ControlBarProHideIpBig=339_ControlBarProHideIpZH.big
-set ControlBarProHideIpBak=339_ControlBarProHideIpZH.big.BAK
-set ControlBarProHideMailBig=339_ControlBarProHideMailZH.big
-set ControlBarProHideMailBak=339_ControlBarProHideMailZH.big.BAK
+set ThisDir=%~dp0.
+set FileList=
+set FileList=%FileList% 339_ControlBarProHideIpZH.big
+set FileList=%FileList% 339_ControlBarProHideMailZH.big
+set SetOn=0
+set RenSuffix=off
 
-if exist %ControlBarProHideIpBig% (
-	ren %ControlBarProHideIpBig% %ControlBarProHideIpBak%
-) else (
-	if exist %ControlBarProHideIpBak% (
-		ren %ControlBarProHideIpBak% %ControlBarProHideIpBig%
-	)
+for %%f in (%FileList%) do (
+    if exist "%ThisDir%\%%f.%RenSuffix%" (
+        set SetOn=1
+        goto next
+    )
 )
 
-if exist %ControlBarProHideMailBig% (
-	ren %ControlBarProHideMailBig% %ControlBarProHideMailBak%
-) else (
-	if exist %ControlBarProHideMailBak% (
-		ren %ControlBarProHideMailBak% %ControlBarProHideMailBig%
-	)
+:next
+
+for %%f in (%FileList%) do (
+    if %SetOn% EQU 0 (
+        if exist "%ThisDir%\%%f" (
+            echo Rename "%ThisDir%\%%f"
+            echo     to "%ThisDir%\%%f.%RenSuffix%"
+            rename "%ThisDir%\%%f" "%%f.%RenSuffix%"
+        )
+    ) else (
+        if exist "%ThisDir%\%%f.%RenSuffix%" (
+            echo Rename "%ThisDir%\%%f.%RenSuffix%""
+            echo     to "%ThisDir%\%%f"
+            rename "%ThisDir%\%%f.%RenSuffix%" "%%f"
+        )
+    )
 )

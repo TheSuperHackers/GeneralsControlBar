@@ -4,7 +4,7 @@ Author(s): EA Games, FAS, xezon
 
 Original download from: http://gentool.net/download/controlbarpro
 
-Code & Assets Source: https://github.com/xezon/GeneralsControlBar
+Code & Assets Source: https://github.com/TheSuperHackers/GeneralsControlBar
 
 
 -----------------------------------------------------------------------------------------------
@@ -121,3 +121,4 @@ v1.2:
 - Fixed scroll list box text sizes in Disconnect and Diplomacy Window
 - Fixed position of Available Gen Points number
 - Increased font size of group numbers
+- Improved batch scripts to toggle Addon on and off
