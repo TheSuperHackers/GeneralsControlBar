@@ -102,6 +102,8 @@ def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
 
 
 def OnPreBuild(**kwargs) -> None:
+    print("Modify Font Sizes ...")
+
     buildDir: str = kwargs.get("_absBuildDir")
     bundleItem: Any = kwargs.get("_bundleItem")
     resolution: int = kwargs.get("size")
@@ -125,24 +127,32 @@ def OnPreBuild(**kwargs) -> None:
 
     for bundleFile in bundleItem.files:
         inFilePath: str = bundleFile.absSourceFile
+        fileName: str = GetFileName(inFilePath).lower()
+
+        isHeaderTemplateIni: bool = fileName == "headertemplate.ini"
+        isLanguageIni: bool = fileName == "language.ini"
+
+        if not isHeaderTemplateIni and not isLanguageIni:
+            continue
 
         print(f"Read file '{inFilePath}'")
         fileContent: str = ReadFile(inFilePath)
+        fileContentModified: str = None
 
         print(f"Modify file ...")
-        fileName: str = GetFileName(inFilePath).lower()
-        fileContentModified: str = None
-        if fileName == "headertemplate.ini":
+
+        if isHeaderTemplateIni:
             fileContentModified = ScaleFontSizesInHeaderTemplateIni(fileContent, fontScale)
-        elif fileName == "language.ini":
+        elif isLanguageIni:
             fileContentModified = ScaleFontSizesInLanguageIni(fileContent, fontScale)
 
-        if fileContentModified != None:
-            outFilePath: str = os.path.join(subBuildDir, bundleFile.relTargetFile)
-            bundleFile.absSourceFile = outFilePath
-            print(f"Write file '{outFilePath}'")
-            MakeDirsForFile(outFilePath)
-            WriteFile(outFilePath, fileContentModified)
+        assert fileContentModified != None
+
+        outFilePath: str = os.path.join(subBuildDir, bundleFile.relTargetFile)
+        bundleFile.absSourceFile = outFilePath
+        print(f"Write file '{outFilePath}'")
+        MakeDirsForFile(outFilePath)
+        WriteFile(outFilePath, fileContentModified)
 
 
 if __name__ == "__main__":
