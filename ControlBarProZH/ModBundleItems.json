@@ -1,0 +1,222 @@
+{
+    "bundles": {
+        "version": 1,
+        "itemsPrefix": "",
+        "itemsSuffix": "ZH",
+        "items": [
+            {
+                "name": "340_ControlBarPro",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*",
+                                "target": "Art/Textures/*.dds"
+                            }
+                        ]
+                    },
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "*.txt",
+                            "Data/INI/*.ini",
+                            "Data/INI/MappedImages/HandCreated/*.ini",
+                            "GenTool/*.dat",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "340_ControlBarPro720",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "function": "OnPreBuild",
+                    "kwargs": {
+                        "size": 720
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro900",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "function": "OnPreBuild",
+                    "kwargs": {
+                        "size": 900
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro1080",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "function": "OnPreBuild",
+                    "kwargs": {
+                        "size": 1080
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro1440",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "function": "OnPreBuild",
+                    "kwargs": {
+                        "size": 1440
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro2160",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "function": "OnPreBuild",
+                    "kwargs": {
+                        "size": 2160
+                    }
+                }
+            },
+            {
+                "name": "339_ControlBarProHideIp",
+                "big": true,
+                "bigSuffix": ".off",
+                "files": [
+                    {
+                        "parent": "GameFilesEditedHideIp",
+                        "sourceList": [
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "339_ControlBarProHideMail",
+                "big": true,
+                "bigSuffix": ".off",
+                "files": [
+                    {
+                        "parent": "GameFilesEditedHideMail",
+                        "sourceList": [
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "339_ControlBarProTest",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesTest",
+                        "sourceList": [
+                            "Data/INI/*.ini"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

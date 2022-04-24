@@ -4,4 +4,4 @@ Author(s): EA Games, FAS, xezon
 
 Original download from: http://gentool.net/download/controlbarpro
 
-Code & Assets Source: https://github.com/xezon/GeneralsControlBar
+Code & Assets Source: https://github.com/TheSuperHackers/GeneralsControlBar

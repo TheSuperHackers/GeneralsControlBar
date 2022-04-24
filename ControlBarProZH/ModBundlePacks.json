@@ -1,0 +1,63 @@
+{
+    "bundles": {
+        "version": 1,
+        "packsPrefix": "ControlBarProZH_v1.2_",
+        "packsSuffix": "",
+        "packs": [
+            {
+                "name": "Plain",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "name": "1280x720",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarPro720",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "name": "1600x900",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarPro900",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "install": true,
+                "name": "1920x1080",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarPro1080",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "name": "2560x1440",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarPro1440",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "name": "3840x2160",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarPro2160",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            }
+        ]
+    }
+}
