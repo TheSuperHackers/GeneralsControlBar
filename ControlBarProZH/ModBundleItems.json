@@ -10,21 +10,9 @@
                 "files": [
                     {
                         "parent": "GameFilesEdited",
-                        "params": {
-                            "-quality": 255,
-                            "-mipmode": "None"
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Art/Textures/*",
-                                "target": "Art/Textures/*.dds"
-                            }
-                        ]
-                    },
-                    {
-                        "parent": "GameFilesEdited",
                         "sourceList": [
                             "*.txt",
+                            "Art/Textures/BlankTexture_16.tga",
                             "Data/INI/*.ini",
                             "Data/INI/MappedImages/HandCreated/*.ini",
                             "GenTool/*.dat",
@@ -38,6 +26,19 @@
                 "name": "340_ControlBarPro720",
                 "big": true,
                 "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "rescale": 0.5,
+                            "resampling": "BOX"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.tga"
+                            }
+                        ]
+                    },
                     {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
@@ -68,6 +69,19 @@
                 "big": true,
                 "files": [
                     {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "rescale": 0.5,
+                            "resampling": "BOX"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.tga"
+                            }
+                        ]
+                    },
+                    {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
                             "Data/Brazilian/*.ini",
@@ -96,6 +110,19 @@
                 "name": "340_ControlBarPro1080",
                 "big": true,
                 "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "rescale": 0.5,
+                            "resampling": "BOX"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.tga"
+                            }
+                        ]
+                    },
                     {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
@@ -126,6 +153,15 @@
                 "big": true,
                 "files": [
                     {
+                        "parent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.tga"
+                            }
+                        ]
+                    },
+                    {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
                             "Data/Brazilian/*.ini",
@@ -154,6 +190,15 @@
                 "name": "340_ControlBarPro2160",
                 "big": true,
                 "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.tga"
+                            }
+                        ]
+                    },
                     {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
