@@ -1,5 +1,5 @@
 import os
-from io import BufferedWriter
+import util
 from dataclasses import dataclass
 from typing import Any
 from parse import search
@@ -7,35 +7,6 @@ from parse import search
 
 g_fontResList   = [ 720, 900, 1080, 1440, 2160 ]
 g_fontScaleList = [ 0.9, 0.9,  1.0,  1.2,  1.9 ]
-
-
-def GetFileName(file: str) -> str:
-    path, file = os.path.split(file)
-    return file
-
-
-def GetAbsFileDir(file: str) -> str:
-    dir: str
-    dir = os.path.dirname(file)
-    dir = os.path.abspath(dir)
-    return dir
-
-
-def MakeDirsForFile(file: str) -> None:
-    os.makedirs(GetAbsFileDir(file), exist_ok=True)
-
-
-def ReadFile(path: str) -> str:
-    content: str = ""
-    with open(path) as file:
-        content = file.read()
-    return content
-
-
-def WriteFile(path: str, content: str):
-    file: BufferedWriter = open(path, "w")
-    file.write(content)
-    file.close()
 
 
 def AllowScale(s: str) -> bool:
@@ -46,7 +17,7 @@ def ReScale(s: str, scale: float) -> float:
     rescale: float = scale
     if rescale > 1.0:
         upScaleMult = search('UpScaleMult={:f}', s)
-        if upScaleMult is not None:
+        if upScaleMult != None:
             rescale = 1.0 + (rescale - 1.0) * upScaleMult[0]
     return rescale
 
@@ -56,11 +27,11 @@ def ScaleFontSizesInHeaderTemplateIni(inText: str, fontScale: float) -> str:
     headerTemplateIniPattern: str = 'Point = {:d}'
     line: str
 
-    for line in inText.splitlines():
+    for line in inText.splitlines(keepends=True):
         if AllowScale(line):
             pointSize: int = search(headerTemplateIniPattern, line)
 
-            if pointSize is not None:
+            if pointSize != None:
                 rescale: float = ReScale(line, fontScale)
                 newPointSize: int = round(pointSize[0] * rescale)
                 curPointStr: str = headerTemplateIniPattern.format(pointSize[0])
@@ -68,7 +39,7 @@ def ScaleFontSizesInHeaderTemplateIni(inText: str, fontScale: float) -> str:
                 line = line.replace(curPointStr, newPointStr)
                 print(curPointStr + ' -> ' + newPointStr)
 
-        outText += line + "\n"
+        outText += line
 
     return outText
 
@@ -79,16 +50,16 @@ def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
     languageIniPatternB: str = '{:d} No'
     line: str
 
-    for line in inText.splitlines():
+    for line in inText.splitlines(keepends=True):
         if AllowScale(line):
             pattern: str = languageIniPatternA
             pointSize: int = search(pattern, line)
 
-            if pointSize is None:
+            if pointSize == None:
                 pattern = languageIniPatternB
                 pointSize = search(pattern, line)
 
-            if pointSize is not None:
+            if pointSize != None:
                 rescale: float = ReScale(line, fontScale)
                 newPointSize: int = round(pointSize[0] * rescale)
                 curPointStr: str = pattern.format(pointSize[0])
@@ -96,7 +67,7 @@ def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
                 line = line.replace(curPointStr, newPointStr)
                 print(curPointStr + ' -> ' + newPointStr)
 
-        outText += line + "\n"
+        outText += line
 
     return outText
 
@@ -127,7 +98,7 @@ def OnPreBuild(**kwargs) -> None:
 
     for bundleFile in bundleItem.files:
         inFilePath: str = bundleFile.absSourceFile
-        fileName: str = GetFileName(inFilePath).lower()
+        fileName: str = util.GetFileName(inFilePath).lower()
 
         isHeaderTemplateIni: bool = fileName == "headertemplate.ini"
         isLanguageIni: bool = fileName == "language.ini"
@@ -136,7 +107,7 @@ def OnPreBuild(**kwargs) -> None:
             continue
 
         print(f"Read file '{inFilePath}'")
-        fileContent: str = ReadFile(inFilePath)
+        fileContent: str = util.ReadTextFile(inFilePath)
         fileContentModified: str = None
 
         print(f"Modify file ...")
@@ -151,8 +122,8 @@ def OnPreBuild(**kwargs) -> None:
         outFilePath: str = os.path.join(subBuildDir, bundleFile.relTargetFile)
         bundleFile.absSourceFile = outFilePath
         print(f"Write file '{outFilePath}'")
-        MakeDirsForFile(outFilePath)
-        WriteFile(outFilePath, fileContentModified)
+        util.MakeDirsForFile(outFilePath)
+        util.WriteTextFile(outFilePath, fileContentModified)
 
 
 if __name__ == "__main__":
@@ -166,7 +137,7 @@ if __name__ == "__main__":
     class BundleItem:
         files: list[BundleFile]
 
-    thisDir: str = GetAbsFileDir(__file__)
+    thisDir: str = util.GetAbsFileDir(__file__)
 
     bundleFiles = [
         BundleFile(
