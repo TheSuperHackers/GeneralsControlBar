@@ -62,7 +62,7 @@ WINDOW
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
-    FONT = NAME: "Placard MT Condensed", SIZE: 16, BOLD: 0;
+    FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
     HEADERTEMPLATE = "Button";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:RestartGame";
@@ -110,7 +110,7 @@ WINDOW
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
-    FONT = NAME: "Placard MT Condensed", SIZE: 16, BOLD: 0;
+    FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
     HEADERTEMPLATE = "Button";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:Options";
@@ -158,7 +158,7 @@ WINDOW
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
-    FONT = NAME: "Placard MT Condensed", SIZE: 16, BOLD: 0;
+    FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
     HEADERTEMPLATE = "Button";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:ReturnToGame";
@@ -206,7 +206,7 @@ WINDOW
     INPUTCALLBACK = "[None]";
     TOOLTIPCALLBACK = "[None]";
     DRAWCALLBACK = "[None]";
-    FONT = NAME: "Placard MT Condensed", SIZE: 16, BOLD: 0;
+    FONT = NAME: "Generals", SIZE: 15, BOLD: 0;
     HEADERTEMPLATE = "Button";
     TOOLTIPDELAY = -1;
     TEXT = "GUI:Exit";
