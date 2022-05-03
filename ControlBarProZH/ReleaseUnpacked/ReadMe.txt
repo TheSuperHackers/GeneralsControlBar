@@ -72,6 +72,7 @@ Control Bar Pro preserves all original game functionality.
   > Window\DisconnectScreen.wnd
   > Window\MessageBox.wnd
   > Window\PopupBuddyListNotification.wnd
+  > Window\QuitMenu.wnd
   > Window\QuitMessageBox.wnd
   > Window\QuitNoSave.wnd
 
