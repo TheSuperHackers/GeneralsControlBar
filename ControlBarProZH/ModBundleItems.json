@@ -30,12 +30,14 @@
                         "parent": "GameFilesEdited",
                         "params": {
                             "rescale": 0.5,
-                            "resampling": "BOX"
+                            "resampling": "BOX",
+                            "-quality": 255,
+                            "-mipmode": "None"
                         },
                         "sourceTargetList": [
                             {
                                 "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.tga"
+                                "target": "Art/Textures/*.dds"
                             }
                         ]
                     },
@@ -72,12 +74,14 @@
                         "parent": "GameFilesEdited",
                         "params": {
                             "rescale": 0.5,
-                            "resampling": "BOX"
+                            "resampling": "BOX",
+                            "-quality": 255,
+                            "-mipmode": "None"
                         },
                         "sourceTargetList": [
                             {
                                 "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.tga"
+                                "target": "Art/Textures/*.dds"
                             }
                         ]
                     },
@@ -114,12 +118,14 @@
                         "parent": "GameFilesEdited",
                         "params": {
                             "rescale": 0.5,
-                            "resampling": "BOX"
+                            "resampling": "BOX",
+                            "-quality": 255,
+                            "-mipmode": "None"
                         },
                         "sourceTargetList": [
                             {
                                 "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.tga"
+                                "target": "Art/Textures/*.dds"
                             }
                         ]
                     },
@@ -154,10 +160,14 @@
                 "files": [
                     {
                         "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
                         "sourceTargetList": [
                             {
                                 "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.tga"
+                                "target": "Art/Textures/*.dds"
                             }
                         ]
                     },
@@ -192,10 +202,14 @@
                 "files": [
                     {
                         "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
                         "sourceTargetList": [
                             {
                                 "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.tga"
+                                "target": "Art/Textures/*.dds"
                             }
                         ]
                     },
@@ -223,6 +237,25 @@
                         "size": 2160
                     }
                 }
+            },
+            {
+                "name": "340_ControlBarProPlain",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "params": {
+                            "-quality": 255,
+                            "-mipmode": "None"
+                        },
+                        "sourceTargetList": [
+                            {
+                                "source": "Art/Textures/*.psd",
+                                "target": "Art/Textures/*.dds"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "name": "339_ControlBarProHideIp",

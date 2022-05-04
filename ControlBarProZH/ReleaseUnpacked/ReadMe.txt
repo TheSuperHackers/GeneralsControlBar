@@ -47,7 +47,7 @@ Control Bar Pro preserves all original game functionality.
 
 + No mismatch between player installation in Network and Online.
 
-+ Best visual quality is served in 1920 x 1080 window resolution.
++ Best visual quality is served in 1920 x 1080 and 3840 x 2160 window resolutions.
 
 + This addon combines well with the Control Bar HD Addon for upscaled icon textures.
   > http://gentool.net/download/controlbar
@@ -80,24 +80,35 @@ Control Bar Pro preserves all original game functionality.
 -----------------------------------------------------------------------------------------------
 --- TROUBLESHOOTING ---------------------------------------------------------------------------
 
-# If Control Bar Pro does not look correct, then game has modified files that are loaded
-  instead of the files provided by this addon. In that case, other modified files must be
-  deleted.
-
-# NOTE: Game files outside of BIG files are loaded before any files in BIG files.
++ If Control Bar Pro does not look correct, then game has modified files that are loaded
+  instead of the files provided by this Addon. In that case, other modified files must be
+  deleted. NOTE: Game files outside of BIG files are loaded before any files in BIG files.
   And BIG files with names in less alphabetical order are loaded before BIG files with names
   in greater alphabetical order.
 
-# If original control bar textures are shown, then likely game has modified INI and/or WND
-  files somewhere that break the install of this addon. See list above which files must not be
-  changed by other game modifications.
++ If original control bar textures are shown, then likely game has modified INI and/or WND
+  files somewhere that break the install of this addon. See list above of which files must not
+  be changed by other game modifications.
 
-# If texts in menus are very small, then Data\Language\HeaderTemplate.ini is modified
++ If texts in menus are very small, then Data\Language\HeaderTemplate.ini is modified
   somewhere.
 
-# If you are unsure how to fix the modifications you have applied to the game,
++ If you are unsure how to fix the modifications you have applied to the game,
   then uninstall Generals Zero Hour, delete all remaining files in the game install directory,
   reinstall Generals Zero Hour, (Run GenPatcher), install GenTool, install Control Bar Pro.
+
+
+-----------------------------------------------------------------------------------------------
+--- INFO FOR MOD CREATORS ---------------------------------------------------------------------
+
+This Addon can be modified and redistributed under the MIT License.
+
+When adapting to a custom Mod, please pay special attention to the HeaderTemplate.ini files
+supplied by Control Bar Pro. It contains 4 new definitions starting with
+"ControlBarProScrollListBox", which are used in various WND files.
+
+The HeaderTemplate definitions and their references in WND files should be replicated, if a Mod
+is intended to gracefully support large resolutions, such as 2560 x 1440 or 3840 x 2160.
 
 
 -----------------------------------------------------------------------------------------------
@@ -117,10 +128,11 @@ v1.1:
 - Changed textures next to money text and gen power window title texts
 
 v1.2:
-- Compressed all TGA textures to DDS DXT5 to cut 75% GPU memory
+- Added DDS DXT formats for all textures
 - Added new Quit Menu for Single Player
+- Decreased faction icon sizes in Upgrades Window
 - Decreased font sizes in 720, 900, 1440, 2160 presets
 - Increased font size of group numbers
 - Fixed scroll list box text sizes in Disconnect and Diplomacy Window
 - Fixed position of Available Gen Points number
-- Improved batch scripts to toggle Addon on and off
+- Improved batch scripts that can toggle this Addon on and off
