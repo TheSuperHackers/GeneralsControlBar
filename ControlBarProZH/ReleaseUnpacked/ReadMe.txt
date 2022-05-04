@@ -135,4 +135,5 @@ v1.2:
 - Increased font size of group numbers
 - Fixed scroll list box text sizes in Disconnect and Diplomacy Window
 - Fixed position of Available Gen Points number
+- Fixed missing mission log in Single Player diplomacy window
 - Improved batch scripts that can toggle this Addon on and off
