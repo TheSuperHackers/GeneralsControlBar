@@ -5,14 +5,6 @@
         "packsSuffix": "",
         "packs": [
             {
-                "name": "Plain",
-                "itemNames": [
-                    "340_ControlBarPro",
-                    "339_ControlBarProHideIp",
-                    "339_ControlBarProHideMail"
-                ]
-            },
-            {
                 "name": "1280x720",
                 "itemNames": [
                     "340_ControlBarPro",
@@ -54,6 +46,15 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro2160",
+                    "339_ControlBarProHideIp",
+                    "339_ControlBarProHideMail"
+                ]
+            },
+            {
+                "name": "Plain",
+                "itemNames": [
+                    "340_ControlBarPro",
+                    "340_ControlBarProPlain",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]

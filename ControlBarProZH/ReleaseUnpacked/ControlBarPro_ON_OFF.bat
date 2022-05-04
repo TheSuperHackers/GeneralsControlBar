@@ -31,6 +31,7 @@ set FileList1=%FileList1% 340_ControlBarPro900ZH.big
 set FileList1=%FileList1% 340_ControlBarPro1080ZH.big
 set FileList1=%FileList1% 340_ControlBarPro1440ZH.big
 set FileList1=%FileList1% 340_ControlBarPro2160ZH.big
+set FileList1=%FileList1% 340_ControlBarProPlainZH.big
 set FileList2=
 set FileList2=%FileList2% 339_ControlBarProHideIpZH.big
 set FileList2=%FileList2% 339_ControlBarProHideMailZH.big
