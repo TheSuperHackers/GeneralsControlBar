@@ -47,7 +47,7 @@ Control Bar Pro preserves all original game functionality.
 
 + No mismatch between player installation in Network and Online.
 
-+ Best visual quality is served in 1920 x 1080 and 3840 x 2160 window resolutions.
++ Best visual quality is served in 1920x1080 and 3840x2160 window resolutions.
 
 + This addon combines well with the Control Bar HD Addon for upscaled icon textures.
   > http://gentool.net/download/controlbar
@@ -108,7 +108,7 @@ supplied by Control Bar Pro. It contains 4 new definitions starting with
 "ControlBarProScrollListBox", which are used in various WND files.
 
 The HeaderTemplate definitions and their references in WND files should be replicated, if a Mod
-is intended to gracefully support large resolutions, such as 2560 x 1440 or 3840 x 2160.
+is intended to gracefully support large resolutions, such as 2560x1440 or 3840x2160.
 
 
 -----------------------------------------------------------------------------------------------
@@ -128,6 +128,8 @@ v1.1:
 - Changed textures next to money text and gen power window title texts
 
 v1.2:
+- Added high resolution textures for 3840x2160 and 2560x1440 presets
+- Added slight transparency to major areas of the Command Bar
 - Added DDS DXT formats for all textures
 - Added new Quit Menu for Single Player
 - Decreased faction icon sizes in Upgrades Window
