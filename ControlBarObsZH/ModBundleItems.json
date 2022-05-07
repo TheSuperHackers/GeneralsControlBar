@@ -48,7 +48,7 @@
             {
                 "name": "250_HideIP_Window",
                 "big": true,
-                "bigSuffix": ".off",
+                "bigSuffix": ".BAK",
                 "files": [
                     {
                         "parent": "GameFilesEdited",
@@ -62,7 +62,7 @@
             {
                 "name": "251_HideMail_Window",
                 "big": true,
-                "bigSuffix": ".off",
+                "bigSuffix": ".BAK",
                 "files": [
                     {
                         "parent": "GameFilesEdited",
