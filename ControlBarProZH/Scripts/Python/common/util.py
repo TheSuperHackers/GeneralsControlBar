@@ -7,6 +7,18 @@ def GetFileName(file: str) -> str:
     return file
 
 
+def GetFileExt(file: str) -> str:
+    path, ext = os.path.splitext(file)
+    if ext and ext[0] == '.':
+        ext = ext[1:]
+    return ext
+
+
+def HasFileExt(file: str, expectedExt: str) -> bool:
+    fileExt: str = GetFileExt(file)
+    return fileExt.lower() == expectedExt.lower()
+
+
 def GetAbsFileDir(file: str) -> str:
     dir: str
     dir = os.path.dirname(file)

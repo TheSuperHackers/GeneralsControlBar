@@ -60,7 +60,6 @@
                 ],
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
-                    "function": "OnPreBuild",
                     "kwargs": {
                         "size": 720
                     }
@@ -104,7 +103,6 @@
                 ],
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
-                    "function": "OnPreBuild",
                     "kwargs": {
                         "size": 900
                     }
@@ -148,7 +146,6 @@
                 ],
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
-                    "function": "OnPreBuild",
                     "kwargs": {
                         "size": 1080
                     }
@@ -190,7 +187,6 @@
                 ],
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
-                    "function": "OnPreBuild",
                     "kwargs": {
                         "size": 1440
                     }
@@ -232,7 +228,6 @@
                 ],
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
-                    "function": "OnPreBuild",
                     "kwargs": {
                         "size": 2160
                     }
