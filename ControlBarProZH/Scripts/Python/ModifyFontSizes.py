@@ -1,8 +1,8 @@
 import os
-import util
 from dataclasses import dataclass
 from typing import Any
-from parse import search
+from common import util
+from common.parse import search
 
 
 g_fontResList   = [ 720, 900, 1080, 1440, 2160 ]
@@ -72,7 +72,7 @@ def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
     return outText
 
 
-def OnPreBuild(**kwargs) -> None:
+def OnEvent(**kwargs) -> None:
     print("Modify Font Sizes ...")
 
     buildDir: str = kwargs.get("_absBuildDir")
@@ -161,4 +161,4 @@ if __name__ == "__main__":
         "size": 720
         }
 
-    OnPreBuild(**kwargs)
+    OnEvent(**kwargs)
