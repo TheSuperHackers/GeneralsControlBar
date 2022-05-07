@@ -260,7 +260,7 @@
             {
                 "name": "339_ControlBarProHideIp",
                 "big": true,
-                "bigSuffix": ".off",
+                "bigSuffix": ".BAK",
                 "files": [
                     {
                         "parent": "GameFilesEditedHideIp",
@@ -273,7 +273,7 @@
             {
                 "name": "339_ControlBarProHideMail",
                 "big": true,
-                "bigSuffix": ".off",
+                "bigSuffix": ".BAK",
                 "files": [
                     {
                         "parent": "GameFilesEditedHideMail",

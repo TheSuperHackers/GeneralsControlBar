@@ -28,7 +28,7 @@ set FileList=
 set FileList=%FileList% 339_ControlBarProHideIpZH.big
 set FileList=%FileList% 339_ControlBarProHideMailZH.big
 set SetOn=0
-set RenSuffix=off
+set RenSuffix=BAK
 
 for %%f in (%FileList%) do (
     if exist "%ThisDir%\%%f.%RenSuffix%" (
