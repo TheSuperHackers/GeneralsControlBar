@@ -20,7 +20,10 @@
                             "Window/Menus/*.wnd"
                         ]
                     }
-                ]
+                ],
+                "onFinishBuildRawBundleItem": {
+                    "script": "Scripts/Python/VerifyPositions.py"
+                }
             },
             {
                 "name": "340_ControlBarPro720",
