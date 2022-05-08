@@ -5,10 +5,6 @@ from common import util
 from common.parse import search
 
 
-g_fontResList   = [ 720, 900, 1080, 1440, 2160 ]
-g_fontScaleList = [ 0.9, 0.9,  1.0,  1.2,  1.9 ]
-
-
 def AllowScale(s: str) -> bool:
     return s.find("NoScale") < 0
 
@@ -77,24 +73,18 @@ def OnEvent(**kwargs) -> None:
 
     buildDir: str = kwargs.get("_absBuildDir")
     bundleItem: Any = kwargs.get("_bundleItem")
-    resolution: int = kwargs.get("size")
+    size: int = kwargs.get("size")
+    scale: float = kwargs.get("scale")
 
     assert buildDir != None, "_buildDir kwargs not found"
     assert bundleItem != None, "_bundleItem kwargs not found"
-    assert resolution != None, "size kwargs not found"
+    assert size != None, "size kwargs not found"
+    assert scale != None, "scale kwargs not found"
 
-    subBuildDir: str = os.path.join(buildDir, "ModifyFontSizes", str(resolution))
-    fontScale: float = 1.0
-    index: int
-    bundleFile: Any
-
-    for index in range(len(g_fontResList)):
-        if g_fontResList[index] == resolution:
-            fontScale = g_fontScaleList[index]
-            break
-
-    if fontScale == 1.0:
+    if scale == 1.0:
         return
+
+    subBuildDir: str = os.path.join(buildDir, "ModifyFontSizes", str(size))
 
     for bundleFile in bundleItem.files:
         inFilePath: str = bundleFile.absSourceFile
@@ -107,23 +97,25 @@ def OnEvent(**kwargs) -> None:
             continue
 
         print(f"Read file '{inFilePath}'")
-        fileContent: str = util.ReadTextFile(inFilePath)
-        fileContentModified: str = None
 
-        print(f"Modify file ...")
+        text: str = util.ReadTextFile(inFilePath)
 
+        modifiedText: str = None
         if isHeaderTemplateIni:
-            fileContentModified = ScaleFontSizesInHeaderTemplateIni(fileContent, fontScale)
+            modifiedText = ScaleFontSizesInHeaderTemplateIni(text, scale)
         elif isLanguageIni:
-            fileContentModified = ScaleFontSizesInLanguageIni(fileContent, fontScale)
+            modifiedText = ScaleFontSizesInLanguageIni(text, scale)
 
-        assert fileContentModified != None
+        assert modifiedText != None
 
         outFilePath: str = os.path.join(subBuildDir, bundleFile.relTargetFile)
-        bundleFile.absSourceFile = outFilePath
+
         print(f"Write file '{outFilePath}'")
+
         util.MakeDirsForFile(outFilePath)
-        util.WriteTextFile(outFilePath, fileContentModified)
+        util.WriteTextFile(outFilePath, modifiedText)
+
+        bundleFile.absSourceFile = outFilePath
 
 
 if __name__ == "__main__":

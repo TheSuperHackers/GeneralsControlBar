@@ -12,38 +12,15 @@
                         "parent": "GameFilesEdited",
                         "sourceList": [
                             "*.txt",
-                            "Art/Textures/BlankTexture_16.tga",
-                            "Data/INI/*.ini",
-                            "Data/INI/MappedImages/HandCreated/*.ini",
-                            "GenTool/*.dat",
-                            "Window/*.wnd",
-                            "Window/Menus/*.wnd"
+                            "GenTool/*.dat"
                         ]
                     }
-                ],
-                "onFinishBuildRawBundleItem": {
-                    "script": "Scripts/Python/VerifyPositions.py"
-                }
+                ]
             },
             {
                 "name": "340_ControlBarPro720",
                 "big": true,
                 "files": [
-                    {
-                        "parent": "GameFilesEdited",
-                        "params": {
-                            "rescale": 0.5,
-                            "resampling": "BOX",
-                            "-quality": 255,
-                            "-mipmode": "None"
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.dds"
-                            }
-                        ]
-                    },
                     {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
@@ -64,7 +41,8 @@
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
                     "kwargs": {
-                        "size": 720
+                        "size": 720,
+                        "scale": 0.9
                     }
                 }
             },
@@ -73,21 +51,6 @@
                 "big": true,
                 "files": [
                     {
-                        "parent": "GameFilesEdited",
-                        "params": {
-                            "rescale": 0.5,
-                            "resampling": "BOX",
-                            "-quality": 255,
-                            "-mipmode": "None"
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.dds"
-                            }
-                        ]
-                    },
-                    {
                         "parent": "GameFilesEditedLanguage",
                         "sourceList": [
                             "Data/Brazilian/*.ini",
@@ -107,7 +70,8 @@
                 "onPreBuild": {
                     "script": "Scripts/Python/ModifyFontSizes.py",
                     "kwargs": {
-                        "size": 900
+                        "size": 900,
+                        "scale": 0.9
                     }
                 }
             },
@@ -116,6 +80,137 @@
                 "big": true,
                 "files": [
                     {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "kwargs": {
+                        "size": 1080,
+                        "scale": 1.0
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro1440",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "kwargs": {
+                        "size": 1440,
+                        "scale": 1.2
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarPro2160",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEditedLanguage",
+                        "sourceList": [
+                            "Data/Brazilian/*.ini",
+                            "Data/Chinese/*.ini",
+                            "Data/English/*.ini",
+                            "Data/French/*.ini",
+                            "Data/German/*.ini",
+                            "Data/Italian/*.ini",
+                            "Data/Korean/*.ini",
+                            "Data/Polish/*.ini",
+                            "Data/Spanish/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyFontSizes.py",
+                    "kwargs": {
+                        "size": 2160,
+                        "scale": 1.9
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarProData1080",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "Data/INI/*.ini",
+                            "Data/INI/MappedImages/HandCreated/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyPositions.py",
+                    "kwargs": {
+                        "size": 1080,
+                        "scale": 0.5
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarProData2160",
+                "big": true,
+                "files": [
+                    {
+                        "parent": "GameFilesEdited",
+                        "sourceList": [
+                            "Data/INI/*.ini",
+                            "Data/INI/MappedImages/HandCreated/*.ini",
+                            "Window/*.wnd",
+                            "Window/Menus/*.wnd"
+                        ]
+                    }
+                ],
+                "onPreBuild": {
+                    "script": "Scripts/Python/ModifyPositions.py",
+                    "kwargs": {
+                        "size": 2160,
+                        "scale": 1.0
+                    }
+                }
+            },
+            {
+                "name": "340_ControlBarProArt1080",
+                "big": true,
+                "files": [
+                    {
                         "parent": "GameFilesEdited",
                         "params": {
                             "rescale": 0.5,
@@ -131,31 +226,15 @@
                         ]
                     },
                     {
-                        "parent": "GameFilesEditedLanguage",
+                        "parent": "GameFilesEdited",
                         "sourceList": [
-                            "Data/Brazilian/*.ini",
-                            "Data/Chinese/*.ini",
-                            "Data/English/*.ini",
-                            "Data/French/*.ini",
-                            "Data/German/*.ini",
-                            "Data/Italian/*.ini",
-                            "Data/Korean/*.ini",
-                            "Data/Polish/*.ini",
-                            "Data/Spanish/*.ini",
-                            "Window/*.wnd",
-                            "Window/Menus/*.wnd"
+                            "Art/Textures/BlankTexture_16.tga"
                         ]
                     }
-                ],
-                "onPreBuild": {
-                    "script": "Scripts/Python/ModifyFontSizes.py",
-                    "kwargs": {
-                        "size": 1080
-                    }
-                }
+                ]
             },
             {
-                "name": "340_ControlBarPro1440",
+                "name": "340_ControlBarProArt2160",
                 "big": true,
                 "files": [
                     {
@@ -172,85 +251,9 @@
                         ]
                     },
                     {
-                        "parent": "GameFilesEditedLanguage",
-                        "sourceList": [
-                            "Data/Brazilian/*.ini",
-                            "Data/Chinese/*.ini",
-                            "Data/English/*.ini",
-                            "Data/French/*.ini",
-                            "Data/German/*.ini",
-                            "Data/Italian/*.ini",
-                            "Data/Korean/*.ini",
-                            "Data/Polish/*.ini",
-                            "Data/Spanish/*.ini",
-                            "Window/*.wnd",
-                            "Window/Menus/*.wnd"
-                        ]
-                    }
-                ],
-                "onPreBuild": {
-                    "script": "Scripts/Python/ModifyFontSizes.py",
-                    "kwargs": {
-                        "size": 1440
-                    }
-                }
-            },
-            {
-                "name": "340_ControlBarPro2160",
-                "big": true,
-                "files": [
-                    {
                         "parent": "GameFilesEdited",
-                        "params": {
-                            "-quality": 255,
-                            "-mipmode": "None"
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.dds"
-                            }
-                        ]
-                    },
-                    {
-                        "parent": "GameFilesEditedLanguage",
                         "sourceList": [
-                            "Data/Brazilian/*.ini",
-                            "Data/Chinese/*.ini",
-                            "Data/English/*.ini",
-                            "Data/French/*.ini",
-                            "Data/German/*.ini",
-                            "Data/Italian/*.ini",
-                            "Data/Korean/*.ini",
-                            "Data/Polish/*.ini",
-                            "Data/Spanish/*.ini",
-                            "Window/*.wnd",
-                            "Window/Menus/*.wnd"
-                        ]
-                    }
-                ],
-                "onPreBuild": {
-                    "script": "Scripts/Python/ModifyFontSizes.py",
-                    "kwargs": {
-                        "size": 2160
-                    }
-                }
-            },
-            {
-                "name": "340_ControlBarProPlain",
-                "big": true,
-                "files": [
-                    {
-                        "parent": "GameFilesEdited",
-                        "params": {
-                            "-quality": 255,
-                            "-mipmode": "None"
-                        },
-                        "sourceTargetList": [
-                            {
-                                "source": "Art/Textures/*.psd",
-                                "target": "Art/Textures/*.dds"
-                            }
+                            "Art/Textures/BlankTexture_16.tga"
                         ]
                     }
                 ]

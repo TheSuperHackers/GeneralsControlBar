@@ -9,6 +9,8 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro720",
+                    "340_ControlBarProArt1080",
+                    "340_ControlBarProData1080",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]
@@ -18,6 +20,8 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro900",
+                    "340_ControlBarProArt1080",
+                    "340_ControlBarProData1080",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]
@@ -28,6 +32,8 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro1080",
+                    "340_ControlBarProArt1080",
+                    "340_ControlBarProData1080",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]
@@ -37,6 +43,8 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro1440",
+                    "340_ControlBarProArt2160",
+                    "340_ControlBarProData2160",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]
@@ -46,15 +54,8 @@
                 "itemNames": [
                     "340_ControlBarPro",
                     "340_ControlBarPro2160",
-                    "339_ControlBarProHideIp",
-                    "339_ControlBarProHideMail"
-                ]
-            },
-            {
-                "name": "Plain",
-                "itemNames": [
-                    "340_ControlBarPro",
-                    "340_ControlBarProPlain",
+                    "340_ControlBarProArt2160",
+                    "340_ControlBarProData2160",
                     "339_ControlBarProHideIp",
                     "339_ControlBarProHideMail"
                 ]
