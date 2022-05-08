@@ -1,10 +1,16 @@
 Control Bar HD Remastered Pack for COMMAND AND CONQUER GENERALS: ZERO HOUR
 
-Author(s): EA Games, xezon
+AUTHOR:
+EA Games, xezon
 
-Original download from: http://gentool.net/download/controlbar
+ORIGINAL DOWNLOAD URL:
+http://gentool.net/download/controlbar
 
-Code & Assets: https://github.com/TheSuperHackers/GeneralsControlBar
+SOURCE CODE & ASSETS:
+https://github.com/TheSuperHackers/GeneralsControlBar
+
+DONATION LINK:
+https://www.paypal.me/gentool
 
 
 -----------------------------------------------------------------------------------------------
