@@ -10,13 +10,13 @@ g_fontScaleList = [ 0.9, 0.9,  1.0,  1.2,  1.9 ]
 
 
 def AllowScale(s: str) -> bool:
-    return s.find('NoScale') < 0
+    return s.find("NoScale") < 0
 
 
 def ReScale(s: str, scale: float) -> float:
     rescale: float = scale
     if rescale > 1.0:
-        upScaleMult = search('UpScaleMult={:f}', s)
+        upScaleMult = search("UpScaleMult={:f}", s)
         if upScaleMult != None:
             rescale = 1.0 + (rescale - 1.0) * upScaleMult[0]
     return rescale
@@ -24,7 +24,7 @@ def ReScale(s: str, scale: float) -> float:
 
 def ScaleFontSizesInHeaderTemplateIni(inText: str, fontScale: float) -> str:
     outText: str = ""
-    headerTemplateIniPattern: str = 'Point = {:d}'
+    headerTemplateIniPattern: str = "Point = {:d}"
     line: str
 
     for line in inText.splitlines(keepends=True):
@@ -37,7 +37,7 @@ def ScaleFontSizesInHeaderTemplateIni(inText: str, fontScale: float) -> str:
                 curPointStr: str = headerTemplateIniPattern.format(pointSize[0])
                 newPointStr: str = headerTemplateIniPattern.format(newPointSize)
                 line = line.replace(curPointStr, newPointStr)
-                print(curPointStr + ' -> ' + newPointStr)
+                print(curPointStr + " -> " + newPointStr)
 
         outText += line
 
@@ -46,8 +46,8 @@ def ScaleFontSizesInHeaderTemplateIni(inText: str, fontScale: float) -> str:
 
 def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
     outText: str = ""
-    languageIniPatternA: str = '{:d} Yes'
-    languageIniPatternB: str = '{:d} No'
+    languageIniPatternA: str = "{:d} Yes"
+    languageIniPatternB: str = "{:d} No"
     line: str
 
     for line in inText.splitlines(keepends=True):
@@ -65,7 +65,7 @@ def ScaleFontSizesInLanguageIni(inText: str, fontScale: float) -> str:
                 curPointStr: str = pattern.format(pointSize[0])
                 newPointStr: str = pattern.format(newPointSize)
                 line = line.replace(curPointStr, newPointStr)
-                print(curPointStr + ' -> ' + newPointStr)
+                print(curPointStr + " -> " + newPointStr)
 
         outText += line
 

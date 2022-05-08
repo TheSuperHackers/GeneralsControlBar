@@ -40,9 +40,9 @@ def VerifyPositionsInWindowFiles(files: list[str], errors: VerifyErrors):
         lineNum: int = 1
 
         for line in text.splitlines():
-            VerifyOnPatternInText('UPPERLEFT: {:d} {:d}', file, line, lineNum, errors)
-            VerifyOnPatternInText('BOTTOMRIGHT: {:d} {:d}', file, line, lineNum, errors)
-            VerifyOnPatternInText('CREATIONRESOLUTION: {:d} {:d}', file, line, lineNum, errors)
+            VerifyOnPatternInText("UPPERLEFT: {:d} {:d}", file, line, lineNum, errors)
+            VerifyOnPatternInText("BOTTOMRIGHT: {:d} {:d}", file, line, lineNum, errors)
+            VerifyOnPatternInText("CREATIONRESOLUTION: {:d} {:d}", file, line, lineNum, errors)
             lineNum += 1
 
 
@@ -56,9 +56,9 @@ def VerifyPositionsInMappedImageFiles(files: list[str], errors: VerifyErrors):
         lineNum: int = 1
 
         for line in text.splitlines():
-            VerifyOnPatternInText('TextureWidth = {:d}', file, line, lineNum, errors)
-            VerifyOnPatternInText('TextureHeight = {:d}', file, line, lineNum, errors)
-            VerifyOnPatternInText('Coords = Left:{:d} Top:{:d} Right:{:d} Bottom:{:d}', file, line, lineNum, errors)
+            VerifyOnPatternInText("TextureWidth = {:d}", file, line, lineNum, errors)
+            VerifyOnPatternInText("TextureHeight = {:d}", file, line, lineNum, errors)
+            VerifyOnPatternInText("Coords = Left:{:d} Top:{:d} Right:{:d} Bottom:{:d}", file, line, lineNum, errors)
             lineNum += 1
 
 
@@ -72,7 +72,7 @@ def VerifyPositionsInUiFiles(files: list[str], errors: VerifyErrors):
         lineNum: int = 1
 
         for line in text.splitlines():
-            VerifyOnPatternInText('X:{:d} Y:{:d}', file, line, lineNum, errors)
+            VerifyOnPatternInText("X:{:d} Y:{:d}", file, line, lineNum, errors)
             lineNum += 1
 
 
