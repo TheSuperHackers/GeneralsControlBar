@@ -141,6 +141,7 @@ v1.2:
 - Decreased faction icon sizes in Upgrades Window
 - Decreased font sizes in 720, 900, 1440, 2160 presets
 - Increased font size of group numbers
+- Increased player faction list size in game option menus
 - Fixed scroll list box text sizes in Disconnect and Diplomacy Window
 - Fixed position of Available Gen Points number
 - Fixed missing mission log in Single Player diplomacy window
